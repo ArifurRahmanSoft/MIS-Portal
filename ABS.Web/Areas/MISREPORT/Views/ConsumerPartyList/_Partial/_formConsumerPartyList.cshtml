@@ -1,0 +1,27 @@
+﻿<form novalidate name="formPartyCreditLimit" id="formPartyCreditLimit" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product Type</label>
+                <div class="col-md-6">
+                    <select id="ddlProductTypeSSTYP" class="select2-select-00"
+                            ng-model="ngModelProductTypeSSTYP" 
+                            name="ddlProductTypeSSTYP"
+                            data-placeholder="--Select Product Type--"
+                            style="width: 100%" ng-options="type.SSTYP_ID as type.SSTYP_NAME for type in listSSTYP" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formPartyCreditLimit.$dirty||submitted) && formPartyCreditLimit.ddlProductType.$error.required">*</span>
+            </div>
+
+
+
+        </div>
+        </div>
+
+</form>

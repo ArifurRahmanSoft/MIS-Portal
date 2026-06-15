@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTGroup.Web", "ABS.Web\CTGroup.Web.csproj", "{B3C65E87-6C4F-4A1B-B42C-ACBEB123081B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTGroup.Utility", "ABS.Utility\CTGroup.Utility.csproj", "{07B48FAA-D263-4935-8570-06F43E586530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTGroup.Service", "ABS.Service\CTGroup.Service.csproj", "{AA41F2B6-2627-4853-BB6C-8F8594B42562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTGroup.Data", "ABS.Data\CTGroup.Data.csproj", "{60B41D4A-2813-4313-86D9-7B0CFCA128AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTGroup.OracleModel", "CTGroup.OracleModel\CTGroup.OracleModel.csproj", "{8B0690E8-3673-48DC-9F44-28649B16D689}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C65E87-6C4F-4A1B-B42C-ACBEB123081B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C65E87-6C4F-4A1B-B42C-ACBEB123081B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C65E87-6C4F-4A1B-B42C-ACBEB123081B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C65E87-6C4F-4A1B-B42C-ACBEB123081B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B48FAA-D263-4935-8570-06F43E586530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B48FAA-D263-4935-8570-06F43E586530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B48FAA-D263-4935-8570-06F43E586530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B48FAA-D263-4935-8570-06F43E586530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA41F2B6-2627-4853-BB6C-8F8594B42562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA41F2B6-2627-4853-BB6C-8F8594B42562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA41F2B6-2627-4853-BB6C-8F8594B42562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA41F2B6-2627-4853-BB6C-8F8594B42562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B41D4A-2813-4313-86D9-7B0CFCA128AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B41D4A-2813-4313-86D9-7B0CFCA128AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B41D4A-2813-4313-86D9-7B0CFCA128AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B41D4A-2813-4313-86D9-7B0CFCA128AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0690E8-3673-48DC-9F44-28649B16D689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0690E8-3673-48DC-9F44-28649B16D689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0690E8-3673-48DC-9F44-28649B16D689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0690E8-3673-48DC-9F44-28649B16D689}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9301300D-E9C8-4D60-8D23-9029E811C156}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://agileprinciples.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ABS.Data\\CTGroup.Data.csproj
+		SccProjectName1 = ABS.Data
+		SccLocalPath1 = ABS.Data
+		SccProjectUniqueName2 = ABS.Service\\CTGroup.Service.csproj
+		SccProjectName2 = ABS.Service
+		SccLocalPath2 = ABS.Service
+		SccProjectUniqueName3 = ABS.Utility\\CTGroup.Utility.csproj
+		SccProjectName3 = ABS.Utility
+		SccLocalPath3 = ABS.Utility
+		SccProjectUniqueName4 = ABS.Web\\CTGroup.Web.csproj
+		SccProjectName4 = ABS.Web
+		SccLocalPath4 = ABS.Web
+		SccProjectUniqueName5 = CTGroup.OracleModel\\CTGroup.OracleModel.csproj
+		SccProjectName5 = CTGroup.OracleModel
+		SccLocalPath5 = CTGroup.OracleModel
+	EndGlobalSection
+EndGlobal

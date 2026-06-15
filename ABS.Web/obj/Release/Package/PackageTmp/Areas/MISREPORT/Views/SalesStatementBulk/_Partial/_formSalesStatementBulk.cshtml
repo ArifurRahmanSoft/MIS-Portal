@@ -1,0 +1,51 @@
+﻿<form novalidate name="formSalesStatementBulk" id="formSalesStatementBulk" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-6 control-label"> From Date </label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formSalesStatementBulk.$dirty||submitted) && formSalesStatementBulk.dtStartDate.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            
+            <div class="form-group">
+                <label class="col-md-6 control-label"> To Date </label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formSalesStatementBulk.$dirty||submitted) && formSalesStatementBulk.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10" style="margin-left: -4%;">
+                    <input type="radio" ng-model="ReportType" id="dobased_bulk" value="dobased_bulk"><label for="dobased_bulk" class="control-label" style="font-weight:normal; margin-right:10px">&nbsp;DO Based (Bulk)</label>
+                </div>
+                <span class="error" ng-show="(formSalesStatementBulk.$dirty||submitted) && formSalesStatementBulk.ReportType.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+</form>

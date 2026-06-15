@@ -1,0 +1,118 @@
+﻿<form novalidate name="frmAutoRiceCollection" id="frmAutoRiceCollection" class="form-horizontal row-border">
+    <input type="hidden" id="OID" readonly="readonly" ng-model="OID" />
+
+    <div class="row" ng-hide="marketinghide">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Cash Collection By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" ng-disabled="true" ng-readonly="true"
+                           id="txtCash" class="form-control" style="width: 100%"
+                           name="txtCash" ng-model="CASHCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Cheque Collection By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" ng-disabled="true" ng-readonly="true"
+                           id="txtCheque" class="form-control" style="width: 100%"
+                           name="txtCheque" ng-model="CHEQUECOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">TT Collection By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" 
+                           id="txtTT" class="form-control" style="width: 100%"
+                           name="txtTT" ng-model="TTCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">LC Collection By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" ng-disabled="true" ng-readonly="true"
+                           id="txtLC" class="form-control" style="width: 100%"
+                           name="txtLC" ng-model="LCCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Other Collection By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" ng-disabled="true" ng-readonly="true"
+                           id="txtOther" class="form-control" style="width: 100%"
+                           name="txtOther" ng-model="OTHERCOLLECTION" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-hide="bulkhide">
+        <div class="col-md-8">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Select Location</label>
+                <div class="col-md-3">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="-- Location --"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Cash Collection (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" style="width: 100%"
+                           id="txtCash" class="form-control"
+                           name="txtCash" ng-model="CASHCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Cheque Collection (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" style="width: 100%"
+                           id="txtCheque" class="form-control"
+                           name="txtCheque" ng-model="CHEQUECOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">TT Collection (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" style="width: 100%"
+                           id="txtTT" class="form-control"
+                           name="txtTT" ng-model="TTCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">LC Collection (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" style="width: 100%"
+                           id="txtLC" class="form-control"
+                           name="txtLC" ng-model="LCCOLLECTION" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Other Collection (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number" style="width: 100%"
+                           id="txtOther" class="form-control"
+                           name="txtOther" ng-model="OTHERCOLLECTION" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+    <style type="text/css">
+        .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+            border-top-color: #333333 !important;
+            margin-top: 0;
+            margin-left: 125px !important;
+            vertical-align: middle;
+        }
+    </style>

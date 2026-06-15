@@ -1,0 +1,47 @@
+﻿
+<style>
+    .sutonny-text {
+        font-family: 'SutonnyMJ', 'Arial Unicode MS', sans-serif;
+    }
+</style>
+
+<input id="prodSearch" ng-model="prodSearch" type="text" class="form-control search" placeholder="Search By Product Name">
+<table style="max-height:500px; display: block; overflow-y: scroll; overflow-x: auto; white-space: nowrap; " class="table table-striped table-bordered table-hover table-checkable table-tabletools datatable dataTable ">
+
+
+    <thead style="position: sticky; top: 0; background-color: gray; color:white; z-index: 10; box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);" class="">
+        <tr>
+
+            <th style="width: 100px;" class="text-center">SN.</th>
+            <th class="text-center col-md-3">PRODUCT NAME</th>
+            <th class="text-center col-md-2">PRODUCT CODE</th>
+            <th class="text-center col-md-2">SHORT NAME</th>
+            <th class="text-center col-md-3">BANGLA NAME</th>
+            <th class="text-center col-md-2">RATE</th>
+            <th class="text-center col-md-3">OPTION</th>
+
+        </tr>
+    </thead>
+    <tbody style="text-align:center;">
+        <tr ng-repeat="product in productsList | filter:{ name: prodSearch }">
+            <td style="width: 100px;" class="">{{$index+1}}</td>
+            <td style="max-width: 400px; text-align:left" class="col-md-3">{{product.name}}</td>
+            <td style="max-width: 150px; text-align: center" class="col-md-2">{{product.text}}</td>
+            <td style="max-width: 100px; text-align:center" class="col-md-2">{{product.shortName}}</td>
+            <td style="min-width: 150px; text-align:left" class="col-md-3 sutonny-text">{{product.bngName}}</td>
+            <td style="max-width: 100px; text-align: center" class="col-md-3">{{product.rate}}</td>
+            @*     <td style="min-width: 250px;" class="col-md-3"><input class="form-control" type="text" ng-model="product.shortName" /></td>
+                <td style="min-width: 250px;" class="col-md-3"><input class="form-control" type="text" ng-model="product.bngName" /></td>
+                <td style="min-width: 250px;" class="col-md-3"><input class="form-control" type="text" ng-model="product.rate" /></td>*@
+
+            <td style="min-width: 150px;" class="col-md-3 ">
+                <span ng-click="editProduct(product)"
+                      style="margin-right:20px; color: #E19E1D"> <i class="icon-edit"></i> </span>
+                <span ng-click="DeleteProdById(product)" style="color:red"> <i class="icon-trash"></i> </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+

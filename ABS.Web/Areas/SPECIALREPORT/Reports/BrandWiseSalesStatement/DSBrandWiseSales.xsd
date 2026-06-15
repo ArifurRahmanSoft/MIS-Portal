@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BRANDWISESALESSTATEMENT" targetNamespace="http://tempuri.org/BRANDWISESALESSTATEMENT.xsd" xmlns:mstns="http://tempuri.org/BRANDWISESALESSTATEMENT.xsd" xmlns="http://tempuri.org/BRANDWISESALESSTATEMENT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BRANDWISESALESSTATEMENT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BRANDWISESALESSTATEMENT" msprop:Generator_UserDSName="BRANDWISESALESSTATEMENT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BrandWiseSales" msprop:Generator_TableClassName="BrandWiseSalesDataTable" msprop:Generator_TableVarName="tableBrandWiseSales" msprop:Generator_TablePropName="BrandWiseSales" msprop:Generator_RowDeletingName="BrandWiseSalesRowDeleting" msprop:Generator_RowChangingName="BrandWiseSalesRowChanging" msprop:Generator_RowEvHandlerName="BrandWiseSalesRowChangeEventHandler" msprop:Generator_RowDeletedName="BrandWiseSalesRowDeleted" msprop:Generator_UserTableName="BrandWiseSales" msprop:Generator_RowChangedName="BrandWiseSalesRowChanged" msprop:Generator_RowEvArgName="BrandWiseSalesRowChangeEvent" msprop:Generator_RowClassName="BrandWiseSalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sbrnd_name" msprop:Generator_ColumnVarNameInTable="columnsbrnd_name" msprop:Generator_ColumnPropNameInRow="sbrnd_name" msprop:Generator_ColumnPropNameInTable="sbrnd_nameColumn" msprop:Generator_UserColumnName="sbrnd_name" type="xs:string" minOccurs="0" />
+              <xs:element name="AREANAME" msprop:Generator_ColumnVarNameInTable="columnAREANAME" msprop:Generator_ColumnPropNameInRow="AREANAME" msprop:Generator_ColumnPropNameInTable="AREANAMEColumn" msprop:Generator_UserColumnName="AREANAME" type="xs:string" minOccurs="0" />
+              <xs:element name="sprod_name" msprop:Generator_ColumnVarNameInTable="columnsprod_name" msprop:Generator_ColumnPropNameInRow="sprod_name" msprop:Generator_ColumnPropNameInTable="sprod_nameColumn" msprop:Generator_UserColumnName="sprod_name" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQUENCE_ON_REPORT" msprop:Generator_ColumnVarNameInTable="columnSEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInRow="SEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInTable="SEQUENCE_ON_REPORTColumn" msprop:Generator_UserColumnName="SEQUENCE_ON_REPORT" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesCtnBag" msprop:Generator_ColumnVarNameInTable="columnSalesCtnBag" msprop:Generator_ColumnPropNameInRow="SalesCtnBag" msprop:Generator_ColumnPropNameInTable="SalesCtnBagColumn" msprop:Generator_UserColumnName="SalesCtnBag" type="xs:string" minOccurs="0" />
+              <xs:element name="SalePcs" msprop:Generator_ColumnVarNameInTable="columnSalePcs" msprop:Generator_ColumnPropNameInRow="SalePcs" msprop:Generator_ColumnPropNameInTable="SalePcsColumn" msprop:Generator_UserColumnName="SalePcs" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesTon" msprop:Generator_ColumnVarNameInTable="columnSalesTon" msprop:Generator_ColumnPropNameInRow="SalesTon" msprop:Generator_ColumnPropNameInTable="SalesTonColumn" msprop:Generator_UserColumnName="SalesTon" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesAmount" msprop:Generator_ColumnVarNameInTable="columnSalesAmount" msprop:Generator_ColumnPropNameInRow="SalesAmount" msprop:Generator_ColumnPropNameInTable="SalesAmountColumn" msprop:Generator_UserColumnName="SalesAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="SEC_SALEPCS" msprop:Generator_ColumnVarNameInTable="columnSEC_SALEPCS" msprop:Generator_ColumnPropNameInRow="SEC_SALEPCS" msprop:Generator_ColumnPropNameInTable="SEC_SALEPCSColumn" msprop:Generator_UserColumnName="SEC_SALEPCS" type="xs:string" minOccurs="0" />
+              <xs:element name="SEC_SALESTON" msprop:Generator_ColumnVarNameInTable="columnSEC_SALESTON" msprop:Generator_ColumnPropNameInRow="SEC_SALESTON" msprop:Generator_ColumnPropNameInTable="SEC_SALESTONColumn" msprop:Generator_UserColumnName="SEC_SALESTON" type="xs:string" minOccurs="0" />
+              <xs:element name="SEC_SALESAMOUNT" msprop:Generator_ColumnVarNameInTable="columnSEC_SALESAMOUNT" msprop:Generator_ColumnPropNameInRow="SEC_SALESAMOUNT" msprop:Generator_ColumnPropNameInTable="SEC_SALESAMOUNTColumn" msprop:Generator_UserColumnName="SEC_SALESAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="SEC_SALESCTNBAG" msprop:Generator_ColumnVarNameInTable="columnSEC_SALESCTNBAG" msprop:Generator_ColumnPropNameInRow="SEC_SALESCTNBAG" msprop:Generator_ColumnPropNameInTable="SEC_SALESCTNBAGColumn" msprop:Generator_UserColumnName="SEC_SALESCTNBAG" type="xs:string" minOccurs="0" />
+              <xs:element name="FreeQtyPcs" msprop:Generator_ColumnVarNameInTable="columnFreeQtyPcs" msprop:Generator_ColumnPropNameInRow="FreeQtyPcs" msprop:Generator_ColumnPropNameInTable="FreeQtyPcsColumn" msprop:Generator_UserColumnName="FreeQtyPcs" type="xs:string" minOccurs="0" />
+              <xs:element name="FreeQtyCtn" msprop:Generator_ColumnVarNameInTable="columnFreeQtyCtn" msprop:Generator_ColumnPropNameInRow="FreeQtyCtn" msprop:Generator_ColumnPropNameInTable="FreeQtyCtnColumn" msprop:Generator_UserColumnName="FreeQtyCtn" type="xs:string" minOccurs="0" />
+              <xs:element name="FreeQtyTon" msprop:Generator_ColumnVarNameInTable="columnFreeQtyTon" msprop:Generator_ColumnPropNameInRow="FreeQtyTon" msprop:Generator_ColumnPropNameInTable="FreeQtyTonColumn" msprop:Generator_UserColumnName="FreeQtyTon" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

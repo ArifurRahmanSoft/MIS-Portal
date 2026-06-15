@@ -1,0 +1,93 @@
+﻿<form novalidate name="formShowroomLedger" id="formShowroomLedger" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Showroom</label>
+                <div class="col-md-6">
+                    <select id="ddlNational" class="select2-select-00"
+                            ng-model="ngModelShowroom"
+                            name="ddlShowroom"
+                            data-placeholder="--Select Showroom--"
+                            style="width: 100%" ng-options="showroom.OID as showroom.SGLOC_NAME for showroom in ListShowroom" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmShowroomLedgerStatement.$dirty||submitted) && frmShowroomLedgerStatement.ddlShowroom.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00"
+                            ng-model="ngModelProduct"
+                            name="ddlProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.OID as prod.NAME for prod in loadProduct" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmShowroomLedgerStatement.$dirty||submitted) && frmShowroomLedgerStatement.ddlProduct.$error.required">*</span>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+
+
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmShowroomLedgerStatement.$dirty||submitted) && frmShowroomLedgerStatement.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmShowroomLedgerStatement.$dirty||submitted) && frmShowroomLedgerStatement.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="comTranDetails" id="comTranDetails"> <label style="font-weight:normal" for="comTranDetails">Company Wise Transaction (Details) </label></br>
+                    <input type="radio" ng-model="ReportType" value="comTranSummary" id="comTranSummary"> <label style="font-weight:normal" for="comTranSummary"> Company Wise Transaction (Summary) </label></br>  
+                    <input type="radio" ng-model="ReportType" value="showrmLedgerDetails" id="showrmLedgerDetails"> <label style="font-weight:normal" for="showrmLedgerDetails"> Showroom Ledger (Details) </label></br>
+                    <input type="radio" ng-model="ReportType" value="showrmLedgerSummary" id="showrmLedgerSummary"> <label style="font-weight:normal" for="showrmLedgerSummary">Showroom Ledger(Summary) </label></br> 
+
+                    <input type="radio" ng-model="ReportType" value="dailyStatementWithAmntDetails" id="dailyStatementWithAmntDetails"> <label style="font-weight:normal" for="dailyStatementWithAmntDetails">Daily Statement With Amount (Details) </label></br> 
+                    <input type="radio" ng-model="ReportType" value="dailyStatementWithAmntSummary" id="dailyStatementWithAmntSummary"> <label style="font-weight:normal" for="dailyStatementWithAmntSummary"> Daily Statement With Amount (Summary) </label></br> 
+                    <input type="radio" ng-model="ReportType" value="dailyStatemntWithSalesVlueDtls" id="dailyStatemntWithSalesVlueDtls"> <label style="font-weight:normal" for="dailyStatemntWithSalesVlueDtls">Daily Statement With Sales Value (Details) </label></br>  
+                    <input type="radio" ng-model="ReportType" value="dailyStatemntWithSalesVlueSummry" id="dailyStatemntWithSalesVlueSummry"> <label style="font-weight:normal" for="dailyStatemntWithSalesVlueSummry"> Daily Statement With Sales Value(Summary) </label></br> 
+                </div>
+                <span class="error" ng-show="(frmShowroomLedgerStatement.$dirty||submitted) && frmShowroomLedgerStatement.ddlZone.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+</form>
+@*//frmBrandWiseSalesStatement*@

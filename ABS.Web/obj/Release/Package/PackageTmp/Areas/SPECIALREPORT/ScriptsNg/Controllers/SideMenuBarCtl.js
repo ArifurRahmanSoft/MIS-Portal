@@ -1,0 +1,182 @@
+﻿ 
+app.controller('SideMenuBarCtl', ['$scope', 'sideNavService', '$localStorage', '$rootScope', function ($scope, sideNavService, $localStorage, $rootScope) {
+   // var moduleID = 4; // It will come From Dynamic Top Navigation Bar Click Event
+    var moduleID = $rootScope.TopNavigationBarModuleID;
+    //***************For Menu Permission ******************
+
+    $scope.sessionUserCompanyID = 0;
+    $scope.sessionLoggedUserID = 0;
+    $scope.sessionUserCompanyID = $('#hCompanyID').val();
+    $scope.sessionLoggedUserID = $('#hUserID').val();
+    //*************** For Menu Permission *****************
+    $scope.loaderWait = false;
+    $scope.ListMenues = [];
+    loadRecords_Menues(moduleID);
+    $scope.moduleValue = function (dataModuleID) {
+        loadRecords_Menues(dataModuleID);
+    };
+    //**********----Get Side Menus---***************
+    //function loadRecords_Menues(dataModuleID) {
+    //    var ModuleID = dataModuleID;
+    //    var companyID = $scope.sessionUserCompanyID;
+    //    var loggedUser = $scope.sessionLoggedUserID;
+    //    var apiRoute = '/SPECIALREPORT/api/MISReportLayout/GetSideMenu/';
+    //    $scope.loaderWait = true;
+    //    $scope.LoadMessage = 'Loading Please wait...!';
+
+    //    var processMenues = sideNavService.GetSideMenu(apiRoute, companyID, loggedUser, ModuleID);
+    //    processMenues.then(function (response) {
+    //        $scope.ListMenues = response.data;
+    //        $scope.loaderWait = false;
+    //    },
+    //    function (error) {
+    //        console.log("Error: " + error);
+    //        $scope.LoadMessage = 'Loading Problem...!';
+    //    });
+    //}
+
+    function loadRecords_Menues(dataModuleID) {
+        var ModuleID = dataModuleID;
+        var companyID = $scope.sessionUserCompanyID;
+        var loggedUser = $scope.sessionLoggedUserID;
+        var apiRoute = '/SPECIALREPORT/api/MISReportLayout/GetSideMenu/';
+        $scope.loaderWait = true;
+        $scope.LoadMessage = 'Loading Please wait...!';
+
+        var processMenues = sideNavService.GetSideMenu(apiRoute, companyID, loggedUser, ModuleID);
+        processMenues.then(function (response) {
+            debugger;
+            var res = response.data;
+            var parentMenues = [];
+            var childMenues = [];
+            var subChildMenues = [];
+            if (res.mainMenues != '') {
+                debugger;
+                parentMenues = res.mainMenues;
+                if (res.childMenues != '') {
+                    childMenues = res.childMenues;
+                    if (res.subChildMenues != '') {
+                        subChildMenues = res.subChildMenues;
+
+                        angular.forEach(childMenues, function (item, index) {
+                            debugger;
+                            var scmodel = subChildMenues.filter(x => x.SubParentID == item.MenuID);
+                            item.ChildMenues = scmodel;
+                        });
+                    }
+
+                    angular.forEach(parentMenues, function (item, index) {
+                        debugger;
+                        var cmodel = childMenues.filter(x => x.ParentID == item.MenuID);
+                        item.ChildMenues = cmodel;
+                    });
+                }
+
+                $scope.ListMenues = setBooleanType(parentMenues);
+                //$scope.ListMenues = parentMenues;
+                $scope.loaderWait = false;
+            }
+        },
+            function (error) {
+                console.log("Error: " + error);
+                $scope.LoadMessage = 'Loading Problem...!';
+            });
+    }
+
+    function setBooleanType(modelList) {
+        angular.forEach(modelList, function (item) {
+            debugger;
+            item.ChildMenues = item.ChildMenues == undefined ? [] : item.ChildMenues;
+            item.EnableView = item.EnableView == 1 ? true : false;
+            item.EnableInsert = item.EnableInsert == 1 ? true : false;
+            item.EnableUpdate = item.EnableUpdate == 1 ? true : false;
+            item.EnableDelete = item.EnableDelete == 1 ? true : false;
+            item.IsEdit = item.IsEdit == '1' ? true : false;
+            item.IsViewOnly = item.IsViewOnly == '1' ? true : false;
+            item.IsShow = item.IsShow == '1' ? true : false;
+            item.HasChild = item.HasChild == '1' ? true : false;
+            if (item.ChildMenues.length > 0) {
+                item.ChildMenues = setChildBooleanType(item.ChildMenues);
+            }
+        });
+
+        return modelList;
+    }
+
+    function setChildBooleanType(modelList) {
+        debugger;
+        angular.forEach(modelList, function (item) {
+            item.ChildMenues = item.ChildMenues == undefined ? [] : item.ChildMenues;
+            item.EnableView = item.EnableView == 1 ? true : false;
+            item.EnableInsert = item.EnableInsert == 1 ? true : false;
+            item.EnableUpdate = item.EnableUpdate == 1 ? true : false;
+            item.EnableDelete = item.EnableDelete == 1 ? true : false;
+            item.IsEdit = item.IsEdit == '1' ? true : false;
+            item.IsViewOnly = item.IsViewOnly == '1' ? true : false;
+            item.IsShow = item.IsShow == '1' ? true : false;
+            item.IsSubParent = item.IsSubParent == '1' ? true : false;
+            item.HasChild = item.HasChild == '1' ? true : false;
+            if (item.ChildMenues.length > 0) {
+                item.ChildMenues = setSubChildBooleanType(item.ChildMenues);
+            }
+        });
+
+        return modelList;
+    }
+
+    function setSubChildBooleanType(modelList) {
+        debugger;
+        angular.forEach(modelList, function (item) {
+            item.EnableView = item.EnableView == 1 ? true : false;
+            item.EnableInsert = item.EnableInsert == 1 ? true : false;
+            item.EnableUpdate = item.EnableUpdate == 1 ? true : false;
+            item.EnableDelete = item.EnableDelete == 1 ? true : false;
+            item.IsEdit = item.IsEdit == '1' ? true : false;
+            item.IsViewOnly = item.IsViewOnly == '1' ? true : false;
+            item.IsShow = item.IsShow == '1' ? true : false;
+            item.HasChild = item.HasChild == '1' ? true : false;
+        });
+
+        return modelList;
+    }
+
+    //****************** BroadCust *************************
+    $scope.menuStorage = function (menuID, menuList) {
+        $localStorage.MenuID = menuID;
+        $localStorage.ListMenues = menuList;
+        //
+        $localStorage.LoggedUserID = $scope.sessionLoggedUserID;
+        //Code That Hide Approval and Delcline Button
+        $localStorage.notificationStorageMenuID = 0;
+        $localStorage.notificationStorageMasterID = 0;
+        $localStorage.notificationStorageIsApproved = false;
+        $localStorage.notificationStorageIsDeclained = false;
+    }
+
+    $scope.SideBarMenuClicked = function (childMenu, menuList, ChildMenues) {
+        
+        $localStorage.loggedCompnyID = $scope.sessionUserCompanyID
+        $localStorage.loggedUserID = $scope.sessionLoggedUserID;
+        $localStorage.loggedUserBranchID = 1; //It will Come from Logged User Branch
+        $localStorage.loggedUserBranchID = childMenu.DepartmentID; //It will Come from Logged User Branch
+
+        $localStorage.loggedUserDepartmentID = childMenu.DepartmentID; //It will Come from Logged User Department
+
+        $localStorage.currentModuleID = moduleID; // It will come From Dynamic Top Navigation Bar Click Event
+        $localStorage.currentMenuID = childMenu.MenuID;
+        $localStorage.currentTransactionTypeID = childMenu.TransactionTypeID;
+        $localStorage.MenuList = menuList;
+        $localStorage.ChildMenues = ChildMenues;
+        //
+
+        //Code That Hide Approval and Delcline Button
+        $localStorage.notificationStorageMenuID = 0;
+        $localStorage.notificationStorageMasterID = 0;
+        $localStorage.notificationStorageIsApproved = false;
+        $localStorage.notificationStorageIsDeclained = false;
+
+    }
+
+
+}]);
+

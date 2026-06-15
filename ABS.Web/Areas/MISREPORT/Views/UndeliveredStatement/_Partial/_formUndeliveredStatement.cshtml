@@ -1,0 +1,182 @@
+﻿<form novalidate name="formUndeliveredStatement" id="formUndeliveredStatement" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            @*<div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>*@
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">National</label>
+                <div class="col-md-6">
+                    <select id="ddlNational" class="select2-select-00" ng-disabled="IsDisableNational" ng-readonly="IsReadOnlyNational"
+                            ng-model="ngModelNational"
+                            name="ddlNational"
+                            data-placeholder="--Select National--" ng-click="loadDivisionRecords();loadProductCategory()"
+                            style="width: 100%" ng-options="ntn.NTNAL_OID as ntn.NTNAL_NAME for ntn in listNational" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Division</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00" ng-disabled="IsDisableDivision" ng-readonly="IsReadOnlyDivision"
+                            ng-model="ngModelDivision"
+                            name="ddlDivision"
+                            data-placeholder="--Select Division--" ng-click="loadRegionRecords()"
+                            style="width: 100%" ng-options="div.DIVISION_ID as div.DIVISION_NAME for div in listDivision" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Region</label>
+                <div class="col-md-6">
+                    <select id="ddlRegion" class="select2-select-00" ng-disabled="IsDisableRegion" ng-readonly="IsReadOnlyRegion"
+                            ng-model="ngModelRegion"
+                            name="ddlRegion"
+                            data-placeholder="--Select Region--" ng-click="loadZoneRecords()"
+                            style="width: 100%" ng-options="reg.REGION_ID as reg.REGION_NAME for reg in listRegion" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Zone</label>
+                <div class="col-md-6">
+                    <select id="ddlZone" class="select2-select-00" ng-disabled="IsDisableZone" ng-readonly="IsReadOnlyZone"
+                            ng-model="ngModelZone"
+                            name="ddlZone"
+                            data-placeholder="--Select Zone--" ng-click="loadDistributorRecords()"
+                            style="width: 100%" ng-options="zon.ZONE_ID as zon.ZONE_NAME for zon in listZone" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Distributor</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group" ng-show="!isBrandGroup">
+                <label class="col-md-4 control-label" for="input17">Product Category</label>
+                <div class="col-md-6">
+                    <select id="ddlProductCategory" class="select2-select-00"
+                            ng-model="ngmProductCategory"
+                            name="ddlProductCategory"
+                            data-placeholder="--Select Category--" ng-click="loadBrandByCategory()"
+                            style="width: 100%" ng-options="cat.CATEGORYID as cat.CATEGORYNAME for cat in listProductCategory" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" ng-show="isBrandGroup">
+                <label class="col-md-4 control-label" for="input17">Brand Group</label>
+                <div class="col-md-6">
+                    <select id="ddlBrandGroup" class="select2-select-00"
+                            ng-model="brandGroupId"
+                            name="ddlBrandGroup"
+                            data-placeholder="--Select Brand Group--" ng-change="loadBrandByCategoryBrandGroup()"
+                            style="width: 100%" ng-options="grp.BRAND_GROUP_ID as grp.BRAND_GROUP_NAME for grp in listBrandGroup" required>
+                        <option></option>
+                    </select>
+                </div>
+                @*<span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.ddlBrandGroup.$error.required">*</span>*@
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlProductBrand" class="select2-select-00"
+                            ng-model="ngModelBrand"
+                            name="ddlProductBrand"
+                            data-placeholder="--Select Brand--" ng-click="loadProductBrand()"
+                            @*data-placeholder="--Select Brand--" ng-click="loadSKURecords()"*@
+                            style="width: 100%" ng-options="brnd.BRANDID as brnd.SBRND_NAME for brnd in listBrandByCat" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlProduct" class="select2-select-00"
+                            ng-model="ngModelProduct"
+                            name="ddlProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListSKUBrand" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="detail">Detail
+                    <input type="radio" ng-model="ReportType" value="summary">Summary
+                    <input type="radio" ng-model="ReportType" value="partyxproduct">Party X Product X SKU
+                    <input type="radio" ng-model="ReportType" value="partyxproductxbrand">Party X Product X Brand
+                    <input type="radio" ng-model="ReportType" value="areasummary">Area Summary(Ctn/bag)
+                    <input type="radio" ng-model="ReportType" value="areadetail">Area Detail(Ctn/bag)
+
+                    <input type="radio" ng-model="ReportType" value="areadetailnew">Area Detail(New)(Ctn/bag)
+
+                    <input type="radio" ng-model="ReportType" value="summaryton">Area Summary(M.Ton)
+                    <input type="radio" ng-model="ReportType" value="detailton">Area Detail(M.Ton)
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

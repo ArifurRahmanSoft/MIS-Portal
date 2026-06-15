@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Expense Entry";
+}
+
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="ExpenseEntryCtrl">
+        <!-- Breadcrumbs line -->
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <!-- /Breadcrumbs line -->
+        <!--=== Page Header ===-->
+        <div class="page-header">
+
+        </div>
+        <!-- /Page Header -->
+        <!--==Delete Modal From System Common==-->
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+        <!--==Delete Modal From System Common==-->
+        <!--=== Page Content ===-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget box">
+                    <div class="widget-header">
+                        <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                        <div class="toolbar no-padding">
+                            <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                <i class="icon-refresh"></i> Reset
+                            </span>
+
+                            <span id="Show" class="btn btn-info margin-right-btn" ng-click="ShowHide()">
+                                <i class="icon-search" ng-show="IsListIcon"></i> <i ng-show="IsCreateIcon" class="icon-plus-sign"></i> {{btnShowText}}
+                            </span>
+
+                            <span id="save" class="btn btn-success margin-right-btn" ng-click="Save()" ng-disabled="frmExpenseEntry.$invalid">
+                                <i class="icon-save"></i> {{btnSaveText}}
+                            </span>
+                            <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="widget-content" ng-show="IsShow">
+                        @Html.Partial("~/Areas/Expense/Views/ExpenseEntry/_Partial/_formExpenseEntry.cshtml")
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.col-md-12 -->
+        <!-- /Page Content -->
+        <div class="row" ng-hide="IsHidden">
+            <div class="col-md-12">
+                <div class="widget box">
+                    <div class="widget-header">
+                        <h4><i class="icon-reorder"></i> {{ListTitleRequisitionMaster}}</h4>
+                        <div class="toolbar no-padding">
+                            <div class="btn-group">
+                                @*<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content no-padding">
+                        @Html.Partial("~/Areas/Expense/Views/ExpenseEntry/_Partial/_tableExpenseEntryMaster.cshtml")
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->  
+        
+    </div>
+</div>
+<!-- /.container -->
+
+@section AngularScript{
+    <script src="~/Areas/Expense/ScriptsNg/Directives/Validator.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Directives/DropdownMultiselect.js"></script>
+    <script src="~/Areas/Expense/ScriptsNg/Controllers/ExpenseEntryCtrl.js"></script>
+    <script src="~/Areas/Expense/ScriptsNg/Service/ExpenseEntryService.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Service/CrudServiceCmnPro.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Directives/ConversionCmnPro.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

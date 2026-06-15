@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSIntercompanyTransfer" targetNamespace="http://tempuri.org/DSIntercompanyTransfer.xsd" xmlns:mstns="http://tempuri.org/DSIntercompanyTransfer.xsd" xmlns="http://tempuri.org/DSIntercompanyTransfer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSIntercompanyTransfer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSIntercompanyTransfer" msprop:Generator_UserDSName="DSIntercompanyTransfer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTIntercompanyTransfer" msprop:Generator_TableClassName="DTIntercompanyTransferDataTable" msprop:Generator_TableVarName="tableDTIntercompanyTransfer" msprop:Generator_RowChangedName="DTIntercompanyTransferRowChanged" msprop:Generator_TablePropName="DTIntercompanyTransfer" msprop:Generator_RowDeletingName="DTIntercompanyTransferRowDeleting" msprop:Generator_RowChangingName="DTIntercompanyTransferRowChanging" msprop:Generator_RowEvHandlerName="DTIntercompanyTransferRowChangeEventHandler" msprop:Generator_RowDeletedName="DTIntercompanyTransferRowDeleted" msprop:Generator_RowClassName="DTIntercompanyTransferRow" msprop:Generator_UserTableName="DTIntercompanyTransfer" msprop:Generator_RowEvArgName="DTIntercompanyTransferRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SPROD_NAME" msprop:Generator_ColumnVarNameInTable="columnSPROD_NAME" msprop:Generator_ColumnPropNameInRow="SPROD_NAME" msprop:Generator_ColumnPropNameInTable="SPROD_NAMEColumn" msprop:Generator_UserColumnName="SPROD_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOS_PER_PACK" msprop:Generator_ColumnVarNameInTable="columnNOS_PER_PACK" msprop:Generator_ColumnPropNameInRow="NOS_PER_PACK" msprop:Generator_ColumnPropNameInTable="NOS_PER_PACKColumn" msprop:Generator_UserColumnName="NOS_PER_PACK" type="xs:string" minOccurs="0" />
+              <xs:element name="CARTON" msprop:Generator_ColumnVarNameInTable="columnCARTON" msprop:Generator_ColumnPropNameInRow="CARTON" msprop:Generator_ColumnPropNameInTable="CARTONColumn" msprop:Generator_UserColumnName="CARTON" type="xs:string" minOccurs="0" />
+              <xs:element name="PIECES" msprop:Generator_ColumnVarNameInTable="columnPIECES" msprop:Generator_ColumnPropNameInRow="PIECES" msprop:Generator_ColumnPropNameInTable="PIECESColumn" msprop:Generator_UserColumnName="PIECES" type="xs:string" minOccurs="0" />
+              <xs:element name="WEIGHT_MT" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_MT" msprop:Generator_ColumnPropNameInRow="WEIGHT_MT" msprop:Generator_ColumnPropNameInTable="WEIGHT_MTColumn" msprop:Generator_UserColumnName="WEIGHT_MT" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIAL" msprop:Generator_ColumnVarNameInTable="columnSERIAL" msprop:Generator_ColumnPropNameInRow="SERIAL" msprop:Generator_ColumnPropNameInTable="SERIALColumn" msprop:Generator_UserColumnName="SERIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="SPROG_NAME" msprop:Generator_ColumnVarNameInTable="columnSPROG_NAME" msprop:Generator_ColumnPropNameInRow="SPROG_NAME" msprop:Generator_ColumnPropNameInTable="SPROG_NAMEColumn" msprop:Generator_UserColumnName="SPROG_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SPROG_SEQ_IC" msprop:Generator_ColumnVarNameInTable="columnSPROG_SEQ_IC" msprop:Generator_ColumnPropNameInRow="SPROG_SEQ_IC" msprop:Generator_ColumnPropNameInTable="SPROG_SEQ_ICColumn" msprop:Generator_UserColumnName="SPROG_SEQ_IC" type="xs:string" minOccurs="0" />
+              <xs:element name="TRAN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRAN_DATE" msprop:Generator_ColumnPropNameInRow="TRAN_DATE" msprop:Generator_ColumnPropNameInTable="TRAN_DATEColumn" msprop:Generator_UserColumnName="TRAN_DATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

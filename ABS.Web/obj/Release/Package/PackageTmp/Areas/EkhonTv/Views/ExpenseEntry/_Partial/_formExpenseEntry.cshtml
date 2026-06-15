@@ -1,0 +1,271 @@
+﻿<form novalidate name="frmExpenseEntry" id="frmExpenseEntry" class="form-horizontal row-border"
+      enctype="multipart/form-data">
+
+    @*to make the date time .... month/year format*@
+    <script type="text/javascript">
+        $(function () {
+            $(".mydatepicker").datepicker({
+                format: "MM-yyyy",
+                startView: "months",
+                minViewMode: "months",
+                autoclose: true
+            });
+            $(".mydatepicker").datepicker('setDate', new Date());
+        });
+    </script>
+
+
+    <input type="hidden" id="EXPENSEID" readonly="readonly" ng-model="EXPENSEID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Building</label>
+                    <div class="col-md-6">
+                        <select id="ddlBuilding" class="select2-select-00" required
+                                ng-model="ngmBuilding" tabindex="1"
+                                name="ddlBuilding" ng-change="LoadFloorFlatByBuilding(ngmBuilding)"
+                                data-placeholder="--Select Building--"
+                                style="width: 100%"
+                                ng-options="building.BUILDINGID as building.BUILDINGNAME for building in listBuilding">
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="true">*</span>
+                </div>
+
+
+                @*<div class="form-group">
+                        <label class="col-md-4 control-label">Building</label>
+                        <div class="col-md-6">
+                            <select id="ddlBuilding" class="select2-select-00"
+                                    ng-model="ngmBuilding" tabindex="1"
+                                    name="ddlBuilding" ng-change="LoadFloorFlatByBuilding(ngmBuilding)"
+                                    data-placeholder="--Select Building--"
+                                    style="width: 100%"
+                                    ng-options="building.BUILDINGNAME for building in listBuilding track by building.BUILDINGID">
+                                <option></option>
+                            </select>
+                        </div>
+                        <span class="error" ng-show="true">*</span>
+                    </div>*@
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Expense Area</label>
+                    <div class="col-md-6">
+                        <select id="ddlExpenseArea" class="select2-select-00"
+                                name="ddlExpenseArea"
+                                data-placeholder="--Expense Area--"
+                                style="width: 100%" ng-model="ngmExpenseArea"
+                                ng-options="exp.EXPENSEHEADNAME for exp in ListExpenseHead track by exp.EXPENSEID">
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="true">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Details of Expense</label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="txtDetailsOfExpense: "
+                               class="form-control"
+                               name="txtDetailsOfExpense" ng-model="ngmDetailsOfExpense" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Total Cost (Tk.)</label>
+                    <div class="col-md-6">
+                        <input type="number"
+                               id="txtTotalCost"
+                               class="form-control"
+                               name="txtTotalCost" ng-model="ngmTotalCost" />
+                    </div>
+                    <span class="error" ng-show="true">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Expense Date</label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="dtExpenseDate"
+                               class="form-control datepicker" autocomplete="off"
+                               name="dtExpenseDate" ng-model="ngmExpenseDate" placeholder="dd/mm/yyyy" />
+                    </div>
+                    <span class="error" ng-show="true">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Expense Month</label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="dtFromMonth" autocomplete="off"
+                               placeholder="mm-yyyy" class="form-control mydatepicker"
+                               name="dtFromMonth" ng-model="ngmFromMonth" required />
+                    </div>
+                    <span class="error" ng-show="true">*</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Floor & Flat</label>
+                    <div class="col-md-6">
+                        <select id="ddlFloorFlat" class="select2-select-00"
+                                name="ddlFloorFlat" tabindex="3"
+                                data-placeholder="--Select Floor/Flat--"
+                                style="width: 100%" ng-model="ngmFloorFlat"
+                                ng-options="ff.FLOORFLATNO for ff in listFloorFlat track by ff.FLATID">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Requisition By</label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="txtRequisitionBy"
+                               class="form-control"
+                               name="txtRequisitionBy" ng-model="ngmRequisitionBy" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Approved By</label>
+                    <div class="col-md-6">
+                        <input type="text" id="txtApprovedBy"
+                               class="form-control"
+                               name="txtApprovedBy" ng-model="ngmApprovedBy" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"><br /></label>
+                    <div class="col-md-6">
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <input type="button" id="btnExpenseAddGridView" style="width: 100%; !important;"
+                   class="btn btn-info margin-right-btn " value="Add To List" ng-click="ExpenseAddGridView()">
+        </div>
+    </div>
+
+    <br />
+
+    <table class="table  table-hover general-table" ng-show="listExpenseAreasGrid">
+        <thead class="grid-top-panel">
+            <tr>
+                <th>SN.</th>
+                <th>Expense Area</th>
+                <th>Floor/Flat</th>
+                <th>Expense Detail</th>
+                <th>Expense Date</th>
+                <th>Cost</th>
+                <th>Requisition By</th>
+                <th>Approved By</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="dataModel in listExpenseAreas">
+                <td>{{ $index + 1 }}</td>
+                <td ng-show="false">{{dataModel.FlatId}} </td>
+                <td ng-show="false">{{dataModel.EXPENSEAREAHEADID}} </td>
+                <td>{{dataModel.ExpenseAreaName}}</td>
+                <td>{{dataModel.FLOORFLATNO}} </td>
+                <td>{{dataModel.ExpenseDetail}}</td>
+                <td>{{dataModel.ExpenseDateDisplay}}</td>
+                <td>{{dataModel.TOTALCOST}}</td>
+                <td>{{dataModel.RequisitionBy}}</td>
+                <td>{{dataModel.ApprovedBy}}</td>
+                <td>
+                    <span class="label label-danger label-mini">
+                        <a href="javascript:void(0);" class="bs-tooltip" title="Delete" ng-click="deleteExpenseFromList(dataModel,$index)">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total Cost:</td>
+                <td>{{AllCostTogether}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="grid-body" id="print" style="display:none">
+        <table class="table1" style="  border-collapse: collapse; border-spacing: 10px; border: 1px solid black; " width=100%>
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">SN.</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Expense Area</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Floor/Flat</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Expense Detail</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Expense Date</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Cost</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Requisition By</th>
+                    <th style="border: 1px solid black; color: #131212;text-align:center;">Approved By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dataModel in listExpenseAreasPrint">
+                    <td style=" border: 1px solid black; color: #131212;">{{ $index + 1 }}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.ExpenseAreaName}}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.FLOORFLATNO}} </td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.ExpenseDetail}}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.ExpenseDateDisplay}}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.TOTALCOST}}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.RequisitionBy}}</td>
+                    <td style=" border: 1px solid black; color: #131212;">{{dataModel.ApprovedBy}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total Cost:</td>
+                    <td style="border: 1px solid black; color: #131212;text-align:center;">{{AllCostTogethers}}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br />
+</form>
+
+<style type="text/css">
+    .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+        border-top-color: #333333 !important;
+        margin-top: 0;
+        margin-left: 80px !important;
+        vertical-align: middle;
+    }
+
+    .multiselect-parent {
+        width: 100% !important;
+    }
+</style>

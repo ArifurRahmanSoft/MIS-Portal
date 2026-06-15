@@ -1,0 +1,46 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+
+    <thead class="grid-top-panel">
+        <tr>
+            <th>Sl. No.</th>
+            <th>                CHALLAN NUMBER            </th>
+            <th>                CHALLAN DATE            </th>
+            <th>                DIST CODE                 </th>
+            <th>                DISTRIBUTOR NAME            </th>
+            <th>SHORT NAME</th>
+            <th>                PRODUCT NAME        </th>
+            <th>                CHALLAN QTY CTN            </th>
+            <th>                CHALLAN QTY PCS            </th>
+            <th>                DP CTN            </th>
+            <th>                DP PCS            </th>
+            <th>                ENTRY BY         </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in listCCRData">
+            <td>{{$index+1}}</td>
+            <td>{{dataModel.CHALLAN_ID}}</td>
+            <td>{{dataModel.CHALLAN_DATE | date:'dd/MM/yyyy'}}</td>
+            <td>{{dataModel.DISTRIBUTOR_ID}}</td>
+            <td>{{dataModel.DISTRIBUTOR_NAME}}</td>
+            <td>{{dataModel.SHORT_NAME}}</td>            
+            <td>{{dataModel.PRODUCT_NAME}}</td>
+            <td>{{dataModel.QTY_CTN}}</td>
+            <td>{{dataModel.QTY_PCS}}</td>
+            <td>{{dataModel.DP_CTN}}</td>
+            <td>{{dataModel.DP_PCS}}</td>
+            <td>{{dataModel.ENTRY_BY}}</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(listCCRData).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

@@ -1,0 +1,157 @@
+﻿<form novalidate name="formCustomerWiseDelivery" id="formCustomerWiseDelivery" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listUserWiseCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Location</label>
+                <div class="col-md-6">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="--Select Location--"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.ddlLocation.$error.required">*</span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Customer</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Customer--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlDistributor.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Transport Name</label>
+                <div class="col-md-6">
+                    <select id="ddlTransportType" class="select2-select-00"
+                            ng-model="ngModelTransportType"
+                            name="ddlTransportType"
+                            data-placeholder="--Select Transport --"
+                            style="width: 100%" ng-options="type.TRANSPORT_ID as type.TRANSPORT_NAME for type in listTransportType" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlProductType.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlProduct" class="select2-select-00"
+                            ng-model="ngModelProduct"
+                            name="ddlProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListProducts" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlZone.$error.required">*</span>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sardar Name</label>
+                <div class="col-md-6">
+                    <select id="ddlSardarName" class="select2-select-00"
+                            ng-model="ngModelSardarName"
+                            name="ddlSardarName"
+                            data-placeholder="--Select Sardar Name --"
+                            style="width: 100%" ng-options="sardar.SARDAR_OID as sardar.SARDAR_NAME for sardar in listSardarName" required>
+                        <option></option>
+                    </select>
+                </div>
+                <button ng-click="TimeSelect()">{{IsTime?'Date':'Time'}}</button>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Requisition Number</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtRequisitionNumber"
+                           class="form-control"
+                           name="dtRequisitionNumber" ng-model="ngmRequisitionNumber" required />
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlProductType.$error.required">*</span>
+            </div>
+            <div class="p-0" ng-show="!IsTime">
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> From Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtStartDate"
+                               class="form-control datepicker"
+                               name="dtStartDate" ng-model="StartDate" required />
+                    </div>
+                    <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.dtStartDate.$error.required">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> To Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtEndDate"
+                               class="form-control datepicker"
+                               name="dtEndDate" ng-model="EndDate" required />
+                    </div>
+                    <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.dtEndDate.$error.required">*</span>
+                </div>
+            </div>
+
+            <div class="p-0" ng-show="IsTime">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">From Date(Time)</label>
+                    <div class="col-md-6">
+                        <input type="datetime-local"
+                               id="dtStartDateTime"
+                               class="form-control"
+                               name="dtStartDateTime" ng-model="StartDateTime" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">To Date(Time)</label>
+                    <div class="col-md-6">
+                        <input type="datetime-local"
+                               id="dtEndDateTime"
+                               class="form-control"
+                               name="dtEndDateTime" ng-model="EndDateTime" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,91 @@
+﻿<form novalidate name="frmDeviceLog" id="frmDeviceLog" class="form-horizontal row-border">
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">National</label>
+                <div class="col-md-6">
+                    <select id="ddlNational" class="select2-select-00" ng-disabled="IsDisableNational" ng-readonly="IsReadOnlyNational"
+                            ng-model="ngModelNational"
+                            name="ddlNational"
+                            data-placeholder="--Select National--" ng-click="loadDivisionRecords()"
+                            style="width: 100%" ng-options="ntn.NTNAL_OID as ntn.NTNAL_NAME for ntn in listNational" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDeviceLog.$dirty||submitted) && frmDeviceLog.ddlNational.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Division</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00" ng-disabled="IsDisableDivision" ng-readonly="IsReadOnlyDivision"
+                            ng-model="ngModelDivision"
+                            name="ddlDivision"
+                            data-placeholder="--Select Division--" ng-click="loadRegionRecords()"
+                            style="width: 100%" ng-options="div.DIVISION_ID as div.DIVISION_NAME for div in listDivision" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Region</label>
+                <div class="col-md-6">
+                    <select id="ddlRegion" class="select2-select-00" ng-disabled="IsDisableRegion" ng-readonly="IsReadOnlyRegion"
+                            ng-model="ngModelRegion"
+                            name="ddlRegion"
+                            data-placeholder="--Select Region--" ng-click="loadZoneRecords()"
+                            style="width: 100%" ng-options="reg.REGION_ID as reg.REGION_NAME for reg in listRegion" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Zone</label>
+                <div class="col-md-6">
+                    <select id="ddlZone" class="select2-select-00" ng-disabled="IsDisableZone" ng-readonly="IsReadOnlyZone"
+                            ng-model="ngModelZone"
+                            name="ddlZone"
+                            data-placeholder="--Select Zone--" ng-click="loadDistributorRecords()"
+                            style="width: 100%" ng-options="zon.ZONE_ID as zon.ZONE_NAME for zon in listZone" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Distributor</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Report Option</label>
+                <div class="col-md-6">
+                    <input type="radio" ng-model="ReportType" value="All">All
+                    <input type="radio" ng-model="ReportType" value="WithDevice">With Device
+                    <input type="radio" ng-model="ReportType" value="WithoutDevice">Without Device
+                    <input type="radio" ng-model="ReportType" value="Laptop">Laptop
+                    <input type="radio" ng-model="ReportType" value="Mobile">Mobile
+                </div>
+                <span class="error" ng-show="(frmDeviceLog.$dirty||submitted) && frmDeviceLog.ReportType.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+</form>

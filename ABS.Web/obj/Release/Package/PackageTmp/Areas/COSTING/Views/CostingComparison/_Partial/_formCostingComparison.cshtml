@@ -1,0 +1,51 @@
+﻿<form novalidate name="formDeliveryStatement" id="formDeliveryStatement" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCityCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.ddlZone.$error.required">*</span>
+            </div>
+            
+
+
+
+        </div>
+
+        <div class="col-md-6">
+                       <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+</form>

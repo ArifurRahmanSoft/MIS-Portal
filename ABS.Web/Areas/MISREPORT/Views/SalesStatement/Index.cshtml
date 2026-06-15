@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "MIS REPORT";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="SalesStatementNewCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Sales Statement</h4>
+                            <div class="toolbar no-padding">
+                                <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                    <i class="icon-refresh"></i> Reset
+                                </span>
+
+
+
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="ShowSalesStatementReport()"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-table"></i> Show Report
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/MISREPORT/Views/SalesStatement/_Partial/_formSalesStatement.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    @*<script src="~/Areas/MISREPORT/ScriptsNg/Controllers/SalesStatementCtrl_V1.js"></script>*@
+    <script src="~/Areas/MISREPORT/ScriptsNg/Controllers/SalesStatementNewCtrl.js"></script>
+    <script src="~/Areas/MISREPORT/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/MISREPORT/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

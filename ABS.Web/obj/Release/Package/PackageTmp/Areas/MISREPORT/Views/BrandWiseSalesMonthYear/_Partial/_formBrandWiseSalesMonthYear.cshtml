@@ -1,0 +1,165 @@
+﻿<form novalidate name="formBrandWiseSalesStatement" id="formBrandWiseSalesStatement" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlCompany.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">National</label>
+                <div class="col-md-6">
+                    <select id="ddlNational" class="select2-select-00" ng-disabled="IsDisableNational" ng-readonly="IsReadOnlyNational"
+                            ng-model="ngModelNational"
+                            name="ddlNational"
+                            data-placeholder="--Select National--" ng-click="loadDivisionRecords()"
+                            style="width: 100%" ng-options="ntn.NTNAL_OID as ntn.NTNAL_NAME for ntn in listNational" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlNational.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Division</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00" ng-disabled="IsDisableDivision" ng-readonly="IsReadOnlyDivision"
+                            ng-model="ngModelDivision"
+                            name="ddlDivision"
+                            data-placeholder="--Select Division--" ng-click="loadRegionRecords()"
+                            style="width: 100%" ng-options="div.DIVISION_ID as div.DIVISION_NAME for div in listDivision" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlDivision.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Region</label>
+                <div class="col-md-6">
+                    <select id="ddlRegion" class="select2-select-00" ng-disabled="IsDisableRegion" ng-readonly="IsReadOnlyRegion"
+                            ng-model="ngModelRegion"
+                            name="ddlRegion"
+                            data-placeholder="--Select Region--" ng-click="loadZoneRecords()"
+                            style="width: 100%" ng-options="reg.REGION_ID as reg.REGION_NAME for reg in listRegion" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlRegion.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            @*<div style="height:32px;"></div>*@
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Zone</label>
+                <div class="col-md-6">
+                    <select id="ddlZone" class="select2-select-00" ng-disabled="IsDisableZone" ng-readonly="IsReadOnlyZone"
+                            ng-model="ngModelZone"
+                            name="ddlZone"
+                            data-placeholder="--Select Zone--" ng-click="loadDistributorRecords()"
+                            style="width: 100%" ng-options="zon.ZONE_ID as zon.ZONE_NAME for zon in listZone" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Distributor</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlDistributor.$error.required">*</span>
+            </div>
+
+            <div class="form-group" ng-show="isBrandGroup">
+                <label class="col-md-4 control-label" for="input17">Brand Group</label>
+                <div class="col-md-6">
+                    <select id="ddlBrandGroup" class="select2-select-00"
+                            ng-model="brandGroupId"
+                            name="ddlBrandGroup"
+                            data-placeholder="--Select Brand Group--" ng-change="loadBrandByNationalBrandGroup()"
+                            style="width: 100%" ng-options="grp.BRAND_GROUP_ID as grp.BRAND_GROUP_NAME for grp in listBrandGroup" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.brandGroupId.$error.required">*</span>
+            </div>
+
+            <div class="form-group" ng-show="isBrandGroup">
+                <label class="col-md-4 control-label" for="input17">Product Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlProductBrand" class="select2-select-00"
+                            ng-model="ngModelBrand"
+                            name="ddlProductBrand"
+                            data-placeholder="--Select Brand--"
+                            style="width: 100%" ng-options="brnd.BRANDID as brnd.SBRND_NAME for brnd in listBrandListByNational" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlDivision.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="brand" id="brand"><label class="label control-label" for="brand" style="font-weight: normal; color: black;">Brand-Wise</label>
+                    <input type="radio" ng-model="ReportType" value="brand_mton" id="brand_mton"><label class="label control-label" for="brand_mton" style="font-weight: normal; color: black;">Brand(M.TON)</label>
+                    <input type="radio" ng-model="ReportType" value="sku" id="sku"><label class="label control-label" for="sku" style="font-weight: normal; color: black;">SKU-Wise</label>
+                    <input type="radio" ng-model="ReportType" value="sku_mton" id="sku_mton"><label class="label control-label" for="sku_mton" style="font-weight: normal; color: black;">SKU(M.TON)</label>
+                    <input type="radio" ng-model="ReportType" value="party" id="party"><label class="label control-label" for="party" style="font-weight: normal; color: black;">Party-Brand</label>
+                    <input type="radio" ng-model="ReportType" value="pbs" id="pbs"><label class="label control-label" for="pbs" style="font-weight: normal; color: black;">Party-Brand-SKU</label>
+                    <input type="radio" ng-model="ReportType" value="pbsam" id="pbsam"><label class="label control-label" for="pbsam" style="font-weight: normal; color: black;">Party-Brand-Area(MT)</label>
+                    <input type="radio" ng-model="ReportType" value="pbsav" id="pbsav"><label class="label control-label" for="pbsav" style="font-weight: normal; color: black;">Party-Brand-Area(Value)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

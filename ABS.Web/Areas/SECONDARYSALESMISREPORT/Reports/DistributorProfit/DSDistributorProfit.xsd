@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDistributorProfit" targetNamespace="http://tempuri.org/DSDistributorProfit.xsd" xmlns:mstns="http://tempuri.org/DSDistributorProfit.xsd" xmlns="http://tempuri.org/DSDistributorProfit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDistributorProfit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSDistributorProfit" msprop:Generator_UserDSName="DSDistributorProfit">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTDistributorProfit" msprop:Generator_TableClassName="DTDistributorProfitDataTable" msprop:Generator_TableVarName="tableDTDistributorProfit" msprop:Generator_TablePropName="DTDistributorProfit" msprop:Generator_RowDeletingName="DTDistributorProfitRowDeleting" msprop:Generator_RowChangingName="DTDistributorProfitRowChanging" msprop:Generator_RowEvHandlerName="DTDistributorProfitRowChangeEventHandler" msprop:Generator_RowDeletedName="DTDistributorProfitRowDeleted" msprop:Generator_UserTableName="DTDistributorProfit" msprop:Generator_RowChangedName="DTDistributorProfitRowChanged" msprop:Generator_RowEvArgName="DTDistributorProfitRowChangeEvent" msprop:Generator_RowClassName="DTDistributorProfitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIST_ID" msprop:Generator_ColumnVarNameInTable="columnDIST_ID" msprop:Generator_ColumnPropNameInRow="DIST_ID" msprop:Generator_ColumnPropNameInTable="DIST_IDColumn" msprop:Generator_UserColumnName="DIST_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_NAME" msprop:Generator_ColumnVarNameInTable="columnDIST_NAME" msprop:Generator_ColumnPropNameInRow="DIST_NAME" msprop:Generator_ColumnPropNameInTable="DIST_NAMEColumn" msprop:Generator_UserColumnName="DIST_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_NAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_NAME" msprop:Generator_ColumnPropNameInRow="PRODUCT_NAME" msprop:Generator_ColumnPropNameInTable="PRODUCT_NAMEColumn" msprop:Generator_UserColumnName="PRODUCT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_PCS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_PCS" msprop:Generator_ColumnPropNameInRow="TOTAL_PCS" msprop:Generator_ColumnPropNameInTable="TOTAL_PCSColumn" msprop:Generator_UserColumnName="TOTAL_PCS" type="xs:string" minOccurs="0" />
+              <xs:element name="AVERAGE_DP_RATE" msprop:Generator_ColumnVarNameInTable="columnAVERAGE_DP_RATE" msprop:Generator_ColumnPropNameInRow="AVERAGE_DP_RATE" msprop:Generator_ColumnPropNameInTable="AVERAGE_DP_RATEColumn" msprop:Generator_UserColumnName="AVERAGE_DP_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="AVERAGE_TP_RATE" msprop:Generator_ColumnVarNameInTable="columnAVERAGE_TP_RATE" msprop:Generator_ColumnPropNameInRow="AVERAGE_TP_RATE" msprop:Generator_ColumnPropNameInTable="AVERAGE_TP_RATEColumn" msprop:Generator_UserColumnName="AVERAGE_TP_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PROFIT" msprop:Generator_ColumnVarNameInTable="columnPROFIT" msprop:Generator_ColumnPropNameInRow="PROFIT" msprop:Generator_ColumnPropNameInTable="PROFITColumn" msprop:Generator_UserColumnName="PROFIT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

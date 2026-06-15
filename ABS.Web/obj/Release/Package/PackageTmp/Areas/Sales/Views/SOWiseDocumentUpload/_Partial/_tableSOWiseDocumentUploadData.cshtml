@@ -1,0 +1,72 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+
+    <thead class="grid-top-panel">
+        <tr>
+            <th>CUST_ID</th>
+            <th>CUST_NAME</th>
+            <th>SO_ID</th>
+            <th>SO_NAME</th>
+            <th>TASO_C</th>
+            <th>SSO_C</th>
+            <th>NVO_C</th>
+            <th>TCN_C</th>
+            <th>TA_C</th>
+            <th>MD_C</th>
+            <th>SZ_C</th>
+            <th>TWA_C</th>
+            <th>JMW_C</th>
+            <th>TMO_C</th>
+            <th>TSG_C</th>
+            <th>TCR_C</th>
+            <th>TLD_C</th>
+            <th>TMR</th>
+            <th>BCT</th>
+            <th>THM_C</th>
+            <th>TFM_C</th>
+            <th>TMU_C</th>
+            <th>TPIS_C</th>
+            <th>VALUE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in ListTargetUploadedData">
+
+            <td>{{dataModel.CUST_ID}}</td>
+            <td>{{dataModel.CUST_NAME}}</td>
+            <td>{{dataModel.SO_ID}}</td>
+            <td>{{dataModel.SO_NAME}}</td>
+            <td>{{dataModel.TASO_C }}</td>
+            <td>{{dataModel.SSO_C }}</td>
+            <td>{{dataModel.NVO_C }}</td>
+            <td>{{dataModel.TCN_C }}</td>
+            <td>{{dataModel.TA_C }}</td>
+            <td>{{dataModel.MD_C }}</td>
+            <td>{{dataModel.SZ_C }}</td>
+            <td>{{dataModel.TWA_C }}</td>
+            <td>{{dataModel.JMW_C }}</td>
+            <td>{{dataModel.TMO_C }}</td>
+            <td>{{dataModel.TSG_C }}</td>
+            <td>{{dataModel.TCR_C }}</td>
+            <td>{{dataModel.TLD_C }}</td>
+            <td>{{dataModel.TMR }}</td>
+            <td>{{dataModel.BCT }}</td>
+            <td>{{dataModel.THM_C }}</td>
+            <td>{{dataModel.TFM_C }}</td>
+            <td>{{dataModel.TMU_C }}</td>
+            <td>{{dataModel.TPIS_C }}</td>
+            <td>{{dataModel.VALUE }}</td>
+
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(ListTargetUploadedData).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

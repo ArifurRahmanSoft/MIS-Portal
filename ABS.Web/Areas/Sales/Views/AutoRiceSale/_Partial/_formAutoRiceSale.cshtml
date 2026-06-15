@@ -1,0 +1,57 @@
+﻿<form novalidate name="frmAutoRiceSale" id="frmAutoRiceSale" class="form-horizontal row-border">
+    <input type="hidden" id="OID" readonly="readonly" ng-model="OID" />
+
+    <div class="row" ng-hide="marketinghide">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Auto Rice Sales By Marketing (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number"
+                           id="txtMarketing" class="form-control" 
+                           name="txtMarketing" ng-model="MarketingDeptSale" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-hide="bulkhide">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Auto Rice Sales By Bulk Dept. (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number"
+                           id="txtBulk" class="form-control"
+                           name="txtBulk" ng-model="BulkDeptSale" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Sales Date: </label>
+                <div class="col-md-2">
+                    <input type="text"
+                           id="dtSalesDate"
+                           class="form-control datepicker"
+                           name="dtSalesDate" ng-model="SalesDate" required />
+                </div>
+                <span class="error" ng-show="(frmAutoRiceSale.$dirty||submitted) && frmAutoRiceSale.dtSalesDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
+    <style type="text/css">
+        .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+            border-top-color: #333333 !important;
+            margin-top: 0;
+            margin-left: 125px !important;
+            vertical-align: middle;
+        }
+    </style>

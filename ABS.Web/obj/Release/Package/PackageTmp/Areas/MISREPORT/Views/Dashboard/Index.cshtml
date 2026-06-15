@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "MIS Report";
+}
+
+<div ng-hide="pageValue" class="ng-hide">
+    <!--Logged User-->
+    <input type="hidden" id="hUserID" name="userID" value="@Session["UserID"].ToString()" />
+    <!--Logged Company-->
+    <input type="hidden" id="hCompanyID" name="companyID" value="@Session["CompanyID"].ToString()" />
+</div>
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="dashboardCtrl">
+        <!-- Breadcrumbs line -->
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <!-- /Breadcrumbs line -->
+        <!--=== Page Header ===-->
+        <div class="page-header">
+            <div class="page-title">
+                @if (HttpContext.Current.Session != null || HttpContext.Current.Session["UserID"] != null)
+                {
+                    <h3>Welcome, @Session["UserFullName"].ToString()</h3>
+                }
+            </div>
+            <!-- Page Stats -->
+            <ul class="page-stats"></ul>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    <script src="~/Areas/MISREPORT/ScriptsNg/Controllers/DashboardCtrl.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Service/dashboardService.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

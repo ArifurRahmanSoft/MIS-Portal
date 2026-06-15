@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<!-- Login Box -->
+<div ng-controller="loginCtrl">
+    <div class="loggedloader" ng-show="IsLogged">
+        <img ng-show="success" src="../Content/img/icon_success.png" />
+        <img ng-show="error" src="../Content/img/icon_error.png" />
+        {{lblrmessage}}
+    </div>
+    <div ng-show="IsVisible" style="margin-top: 25vh; margin-bottom: 25vh;">
+        <div>
+            <form class="form-vertical login-form" method="post" name="frmLogin" novalidate>
+                <div class="mainLogin">
+                    @*<img src="~/Themes/assets/img/group-logo.png" class="images" alt="" />*@
+                    <div class="form" style="background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgba(251,32,86,1) 0%, rgba(135,2,35,1) 90% );">
+                        @*<h1 class="dashboardTitle">PMIS</h1>*@
+                        <h1 class="dashboardTitle">MIS REPORT</h1>
+
+                        <div style="width: 80%; margin: auto;">
+                            <input type="text" name="username" style="vertical-align:middle;"
+                                   ng-model="UserLogin"
+                                   class="text"
+                                   placeholder="Staff Id"
+                                   autofocus="autofocus"
+                                   data-rule-required="true"
+                                   data-msg-required="Please enter your staff id." ng-click="ClearMessage()" />
+                        </div>
+
+                        <div style="width: 80%; margin: auto;">
+                            <input type="password" name="password"
+                                   ng-model="Password"
+                                   placeholder="Password"
+                                   data-rule-required="true"
+                                   data-msg-required="Please enter your password." ng-click="ClearMessage()" />
+                        </div>
+
+                        <div style="width: 80%; margin: auto;">
+                            <input class="submit" id="btnLOGIN" type="submit" ng-click="submitLogin()" value="LOGIN">
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+@section AngularScript{
+    <script src="~/ScriptsNg/Controllers/AuthenticationCtrl_V2.js"></script>
+    <script src="~/ScriptsNg/Service/AuthenticationSrvc.js"></script>
+}

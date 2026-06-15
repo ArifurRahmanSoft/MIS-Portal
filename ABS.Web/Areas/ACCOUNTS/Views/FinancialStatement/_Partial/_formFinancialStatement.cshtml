@@ -1,0 +1,173 @@
+﻿<form novalidate name="frmAccGenLedgerComparison" id="frmAccGenLedgerComparison" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+
+
+        <div class="col-md-6">
+
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelMCompany"
+                            name="ddlCCompany" ng-change="loadChildCompany(); loadSubHead();"
+                            ng-disabled="false"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="loc.OID as loc.MCOM_NAME for loc in ListMstrCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlCCompany.$error.required">*</span>
+            </div>
+
+
+            @*   <div class="form-group">
+            <label class="col-md-4 control-label" for="input17">From : Year</label>
+            <div class="col-md-6">
+                <select id="ddlFromYear" class="select2-select-00"
+                        ng-model="ngModelFromYear"
+                        ng-change="loadCurrentMonth(ngModelFromYear)" ;
+                        name="ddlFromYear"
+                        data-placeholder="--Select From Year--"
+                        style="width: 100%" ng-options="year for year in currentYear" required>
+                    <option></option>
+                </select>
+            </div>
+            <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlFromYear.$error.required">*</span>
+        </div>*@
+
+
+            @*    <div class="form-group">
+            <label class="col-md-4 control-label" for="input17">To   : Year</label>
+            <div class="col-md-6">
+                <select id="ddlToYear" class="select2-select-00"
+                        ng-model="ngModelToYear"
+                        ng-change="loadEndMonth(ngModelToYear)" ;
+                        name="ddlToYear"
+                        data-placeholder="--Select To Year--"
+                        style="width: 100%" ng-options="year for year in currentYear" required>
+                    <option></option>
+                </select>
+            </div>
+            <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlToYear.$error.required">*</span>
+        </div>*@
+
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="input17"> Report Type</label>
+            <div class="col-md-6">
+                <input type="radio" ng-model="ReportType" value="BalanceSheet" id="BalanceSheet"> <label style="font-weight:normal" for="BalanceSheet">Balance Sheet </label></br>
+            </div>
+        </div>
+
+
+        </div>
+
+
+
+        <div class="col-md-6">
+
+     
+
+            
+
+
+
+
+            <div class="form-group">
+
+                <label class="col-md-2 control-label" for="input17">From : Year</label>
+                <div class="col-md-3">
+                    <select id="ddlFromYear" class="select2-select-00"
+                            ng-model="ngModelFromYear"
+                            ng-change="loadCurrentMonth(ngModelFromYear)" ;
+                            name="ddlFromYear"
+                            data-placeholder="--Select Year--"
+                            style="width: 100%" ng-options="year for year in currentYear" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlFromYear.$error.required">*</span>
+
+
+
+
+
+
+
+
+                <label class="col-md-2 control-label" for="input17">Month</label>
+                <div class="col-md-3">
+                    <select id="ddlFromMonth" class="select2-select-00"
+                            ng-model="ngModelFromMonth"
+                            name="ddlFromMonth"
+                            data-placeholder="--Select Month--"
+                            style="width: 100%" ng-options="mon.id as mon.text for mon in currentMonths" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlFromMonth.$error.required">*</span>
+            </div>
+
+
+
+
+            <div class="form-group">
+
+
+                <label class="col-md-2 control-label" for="input17">To   : Year</label>
+                <div class="col-md-3">
+                    <select id="ddlToYear" class="select2-select-00"
+                            ng-model="ngModelToYear"
+                            ng-change="loadEndMonth(ngModelToYear)" ;
+                            name="ddlToYear"
+                            data-placeholder="--Select Year--"
+                            style="width: 100%" ng-options="year for year in currentYear" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlToYear.$error.required">*</span>
+
+
+
+                <label class="col-md-2 control-label" for="input17">Month</label>
+                <div class="col-md-3">
+                    <select id="ddltoMonth" class="select2-select-00"
+                            ng-model="ngModeltoMonth"
+                            name="ddltoMonth"
+                            data-placeholder="--Select Month--"
+                            style="width: 100%" ng-options="mon.id as mon.text for mon in endMonths" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddltoMonth.$error.required">*</span>
+            </div>
+      
+        </div>
+        </div>
+
+
+
+@*    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="BalanceSheet" id="BalanceSheet"> <label style="font-weight:normal" for="BalanceSheet">Balance Sheet </label></br>
+                   
+
+
+                </div>
+              
+            </div>
+        </div>
+    </div>*@
+
+
+</form>

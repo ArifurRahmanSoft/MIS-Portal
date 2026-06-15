@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Top Sheet";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="SaleTopSheetCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Daliy Sales Collection Top Sheet</h4>
+                            <div class="toolbar no-padding">
+                                <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clearSaleDepositTopSheet()">
+                                    <i class="icon-refresh"></i> Reset
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="SaleDepositTopSheetExcel()">
+                                    <i class="icon-save"></i> Show Report (Excel)
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="SaleDepositTopSheet('TopSheet')">
+                                    <i class="icon-save"></i> Show Report
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-hide="HideMYComparison"
+                                      ng-click="SaleDepositTopSheet('MYCompare')">
+                                    <i class="icon-save"></i> Month-Year Comparison
+                                </span>
+
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="SaleDepositTopSheet('DailyDOCollectionCheque')">
+                                    <i class="icon-save"></i> DO-Collection-Cheque
+                                </span>
+
+
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/MISREPORT/Views/SaleDepositTopSheet/_Partial/_formSaleDepositTS.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    <script src="~/Areas/MISREPORT/ScriptsNg/Controllers/SaleTopSheetCtrl.js"></script>
+    <script src="~/Areas/MISREPORT/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/MISREPORT/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

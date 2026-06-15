@@ -1,0 +1,70 @@
+﻿<form novalidate name="frmIncentiveRate" id="frmIncentiveRate" class="form-horizontal row-border">
+    <input type="hidden" id="IncentiveRateID" readonly="readonly" ng-model="IncentiveRateID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlBrand" class="select2-select-00"
+                            ng-model="ngModelBrandForRate"
+                            name="ddlBrand"
+                            data-placeholder="--Select Brand--"
+                            style="width: 100%" ng-options="bra.BRANDID as bra.SBRND_NAME for bra in listBrand" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveRate.$dirty||submitted) && frmIncentiveRate.ddlBrand.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Per Quantity(litre)</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtPerQuantity"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtPerQuantity" ng-model="ngPerQuantity" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Start Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveRate.$dirty||submitted) && frmIncentiveRate.dtStartDate.$error.required">*</span>
+            </div>
+
+            
+        </div>
+
+       
+        <div class="col-md-6">
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Incentive Amount(Tk.)</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtIncentiveAmount"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtIncentiveAmount" ng-model="ngIncentiveAmount" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> End Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveRate.$dirty||submitted) && frmIncentiveRate.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+</form>

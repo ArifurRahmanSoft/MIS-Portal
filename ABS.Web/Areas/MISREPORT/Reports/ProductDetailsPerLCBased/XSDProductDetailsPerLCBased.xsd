@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XSDProductDetailsPerLCBased" targetNamespace="http://tempuri.org/XSDProductDetailsPerLCBased.xsd" xmlns:mstns="http://tempuri.org/XSDProductDetailsPerLCBased.xsd" xmlns="http://tempuri.org/XSDProductDetailsPerLCBased.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="XSDProductDetailsPerLCBased" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="XSDProductDetailsPerLCBased" msprop:Generator_UserDSName="XSDProductDetailsPerLCBased">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTProductDetailsPerLCBased" msprop:Generator_TableClassName="DTProductDetailsPerLCBasedDataTable" msprop:Generator_TableVarName="tableDTProductDetailsPerLCBased" msprop:Generator_TablePropName="DTProductDetailsPerLCBased" msprop:Generator_RowDeletingName="DTProductDetailsPerLCBasedRowDeleting" msprop:Generator_RowChangingName="DTProductDetailsPerLCBasedRowChanging" msprop:Generator_RowEvHandlerName="DTProductDetailsPerLCBasedRowChangeEventHandler" msprop:Generator_RowDeletedName="DTProductDetailsPerLCBasedRowDeleted" msprop:Generator_UserTableName="DTProductDetailsPerLCBased" msprop:Generator_RowChangedName="DTProductDetailsPerLCBasedRowChanged" msprop:Generator_RowEvArgName="DTProductDetailsPerLCBasedRowChangeEvent" msprop:Generator_RowClassName="DTProductDetailsPerLCBasedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PRODUCTOID" msprop:Generator_ColumnVarNameInTable="columnPRODUCTOID" msprop:Generator_ColumnPropNameInRow="PRODUCTOID" msprop:Generator_ColumnPropNameInTable="PRODUCTOIDColumn" msprop:Generator_UserColumnName="PRODUCTOID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_OID" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_OID" msprop:Generator_ColumnPropNameInRow="PRODUCT_OID" msprop:Generator_ColumnPropNameInTable="PRODUCT_OIDColumn" msprop:Generator_UserColumnName="PRODUCT_OID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCTNAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCTNAME" msprop:Generator_ColumnPropNameInRow="PRODUCTNAME" msprop:Generator_ColumnPropNameInTable="PRODUCTNAMEColumn" msprop:Generator_UserColumnName="PRODUCTNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SDODE_QNTY" msprop:Generator_ColumnVarNameInTable="columnSDODE_QNTY" msprop:Generator_ColumnPropNameInRow="SDODE_QNTY" msprop:Generator_ColumnPropNameInTable="SDODE_QNTYColumn" msprop:Generator_UserColumnName="SDODE_QNTY" type="xs:string" minOccurs="0" />
+              <xs:element name="SCHAD_QNTY" msprop:Generator_ColumnVarNameInTable="columnSCHAD_QNTY" msprop:Generator_ColumnPropNameInRow="SCHAD_QNTY" msprop:Generator_ColumnPropNameInTable="SCHAD_QNTYColumn" msprop:Generator_UserColumnName="SCHAD_QNTY" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENINGQUANTITY" msprop:Generator_ColumnVarNameInTable="columnOPENINGQUANTITY" msprop:Generator_ColumnPropNameInRow="OPENINGQUANTITY" msprop:Generator_ColumnPropNameInTable="OPENINGQUANTITYColumn" msprop:Generator_UserColumnName="OPENINGQUANTITY" type="xs:string" minOccurs="0" />
+              <xs:element name="RECEIVEDQUANTITY" msprop:Generator_ColumnVarNameInTable="columnRECEIVEDQUANTITY" msprop:Generator_ColumnPropNameInRow="RECEIVEDQUANTITY" msprop:Generator_ColumnPropNameInTable="RECEIVEDQUANTITYColumn" msprop:Generator_UserColumnName="RECEIVEDQUANTITY" type="xs:string" minOccurs="0" />
+              <xs:element name="ISSUED_FOR_CRASING_QNTY" msprop:Generator_ColumnVarNameInTable="columnISSUED_FOR_CRASING_QNTY" msprop:Generator_ColumnPropNameInRow="ISSUED_FOR_CRASING_QNTY" msprop:Generator_ColumnPropNameInTable="ISSUED_FOR_CRASING_QNTYColumn" msprop:Generator_UserColumnName="ISSUED_FOR_CRASING_QNTY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+﻿<form novalidate name="frmDailyClosing" id="frmDailyClosing" class="form-horizontal row-border">
+    <input type="hidden" id="OID" readonly="readonly" ng-model="OID" />
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Daily Closing Balance (Tk):</label>
+                <div class="col-md-3">
+                    <input type="number"
+                           id="txtDCB" class="form-control" 
+                           name="txtDCB" ng-model="BULKDAILYCLOSINGBALANCE" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <style type="text/css">
+        .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+            border-top-color: #333333 !important;
+            margin-top: 0;
+            margin-left: 125px !important;
+            vertical-align: middle;
+        }
+    </style>

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OracleModelEntityStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="ERRORLOGs">
+      <EntityTypeMapping TypeName="OracleModelEntity.ERRORLOG">
+        <MappingFragment StoreEntitySet="ERRORLOG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ERRORMESSAGE" ColumnName="ERRORMESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_BRAND_MAPPING">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_BRAND_MAPPING">
+        <MappingFragment StoreEntitySet="T_BRAND_MAPPING">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MARKETING_CODE" ColumnName="MARKETING_CODE" />
+          <ScalarProperty Name="BRAND_OID" ColumnName="BRAND_OID" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="BRAND_FULL_NAME" ColumnName="BRAND_FULL_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNCOMPANY">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNCOMPANY">
+        <MappingFragment StoreEntitySet="T_CMNCOMPANY">
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="COMPANYSHORTNAME" ColumnName="COMPANYSHORTNAME" />
+          <ScalarProperty Name="COMPANYNAME" ColumnName="COMPANYNAME" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="CITYID" ColumnName="CITYID" />
+          <ScalarProperty Name="COUNTRYID" ColumnName="COUNTRYID" />
+          <ScalarProperty Name="STAETID" ColumnName="STAETID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+          <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNMENU">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMENU">
+        <MappingFragment StoreEntitySet="T_CMNMENU">
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="MENUNAME" ColumnName="MENUNAME" />
+          <ScalarProperty Name="MENUSHORTNAME" ColumnName="MENUSHORTNAME" />
+          <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+          <ScalarProperty Name="MENUPATH" ColumnName="MENUPATH" />
+          <ScalarProperty Name="REPORTNAME" ColumnName="REPORTNAME" />
+          <ScalarProperty Name="REPORTPATH" ColumnName="REPORTPATH" />
+          <ScalarProperty Name="PARENTID" ColumnName="PARENTID" />
+          <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+          <ScalarProperty Name="MENUTYPEID" ColumnName="MENUTYPEID" />
+          <ScalarProperty Name="MENUICONCSS" ColumnName="MENUICONCSS" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNMENUPERMISSION">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMENUPERMISSION">
+        <MappingFragment StoreEntitySet="T_CMNMENUPERMISSION">
+          <ScalarProperty Name="MENUPERMISSIONID" ColumnName="MENUPERMISSIONID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="USERGROUPID" ColumnName="USERGROUPID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ENABLEVIEW" ColumnName="ENABLEVIEW" />
+          <ScalarProperty Name="ENABLEINSERT" ColumnName="ENABLEINSERT" />
+          <ScalarProperty Name="ENABLEUPDATE" ColumnName="ENABLEUPDATE" />
+          <ScalarProperty Name="ENABLEDELETE" ColumnName="ENABLEDELETE" />
+          <ScalarProperty Name="ORGANOGRAMID" ColumnName="ORGANOGRAMID" />
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="EFFECTIVEDATE" ColumnName="EFFECTIVEDATE" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNMODULE">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMODULE">
+        <MappingFragment StoreEntitySet="T_CMNMODULE">
+          <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="MODULENAME" ColumnName="MODULENAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="MODULEPATH" ColumnName="MODULEPATH" />
+          <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNMODULEPERMISSION">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMODULEPERMISSION">
+        <MappingFragment StoreEntitySet="T_CMNMODULEPERMISSION">
+          <ScalarProperty Name="MODULEPERMISSIONID" ColumnName="MODULEPERMISSIONID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="MENULISTID" ColumnName="MENULISTID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNUSER">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNUSER">
+        <MappingFragment StoreEntitySet="T_CMNUSER">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+          <ScalarProperty Name="TRANSACTIONTYPEID" ColumnName="TRANSACTIONTYPEID" />
+          <ScalarProperty Name="EMPLOYEEID" ColumnName="EMPLOYEEID" />
+          <ScalarProperty Name="USERTYPEID" ColumnName="USERTYPEID" />
+          <ScalarProperty Name="USERDESIGNATIONID" ColumnName="USERDESIGNATIONID" />
+          <ScalarProperty Name="USERGROUPID" ColumnName="USERGROUPID" />
+          <ScalarProperty Name="USERTITLEID" ColumnName="USERTITLEID" />
+          <ScalarProperty Name="USERPARENTID" ColumnName="USERPARENTID" />
+          <ScalarProperty Name="USERFIRSTNAME" ColumnName="USERFIRSTNAME" />
+          <ScalarProperty Name="USERMIDDLENAME" ColumnName="USERMIDDLENAME" />
+          <ScalarProperty Name="USERLASTNAME" ColumnName="USERLASTNAME" />
+          <ScalarProperty Name="USERFULLNAME" ColumnName="USERFULLNAME" />
+          <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+          <ScalarProperty Name="DEPARTMENTNAME" ColumnName="DEPARTMENTNAME" />
+          <ScalarProperty Name="USERJOBTITLE" ColumnName="USERJOBTITLE" />
+          <ScalarProperty Name="APPOINTMENT" ColumnName="APPOINTMENT" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="CUSTOMERACCOUNTID" ColumnName="CUSTOMERACCOUNTID" />
+          <ScalarProperty Name="SAPCUSTOMERID" ColumnName="SAPCUSTOMERID" />
+          <ScalarProperty Name="CONTRACTEMAILID" ColumnName="CONTRACTEMAILID" />
+          <ScalarProperty Name="SKYPEID" ColumnName="SKYPEID" />
+          <ScalarProperty Name="FACEBOOKID" ColumnName="FACEBOOKID" />
+          <ScalarProperty Name="WHATSAPP" ColumnName="WHATSAPP" />
+          <ScalarProperty Name="VIBER" ColumnName="VIBER" />
+          <ScalarProperty Name="LINKEDIN" ColumnName="LINKEDIN" />
+          <ScalarProperty Name="RELIGIONID" ColumnName="RELIGIONID" />
+          <ScalarProperty Name="MOBILENO" ColumnName="MOBILENO" />
+          <ScalarProperty Name="PHONENO" ColumnName="PHONENO" />
+          <ScalarProperty Name="UNIQUEIDENTITY" ColumnName="UNIQUEIDENTITY" />
+          <ScalarProperty Name="OFFICEID" ColumnName="OFFICEID" />
+          <ScalarProperty Name="GENDERID" ColumnName="GENDERID" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="EFFECTIVEDATE" ColumnName="EFFECTIVEDATE" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CMNUSERAUTHENTICATION">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_CMNUSERAUTHENTICATION">
+        <MappingFragment StoreEntitySet="T_CMNUSERAUTHENTICATION">
+          <ScalarProperty Name="AUTHENTICATIONID" ColumnName="AUTHENTICATIONID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="LOGINID" ColumnName="LOGINID" />
+          <ScalarProperty Name="LOGINEMAIL" ColumnName="LOGINEMAIL" />
+          <ScalarProperty Name="LOGINPHONE" ColumnName="LOGINPHONE" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="CONFIRMPASSWORD" ColumnName="CONFIRMPASSWORD" />
+          <ScalarProperty Name="REGISTRATIONDATE" ColumnName="REGISTRATIONDATE" />
+          <ScalarProperty Name="EXPIREDATE" ColumnName="EXPIREDATE" />
+          <ScalarProperty Name="ACTIVATIONDATE" ColumnName="ACTIVATIONDATE" />
+          <ScalarProperty Name="ACTIVATIONCODE" ColumnName="ACTIVATIONCODE" />
+          <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+          <ScalarProperty Name="LANGUAGEID" ColumnName="LANGUAGEID" />
+          <ScalarProperty Name="TIMEZONEID" ColumnName="TIMEZONEID" />
+          <ScalarProperty Name="ALLOWMULTIPLELOGIN" ColumnName="ALLOWMULTIPLELOGIN" />
+          <ScalarProperty Name="NOOFLOGIN" ColumnName="NOOFLOGIN" />
+          <ScalarProperty Name="ISFIRSTLOGIN" ColumnName="ISFIRSTLOGIN" />
+          <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+          <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+          <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+          <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+          <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+          <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+          <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+          <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_BRND_TAR_PRI_SECON">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_BRND_TAR_PRI_SECON">
+        <MappingFragment StoreEntitySet="T_DIST_BRND_TAR_PRI_SECON">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DISTRIBUTORID" ColumnName="DISTRIBUTORID" />
+          <ScalarProperty Name="BRANDID" ColumnName="BRANDID" />
+          <ScalarProperty Name="TARGETQUANTITY" ColumnName="TARGETQUANTITY" />
+          <ScalarProperty Name="PRIMARYSALE" ColumnName="PRIMARYSALE" />
+          <ScalarProperty Name="SECONDARYSALE" ColumnName="SECONDARYSALE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_PRIMARY_INCENTIVE">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_PRIMARY_INCENTIVE">
+        <MappingFragment StoreEntitySet="T_DIST_PRIMARY_INCENTIVE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="PRIMARY_ACHI_PERC" ColumnName="PRIMARY_ACHI_PERC" />
+          <ScalarProperty Name="SECONDARY_ACHI_PERC" ColumnName="SECONDARY_ACHI_PERC" />
+          <ScalarProperty Name="INCENTIVE_AMOUN" ColumnName="INCENTIVE_AMOUN" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="INCENTIVE_UOM" ColumnName="INCENTIVE_UOM" />
+          <ScalarProperty Name="MIN_ACHI_NEXT_MONTH_CONSI" ColumnName="MIN_ACHI_NEXT_MONTH_CONSI" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_SECON_SALE_ACH_D">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_ACH_D">
+        <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_ACH_D">
+          <ScalarProperty Name="DIST_SECON_ACH_DETAIL_ID" ColumnName="DIST_SECON_ACH_DETAIL_ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="UOM_ID" ColumnName="UOM_ID" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+          <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+          <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+          <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+          <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+          <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+          <ScalarProperty Name="DIST_SECON_ACH_ID" ColumnName="DIST_SECON_ACH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_SECON_SALE_ACH_M">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_ACH_M">
+        <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_ACH_M">
+          <ScalarProperty Name="DIST_SECON_ACH_ID" ColumnName="DIST_SECON_ACH_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="DISTRIBUTOR_ID" ColumnName="DISTRIBUTOR_ID" />
+          <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+          <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+          <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+          <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+          <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+          <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_SECON_SALE_TEMP">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_TEMP">
+        <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_TEMP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+          <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+          <ScalarProperty Name="TASO_C" ColumnName="TASO_C" />
+          <ScalarProperty Name="SSO_C" ColumnName="SSO_C" />
+          <ScalarProperty Name="TCR_C" ColumnName="TCR_C" />
+          <ScalarProperty Name="TMO_C" ColumnName="TMO_C" />
+          <ScalarProperty Name="TSG_C" ColumnName="TSG_C" />
+          <ScalarProperty Name="TMR" ColumnName="TMR" />
+          <ScalarProperty Name="JMW_C" ColumnName="JMW_C" />
+          <ScalarProperty Name="TLD_C" ColumnName="TLD_C" />
+          <ScalarProperty Name="NVO_C" ColumnName="NVO_C" />
+          <ScalarProperty Name="BCT" ColumnName="BCT" />
+          <ScalarProperty Name="TA_C" ColumnName="TA_C" />
+          <ScalarProperty Name="MD_C" ColumnName="MD_C" />
+          <ScalarProperty Name="SZ_C" ColumnName="SZ_C" />
+          <ScalarProperty Name="TWA_C" ColumnName="TWA_C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_TAR_DETAIL">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_TAR_DETAIL">
+        <MappingFragment StoreEntitySet="T_DIST_TAR_DETAIL">
+          <ScalarProperty Name="DIST_TARGET_DETAIL_ID" ColumnName="DIST_TARGET_DETAIL_ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="UOM_ID" ColumnName="UOM_ID" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+          <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+          <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+          <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+          <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+          <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+          <ScalarProperty Name="DIST_TARGET_ID" ColumnName="DIST_TARGET_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIST_TAR_MASTER">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_TAR_MASTER">
+        <MappingFragment StoreEntitySet="T_DIST_TAR_MASTER">
+          <ScalarProperty Name="DIST_TARGET_ID" ColumnName="DIST_TARGET_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="DISTRIBUTOR_ID" ColumnName="DISTRIBUTOR_ID" />
+          <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+          <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+          <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+          <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+          <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+          <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DISTRIBUTORTARGET_TEMP">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_DISTRIBUTORTARGET_TEMP">
+        <MappingFragment StoreEntitySet="T_DISTRIBUTORTARGET_TEMP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+          <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+          <ScalarProperty Name="TASO_C" ColumnName="TASO_C" />
+          <ScalarProperty Name="SSO_C" ColumnName="SSO_C" />
+          <ScalarProperty Name="TCR_C" ColumnName="TCR_C" />
+          <ScalarProperty Name="TMO_C" ColumnName="TMO_C" />
+          <ScalarProperty Name="TSG_C" ColumnName="TSG_C" />
+          <ScalarProperty Name="TMR" ColumnName="TMR" />
+          <ScalarProperty Name="JMW_C" ColumnName="JMW_C" />
+          <ScalarProperty Name="TLD_C" ColumnName="TLD_C" />
+          <ScalarProperty Name="NVO_C" ColumnName="NVO_C" />
+          <ScalarProperty Name="BCT" ColumnName="BCT" />
+          <ScalarProperty Name="TA_C" ColumnName="TA_C" />
+          <ScalarProperty Name="MD_C" ColumnName="MD_C" />
+          <ScalarProperty Name="SZ_C" ColumnName="SZ_C" />
+          <ScalarProperty Name="TWA_C" ColumnName="TWA_C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_INCEN_ACHIEV_RATIO">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_ACHIEV_RATIO">
+        <MappingFragment StoreEntitySet="T_INCEN_ACHIEV_RATIO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="INCEN_FORMU_ID" ColumnName="INCEN_FORMU_ID" />
+          <ScalarProperty Name="SF_TYPE" ColumnName="SF_TYPE" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="ACH_RATIO_ID" ColumnName="ACH_RATIO_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_INCEN_ACHIEV_RATIO_DETAIL">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_ACHIEV_RATIO_DETAIL">
+        <MappingFragment StoreEntitySet="T_INCEN_ACHIEV_RATIO_DETAIL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACH_RATIO_ID" ColumnName="ACH_RATIO_ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="PRIMARY_PERC" ColumnName="PRIMARY_PERC" />
+          <ScalarProperty Name="SECONDARY_PERC" ColumnName="SECONDARY_PERC" />
+          <ScalarProperty Name="PERCENTAGE_TK" ColumnName="PERCENTAGE_TK" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_INCEN_FORMULA">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_FORMULA">
+        <MappingFragment StoreEntitySet="T_INCEN_FORMULA">
+          <ScalarProperty Name="INCEN_ID" ColumnName="INCEN_ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="SALES_FORCE_TYPE_ID" ColumnName="SALES_FORCE_TYPE_ID" />
+          <ScalarProperty Name="P_SALE_PERCENT" ColumnName="P_SALE_PERCENT" />
+          <ScalarProperty Name="S_SALE_PERCENT" ColumnName="S_SALE_PERCENT" />
+          <ScalarProperty Name="INCEN_PERCEN" ColumnName="INCEN_PERCEN" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="MINACHNEXTMONTHCONS" ColumnName="MINACHNEXTMONTHCONS" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+          <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+          <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+          <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+          <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+          <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_INCEN_RATE">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_RATE">
+        <MappingFragment StoreEntitySet="T_INCEN_RATE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RATE_ID" ColumnName="RATE_ID" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="PER_QUANTITY" ColumnName="PER_QUANTITY" />
+          <ScalarProperty Name="PER_UOM" ColumnName="PER_UOM" />
+          <ScalarProperty Name="TAKA_AMOUNT" ColumnName="TAKA_AMOUNT" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_INCEN_RATE_DIST_RATIO">
+      <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_RATE_DIST_RATIO">
+        <MappingFragment StoreEntitySet="T_INCEN_RATE_DIST_RATIO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RATE_ID" ColumnName="RATE_ID" />
+          <ScalarProperty Name="SF_TYPE" ColumnName="SF_TYPE" />
+          <ScalarProperty Name="TK_AMOUNT" ColumnName="TK_AMOUNT" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

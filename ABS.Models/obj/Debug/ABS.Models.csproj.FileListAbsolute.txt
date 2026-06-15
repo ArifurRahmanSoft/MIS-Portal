@@ -1,0 +1,54 @@
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll.config
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.pdb
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.dll
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.dll
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.xml
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.xml
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.dll
+F:\TFS\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.pdb
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll.config
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.pdb
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.dll
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.xml
+D:\Home\Old\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Home\Old\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.dll
+D:\Home\Old\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.pdb
+D:\Home\Old\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csprojResolveAssemblyReference.cache
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll.config
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.pdb
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll.config
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csprojAssemblyReference.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csproj.CoreCompileInputs.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csproj.CopyComplete
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\ABS.Models.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Debug\ABS.Models.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll

@@ -1,0 +1,170 @@
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csprojAssemblyReference.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\ABS.Data.dll.config
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\EntityFramework.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\EntityFramework.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Data\obj\Debug\CTGroup.Data.csprojAssemblyReference.cache
+F:\ASP.Net Workspace\MIS Report\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+F:\ASP.Net Workspace\MIS Report\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+F:\ASP.Net Workspace\MIS Report\ABS.Data\obj\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Data\obj\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll.config
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csprojAssemblyReference.cache
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Debug\CTGroup.Data.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Debug\CTGroup.Data.csproj.AssemblyReference.cache
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Debug\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\obj\Debug\CTGroup.Data.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\obj\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\obj\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Data\obj\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\obj\Debug\CTGroup.Data.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\obj\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Data\obj\Debug\ABS.Data.pdb

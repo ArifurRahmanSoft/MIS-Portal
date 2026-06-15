@@ -1,0 +1,415 @@
+﻿<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<div id="divDataBody" class="container" style="padding-bottom:30px;" ng-init="init()">
+    <fieldset style="margin-top:10px;">
+        <legend>&#160;Retailer Count Report&#160;</legend>
+        <div class="form-inline">
+
+            <div class="col-md-12 table-responsive" style="padding-top:15px;font-size:12px;">
+                <table class="table" style="padding-top:10px;font-size:12px; width:50%;">
+                    <tr>
+                        <td>
+                            <input type="radio" class="" id="ReportMode1" name="ReportMode"
+                                   data-ng-model="ReportMode"
+                                   ng-change="ReportModeChange(1)"
+                                   value="1"> <label for="ReportMode1" class="cursor-pointer"> Detail</label>
+                        </td>
+                        <!--<td>
+                            <input type="radio" class="" id="ReportMode2" name="ReportMode"
+                                   data-ng-model="ReportMode"
+                                   ng-change="ReportModeChange(2)"
+                                   value="2"> <label for="ReportMode2" class="cursor-pointer"> Summary</label>
+                        </td>-->
+                    </tr>
+                </table>
+            </div>
+
+            <!--<div class="col-md-12 form-group" style="margin-bottom:5px;">
+                <label for="txtBrand" class="col-sm-2 label-adjust">Product Brand <span class="field-required">*</span></label>
+                <select id="ddlBrand" class="form-control"
+                        ng-class="{'has-warning-me': ddlBrandDirty}"
+                        ng-model="model.SelProductBrand"
+                        ng-change="BrandChange(model.SelProductBrand.BRAND_ID)"
+                        ng-options="item.BRAND_NAME for item in model.BrandList track by item.BRAND_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)"
+                        style="max-width:100%">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>
+            <div class="col-md-12 form-group" style="margin-bottom:5px;" ng-show="model.SelProductBrand.BRAND_ID">
+                <label for="txtProduct" class="col-sm-2 label-adjust">Product <span class="field-required">*</span></label>
+                <select id="ddlProduct" class="form-control"
+                        ng-model="model.SelProduct"
+                        ng-change="ProductChange(model.SelProduct.PRODUCT_ID)"
+                        ng-options="item.PROD_SHORT_NAME for item in model.ProductList track by item.PRODUCT_ID"
+                        style="max-width:100%">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>-->
+
+
+
+
+            <!--<div class="col-md-12 form-group" ng-show="ReportMode==1 || ReportMode==2" style="padding-top:10px;">
+                <label for="txtFilter" class="col-sm-2 label-adjust">Filter <span class="field-required">*</span></label>
+                <select id="ddlFilter" class="form-control"
+                        ng-model="AreaType"
+                        ng-change="AreaTypeChange(AreaType)"
+                        ng-options=" item.Id as item.AreaName for item in model.AreaList"
+                        style="max-width:100%">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>-->
+
+
+            <!--<div class="col-md-12 table-responsive" ng-show="model.SelOnSalesOfferBrand.BRAND_ID" style="padding-top:15px;font-size:12px;">
+        <table class="table" style="padding-top:10px;font-size:12px; width:50%;">
+            <tr>
+                <td>
+                    <input type="radio" class="" id="AreaType1" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(1)"
+                           value="1"> <label for="AreaType1" class="cursor-pointer"> By National</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType2" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(2)"
+                           value="2"> <label for="AreaType2" class="cursor-pointer"> By Division</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType3" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(3)"
+                           value="3"> <label for="AreaType3" class="cursor-pointer"> By Region</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType4" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(4)"
+                           value="4"> <label for="AreaType4" class="cursor-pointer"> By Zone</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType5" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(5)"
+                           value="5"> <label for="AreaType5" class="cursor-pointer"> By Distributor</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType6" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(6)"
+                           value="6"> <label for="AreaType6" class="cursor-pointer"> By Route</label>
+                </td>
+                <td>
+                    <input type="radio" class="" id="AreaType7" name="AreaType"
+                           data-ng-model="AreaType"
+                           ng-change="AreaTypeChange(7)"
+                           value="7"> <label for="AreaType7" class="cursor-pointer"> By Retailer</label>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>-->
+
+
+
+
+
+            <div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" >
+                <label for="txtDivision" class="col-sm-2 label-adjust">Division <span class="field-required">*</span></label>
+                <select id="ddlDivision" class="form-control"
+                        ng-model="model.SelDivision"
+                        ng-change="ChangeDivision()"
+                        ng-options="item.DIVISION_NAME for item in model.DivisionList | orderBy:'DIVISION_NAME' track by item.DIVISION_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>
+
+            <div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelDivision.DIVISION_ID ">
+                <label for="txtRegion" class="col-sm-2 label-adjust">Region <span class="field-required">*</span></label>
+                <select id="ddlRegion" class="form-control"
+                        ng-class="{'has-warning-me': ddlRegionDirty}"
+                        ng-model="model.SelRegion"
+                        ng-change="ChangeRegion()"
+                        ng-options="item.REGION_NAME for item in model.RegionList | orderBy:'REGION_NAME' track by item.REGION_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>
+
+
+            <div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelRegion.REGION_ID">
+                <label for="txtZone" class="col-sm-2 label-adjust">Zone <span class="field-required">*</span></label>
+                <select id="ddlZone" class="form-control"
+                        ng-class="{'has-warning-me': ddlZoneDirty}"
+                        ng-model="model.SelZone"
+                        ng-change="ChangeZone()"
+                        ng-options="item.ZONE_NAME for item in model.ZoneList | orderBy:'ZONE_NAME' track by item.ZONE_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>
+
+            <!--<div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelZone.ZONE_ID && AreaType>=5">
+                <label for="txtDistributor" class="col-sm-2 label-adjust">Distributor <span class="field-required">*</span></label>
+                <select id="ddlDistributor" class="form-control"
+                        ng-class="{'has-warning-me': ddlProductNameDirty}"
+                        ng-model="model.SelDistributor"
+                        ng-change="ChangeDistributor(model.SelDistributor.DIST_ID)"
+                        ng-options="item.DIST_NAME for item in model.DistributorList | orderBy:'DIST_NAME' track by item.DIST_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>
+
+            <div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelDistributor.DIST_ID && AreaType>=6">
+                <label for="txtSO" class="col-sm-2 label-adjust">Sales Officer <span class="field-required">*</span></label>
+                <select id="ddlSO" class="form-control"
+                        ng-class="{'has-warning-me': ddlProductNameDirty}"
+                        ng-model="model.SelSO"
+                        ng-change="ChangeSO(model.SelSO.SO_ID)"
+                        ng-options="(item.SO_TEXT+' : '+item.SO_NAME) for item in model.SOList | orderBy:'DIST_NAME' track by item.SO_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>-->
+
+
+            <!--<div class="col-md-12 form-group" ng-show="AreaType>=5">
+        <label for="txtDistCode" class="col-sm-2 label-adjust">Distributor Code<span class="field-required">*</span></label>
+        <div class="col-md-2" style="width:200px; padding-left:0;">
+            <input type="text" class="form-control" ng-model="DIST_CODE" />
+        </div>
+        <div style="font-weight:bold;"><button type="submit" class="btn btn-primary" ng-click="GetDistributorByCode(DIST_CODE)">Search</button> </div>
+    </div>
+    <div class="col-md-12 form-group" style="padding-top:10px;padding-bottom:10px;" ng-show="showRouteList && AreaType>=5">
+        <label for="txtDistCode" class="col-sm-2 label-adjust">Distributor Name<span class="field-required">*</span></label>
+        <div class="col-md-8" style="font-weight:bold; padding-left:0;">{{model.SelDistributor.DIST_NAME}}</div>
+    </div>-->
+
+            <!--<div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelSO.SO_ID && AreaType>=7">
+                <label for="txtRoute" class="col-sm-2 label-adjust">Route <span class="field-required">*</span></label>
+                <select id="ddlRoute" class="form-control"
+                        ng-model="model.SelRoute"
+                        ng-change="ChangeRoute()"
+                        ng-options="item.ROUTE_NAME for item in model.RouteList | orderBy:'ROUTE_NAME' track by item.ROUTE_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+
+
+            </div>-->
+
+
+            <!--<div class="col-md-12 form-group" style="margin-bottom:5px;padding-top:5px;" ng-show="model.SelRoute.ROUTE_ID && AreaType>=8">
+                <label for="txtRetailer" class="col-sm-2 label-adjust">Retailer <span class="field-required">*</span></label>
+                <select id="ddlRetailer" class="form-control"
+                        ng-model="model.SelRetailer"
+                        ng-change="ChangeRetailer()"
+                        ng-options="item.RETAILER_NAME for item in model.RetailerList | orderBy:'RETAILER_NAME' track by item.RETAILER_ID"
+                        ng-focus="setDrag(true)" ng-blur="setDrag(false)">
+                    <option value="" class="" selected="selected">Please select...</option>
+                </select>
+            </div>-->
+
+
+
+
+
+
+
+            <!--<div class="col-md-12 table-responsive"  style="padding-top:15px;font-size:12px;">
+                <table class="table" style="padding-top:10px;font-size:12px; width:50%;">
+                    <tr>
+                        <td> <label> Shown By</label></td>
+
+                        <td ng-hide="AreaType>2">
+                            <input type="radio" class="" id="ArrangeType2" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(2)"
+                                   value="2"> <label for="ArrangeType2" class="cursor-pointer"> Division Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>3">
+                            <input type="radio" class="" id="ArrangeType3" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(3)"
+                                   value="3"> <label for="ArrangeType3" class="cursor-pointer"> Region Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>4">
+                            <input type="radio" class="" id="ArrangeType4" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(4)"
+                                   value="4"> <label for="ArrangeType4" class="cursor-pointer"> Zone Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>5">
+                            <input type="radio" class="" id="ArrangeType5" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(5)"
+                                   value="5"> <label for="ArrangeType5" class="cursor-pointer"> Distributor Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>6">
+                            <input type="radio" class="" id="ArrangeType6" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(6)"
+                                   value="6"> <label for="ArrangeType6" class="cursor-pointer"> SO Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>7">
+                            <input type="radio" class="" id="ArrangeType7" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(7)"
+                                   value="7"> <label for="ArrangeType7" class="cursor-pointer"> Route Wise</label>
+                        </td>
+                        <td ng-hide="AreaType>8">
+                            <input type="radio" class="" id="ArrangeType8" name="ArrangeType"
+                                   data-ng-model="ArrangeType"
+                                   ng-change="ArrangeTypeChange(8)"
+                                   value="8"> <label for="ArrangeType8" class="cursor-pointer"> Retailer Wise</label>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>-->
+
+
+        </div>
+
+            <div class="col-md-12 form-group" >    
+              
+                    
+
+
+                <div ng-show="( ReportMode==1) || (ReportMode==2) " class="col-md-12 form-group" style="padding:15px;">
+
+                    <div class="col-md-3" style="width: 300px;">
+                        <label for="txtDeliveryFromDate" class="col-sm-2 label-adjust" style="width: 100px; font-weight:bold;">From</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="txtDeliveryFromDate" name="txtDeliveryFromDate"
+                                   ng-model="model.DeliveryFromDate" style="width: 100px;"
+                                   datepicker-popup="{{format}}" is-open="openedFrom" min-date="'2000-01-01'" max-date="'2020-12-31'"
+                                   datepicker-options="dateOptions" show-button-bar="false"
+                                   validate-on="blur"
+                                   clear-on="focus"
+                                   date invalid-date-message="'Invalid date'"
+                                   min-date-message="'Date below minimum value'"
+                                   message-after="calendarButton"
+                                   message-display-class="remove-left-dent"
+                                   ng-focus="setDrag(true);setVisited('txtDeliveryFromDate')" ng-blur="setDrag(false)">
+                            <span id="calendarButton" style="float:right;">
+                                <button type="button" class="btn btn-default height-to-form-comtrol" ng-click="openFrom($event)">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" style="width: 300px;">
+                        <label for="txtDeliveryToDate" class="col-sm-2 label-adjust" style="width: 100px; font-weight:bold;">To</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="txtDeliveryToDate" name="txtDeliveryToDate"
+                                   ng-model="model.DeliveryToDate" style="width: 100px;"
+                                   datepicker-popup="{{format}}" is-open="openedTo" min-date="'2000-01-01'" max-date="'2020-12-31'"
+                                   datepicker-options="dateOptions" show-button-bar="false"
+                                   validate-on="blur"
+                                   clear-on="focus"
+                                   date invalid-date-message="'Invalid date'"
+                                   min-date-message="'Date below minimum value'"
+                                   message-after="calendarButton"
+                                   message-display-class="remove-left-dent"
+                                   ng-focus="setDrag(true);setVisited('txtDeliveryToDate')" ng-blur="setDrag(false)">
+                            <span id="calendarButton" style="float:right;">
+                                <button type="button" class="btn btn-default height-to-form-comtrol" ng-click="openTo($event)">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="ReportMode==1">
+                        <button type="submit" style="font-weight:bold;" class="btn btn-primary" id="btnShowReport" ng-click="ShowReport(model.DeliveryFromDate,model.DeliveryToDate)">&#160;&#160;Show Report (Detail)&#160;&#160;</button>
+                    </div>
+                    <div class="col-md-2" ng-show="ReportMode==2">
+                        <button type="submit" style="font-weight:bold;" class="btn btn-primary" id="btnShowReport" ng-click="ShowReport(model.DeliveryFromDate,model.DeliveryToDate)">&#160;&#160;Show Report (Summary)&#160;&#160;</button>
+                    </div>
+                    <!--<div ng-show="ReportType==2" class="col-md-2">
+        <button type="submit" style="font-weight:bold;" class="btn btn-primary" id="btnShowSalesDeliverySummary_2" ng-click="ShowSalesDeliverySummary_2(model.DeliveryFromDate,model.DeliveryToDate)">&#160;&#160;Show Report&#160;&#160;</button>
+    </div>-->
+                </div>
+              
+
+
+
+            <div class="form-group" style="margin-left:20px;">
+
+            </div>
+            <div class="bottom-line"></div>
+        </div>
+    </fieldset>
+
+</div>
+<!--Template for checkbox in header-->
+<!--<script type="text/ng-template" id="ng-table/headers/checkbox.html">
+    <input type="checkbox" ng-model="orderListCheckboxes.topChecked" ng-disabled="orderListCheckboxes.topDisabled" ng-change="topCheckboxChange()" value="" />
+</script>-->
+
+<style>
+    .table-pt {
+        width: 100%;
+    }
+
+    /*td[data-title] {
+        width: 100%;
+    }        */
+
+    .text-center {
+        font-size: 14px;
+    }
+
+    .thead-pt {
+        display: block;
+    }
+
+    .tbody-pt {
+        display: block;
+        height: 300px;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .tr-pt {
+        display: block;
+    }
+
+
+    .td-pt {
+        display: block;
+        float: left;
+    }
+
+    tr:after {
+        content: '  ';
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+
+    .thead-pt-th {
+        height: 50px;
+        padding-top: 0;
+        display: block;
+        float: left;
+    }
+
+    .thead-pt-tr {
+        height: 100%;
+        width: 98.5%;
+        display: block;
+    }
+</style>
+
+
+

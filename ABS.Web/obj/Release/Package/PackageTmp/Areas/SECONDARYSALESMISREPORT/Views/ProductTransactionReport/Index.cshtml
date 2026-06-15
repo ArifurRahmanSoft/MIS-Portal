@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Sales vs Delivery";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="salesVSDeliveryCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Sales vs Delivery</h4>
+                            <div class="toolbar no-padding">
+
+                                <span id="save" class="btn btn-warning margin-right-btn" ng-click="CommonQueryString(); ShowProductTransactionReport('RETAILER')"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-briefcase"></i> Retailer-Wise
+                                </span>
+                                <span id="save" class="btn btn-primary margin-right-btn" ng-click="CommonQueryString(); ShowProductTransactionReport('ROUTE')"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-shopping-cart"></i> Route-Wise
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="CommonQueryString(); ShowProductTransactionReport('DISTRIBUTOR')"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-home"></i> Distributor-Wise
+                                </span>
+                                <span id="save" class="btn btn-info margin-right-btn" ng-click="CommonQueryString(); ShowProductTransactionReport('COUNTER_SALES')"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-home"></i> Counter Sales
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/SECONDARYSALESMISREPORT/Views/ProductTransactionReport/_Partial/_formProductTransactionReport.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    @*<script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/SecondaryReportCommonCtrl_V2.js"></script>*@
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/SalesVSDeliveryCtrl.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

@@ -1,0 +1,53 @@
+﻿<form novalidate name="frmDocumentUpload" id="frmDocumentUpload" class="form-horizontal row-border">
+    <input type="hidden" id="DocumentUploadID" readonly="readonly" ng-model="DocumentUploadID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-3 control-label">Browse <span class="error">*</span> </label>
+                <div class="col-md-7">
+                    <input type="file" name="file" id="file"
+                           ng-model="docfile" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-5 control-label"> Start Date <span class="error">*</span>  </label>
+                <div class="col-md-5">
+                    <input type="text" autocomplete="off"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmDocumentUpload.$dirty||submitted) && frmDocumentUpload.dtStartDate.$error.required"></span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-5 control-label"> End Date <span class="error">*</span>  </label>
+                <div class="col-md-5">
+                    <input type="text" autocomplete="off"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmDocumentUpload.$dirty||submitted) && frmDocumentUpload.dtEndDate.$error.required"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <input type="button" id="Generate" style="width:150px; margin-right: 350px;" class="btn btn-info margin-right-btn"
+                           value="View File Data" ng-click="ViewFileData()">
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</form>

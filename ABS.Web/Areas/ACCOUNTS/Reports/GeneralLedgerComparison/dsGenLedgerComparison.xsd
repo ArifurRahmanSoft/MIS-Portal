@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGenLedgerComparison" targetNamespace="http://tempuri.org/dsGenLedgerComparison.xsd" xmlns:mstns="http://tempuri.org/dsGenLedgerComparison.xsd" xmlns="http://tempuri.org/dsGenLedgerComparison.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGenLedgerComparison" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsGenLedgerComparison" msprop:Generator_UserDSName="dsGenLedgerComparison">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtGenLedgCom" msprop:Generator_TableClassName="dtGenLedgComDataTable" msprop:Generator_TableVarName="tabledtGenLedgCom" msprop:Generator_RowChangedName="dtGenLedgComRowChanged" msprop:Generator_TablePropName="dtGenLedgCom" msprop:Generator_RowDeletingName="dtGenLedgComRowDeleting" msprop:Generator_RowChangingName="dtGenLedgComRowChanging" msprop:Generator_RowEvHandlerName="dtGenLedgComRowChangeEventHandler" msprop:Generator_RowDeletedName="dtGenLedgComRowDeleted" msprop:Generator_RowClassName="dtGenLedgComRow" msprop:Generator_UserTableName="dtGenLedgCom" msprop:Generator_RowEvArgName="dtGenLedgComRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ONLYMONTH" msprop:Generator_ColumnVarNameInTable="columnONLYMONTH" msprop:Generator_ColumnPropNameInRow="ONLYMONTH" msprop:Generator_ColumnPropNameInTable="ONLYMONTHColumn" msprop:Generator_UserColumnName="ONLYMONTH" type="xs:string" minOccurs="0" />
+              <xs:element name="MONTHNUMBER" msprop:Generator_ColumnVarNameInTable="columnMONTHNUMBER" msprop:Generator_ColumnPropNameInRow="MONTHNUMBER" msprop:Generator_ColumnPropNameInTable="MONTHNUMBERColumn" msprop:Generator_UserColumnName="MONTHNUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="ONLYYEAR" msprop:Generator_ColumnVarNameInTable="columnONLYYEAR" msprop:Generator_ColumnPropNameInRow="ONLYYEAR" msprop:Generator_ColumnPropNameInTable="ONLYYEARColumn" msprop:Generator_UserColumnName="ONLYYEAR" type="xs:string" minOccurs="0" />
+              <xs:element name="TTLMONTH" msprop:Generator_ColumnVarNameInTable="columnTTLMONTH" msprop:Generator_ColumnPropNameInRow="TTLMONTH" msprop:Generator_ColumnPropNameInTable="TTLMONTHColumn" msprop:Generator_UserColumnName="TTLMONTH" type="xs:string" minOccurs="0" />
+              <xs:element name="MONTHSLNO" msprop:Generator_ColumnVarNameInTable="columnMONTHSLNO" msprop:Generator_ColumnPropNameInRow="MONTHSLNO" msprop:Generator_ColumnPropNameInTable="MONTHSLNOColumn" msprop:Generator_UserColumnName="MONTHSLNO" type="xs:string" minOccurs="0" />
+              <xs:element name="OID" msprop:Generator_ColumnVarNameInTable="columnOID" msprop:Generator_ColumnPropNameInRow="OID" msprop:Generator_ColumnPropNameInTable="OIDColumn" msprop:Generator_UserColumnName="OID" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCD" msprop:Generator_ColumnVarNameInTable="columnACCD" msprop:Generator_ColumnPropNameInRow="ACCD" msprop:Generator_ColumnPropNameInTable="ACCDColumn" msprop:Generator_UserColumnName="ACCD" type="xs:string" minOccurs="0" />
+              <xs:element name="TSRM_CCOM" msprop:Generator_ColumnVarNameInTable="columnTSRM_CCOM" msprop:Generator_ColumnPropNameInRow="TSRM_CCOM" msprop:Generator_ColumnPropNameInTable="TSRM_CCOMColumn" msprop:Generator_UserColumnName="TSRM_CCOM" type="xs:string" minOccurs="0" />
+              <xs:element name="CCOM_NAME" msprop:Generator_ColumnVarNameInTable="columnCCOM_NAME" msprop:Generator_ColumnPropNameInRow="CCOM_NAME" msprop:Generator_ColumnPropNameInTable="CCOM_NAMEColumn" msprop:Generator_UserColumnName="CCOM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="LVLST" msprop:Generator_ColumnVarNameInTable="columnLVLST" msprop:Generator_ColumnPropNameInRow="LVLST" msprop:Generator_ColumnPropNameInTable="LVLSTColumn" msprop:Generator_UserColumnName="LVLST" type="xs:string" minOccurs="0" />
+              <xs:element name="ACGP_NAME" msprop:Generator_ColumnVarNameInTable="columnACGP_NAME" msprop:Generator_ColumnPropNameInRow="ACGP_NAME" msprop:Generator_ColumnPropNameInTable="ACGP_NAMEColumn" msprop:Generator_UserColumnName="ACGP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="AHAD_TEXT" msprop:Generator_ColumnVarNameInTable="columnAHAD_TEXT" msprop:Generator_ColumnPropNameInRow="AHAD_TEXT" msprop:Generator_ColumnPropNameInTable="AHAD_TEXTColumn" msprop:Generator_UserColumnName="AHAD_TEXT" type="xs:string" minOccurs="0" />
+              <xs:element name="AHAD_NAME" msprop:Generator_ColumnVarNameInTable="columnAHAD_NAME" msprop:Generator_ColumnPropNameInRow="AHAD_NAME" msprop:Generator_ColumnPropNameInTable="AHAD_NAMEColumn" msprop:Generator_UserColumnName="AHAD_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="AMNT" msprop:Generator_ColumnVarNameInTable="columnAMNT" msprop:Generator_ColumnPropNameInRow="AMNT" msprop:Generator_ColumnPropNameInTable="AMNTColumn" msprop:Generator_UserColumnName="AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="QUARTERNO" msprop:Generator_ColumnVarNameInTable="columnQUARTERNO" msprop:Generator_ColumnPropNameInRow="QUARTERNO" msprop:Generator_ColumnPropNameInTable="QUARTERNOColumn" msprop:Generator_UserColumnName="QUARTERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="HALFYEARNO" msprop:Generator_ColumnVarNameInTable="columnHALFYEARNO" msprop:Generator_ColumnPropNameInRow="HALFYEARNO" msprop:Generator_ColumnPropNameInTable="HALFYEARNOColumn" msprop:Generator_UserColumnName="HALFYEARNO" type="xs:string" minOccurs="0" />
+              <xs:element name="PAIRNUMBER" msprop:Generator_ColumnVarNameInTable="columnPAIRNUMBER" msprop:Generator_ColumnPropNameInRow="PAIRNUMBER" msprop:Generator_ColumnPropNameInTable="PAIRNUMBERColumn" msprop:Generator_UserColumnName="PAIRNUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="QTRPAIR" msprop:Generator_ColumnVarNameInTable="columnQTRPAIR" msprop:Generator_ColumnPropNameInRow="QTRPAIR" msprop:Generator_ColumnPropNameInTable="QTRPAIRColumn" msprop:Generator_UserColumnName="QTRPAIR" type="xs:string" minOccurs="0" />
+              <xs:element name="HALFPAIR" msprop:Generator_ColumnVarNameInTable="columnHALFPAIR" msprop:Generator_ColumnPropNameInRow="HALFPAIR" msprop:Generator_ColumnPropNameInTable="HALFPAIRColumn" msprop:Generator_UserColumnName="HALFPAIR" type="xs:string" minOccurs="0" />
+              <xs:element name="YEARPAIR" msprop:Generator_ColumnVarNameInTable="columnYEARPAIR" msprop:Generator_ColumnPropNameInRow="YEARPAIR" msprop:Generator_ColumnPropNameInTable="YEARPAIRColumn" msprop:Generator_UserColumnName="YEARPAIR" type="xs:string" minOccurs="0" />
+              <xs:element name="LVL" msprop:Generator_ColumnVarNameInTable="columnLVL" msprop:Generator_ColumnPropNameInRow="LVL" msprop:Generator_ColumnPropNameInTable="LVLColumn" msprop:Generator_UserColumnName="LVL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

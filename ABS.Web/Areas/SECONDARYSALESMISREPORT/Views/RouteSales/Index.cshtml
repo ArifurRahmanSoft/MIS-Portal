@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Route Wise Sales";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="RouteSalesCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Route Sales</h4>
+                            <div class="toolbar no-padding">
+
+                                <span id="save" class="btn btn-success margin-right-btn" ng-show="ngModelZone" ng-click="CommonQueryString(); ShowReport()"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-table"></i> Show Report
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/SECONDARYSALESMISREPORT/Views/RouteSales/_Partial/_formRouteSales.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    @*<script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/SecondaryReportCommonCtrl_V2.js"></script>*@
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/RouteSalesCtrl.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

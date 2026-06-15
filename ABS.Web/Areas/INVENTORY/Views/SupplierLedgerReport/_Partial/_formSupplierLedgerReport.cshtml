@@ -1,0 +1,81 @@
+﻿
+<form novalidate name="formSupplierLedgerReport" id="formSupplierLedgerReport" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company/Unit Name</label>
+                <div class="col-md-6">
+                    <select id="ddlUnit" class="select2-select-00"
+                            ng-model="ngModelUnit"
+                            name="ddlUnit"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="unit.CUNIT_ID as unit.CUNIT_NAME for unit in ListUnists" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formSupplierLedgerReport.$dirty||submitted) && formSupplierLedgerReport.ddlUnit.$error.required">*</span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Supplier Name</label>
+                <div class="col-md-6">
+                    <select id="ddlSupplier" class="select2-select-00"
+                            ng-model="ngModelSupplier"
+                            name="ddlSupplier"
+                            data-placeholder="--Select Suppliers--"
+                            style="width: 100%" ng-options="supp.SUPP_ID as supp.SUPP_NAME for supp in ListSuppliers" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formSupplierLedgerReport.$dirty||submitted) && formSupplierLedgerReport.ddlSupplier.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formSupplierLedgerReport.$dirty||submitted) && formSupplierLedgerReport.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formSupplierLedgerReport.$dirty||submitted) && formSupplierLedgerReport.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="partydetails">Supplier's Ledger (Details)
+                    <input type="radio" ng-model="ReportType" value="partysummary">Supplier's Ledger (Summary)
+                    <input type="radio" ng-model="ReportType" value="itemlist">Supplier's Ledger (Item List)
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>

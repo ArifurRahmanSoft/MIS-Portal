@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSSalesTeamMember" targetNamespace="http://tempuri.org/DSSalesTeamMember.xsd" xmlns:mstns="http://tempuri.org/DSSalesTeamMember.xsd" xmlns="http://tempuri.org/DSSalesTeamMember.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSSalesTeamMember" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSSalesTeamMember" msprop:Generator_UserDSName="DSSalesTeamMember">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTSalesTeamMember" msprop:Generator_TableClassName="DTSalesTeamMemberDataTable" msprop:Generator_TableVarName="tableDTSalesTeamMember" msprop:Generator_RowChangedName="DTSalesTeamMemberRowChanged" msprop:Generator_TablePropName="DTSalesTeamMember" msprop:Generator_RowDeletingName="DTSalesTeamMemberRowDeleting" msprop:Generator_RowChangingName="DTSalesTeamMemberRowChanging" msprop:Generator_RowEvHandlerName="DTSalesTeamMemberRowChangeEventHandler" msprop:Generator_RowDeletedName="DTSalesTeamMemberRowDeleted" msprop:Generator_RowClassName="DTSalesTeamMemberRow" msprop:Generator_UserTableName="DTSalesTeamMember" msprop:Generator_RowEvArgName="DTSalesTeamMemberRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NTNAL_NAME" msprop:Generator_ColumnVarNameInTable="columnNTNAL_NAME" msprop:Generator_ColumnPropNameInRow="NTNAL_NAME" msprop:Generator_ColumnPropNameInTable="NTNAL_NAMEColumn" msprop:Generator_UserColumnName="NTNAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SDVSN_NAME" msprop:Generator_ColumnVarNameInTable="columnSDVSN_NAME" msprop:Generator_ColumnPropNameInRow="SDVSN_NAME" msprop:Generator_ColumnPropNameInTable="SDVSN_NAMEColumn" msprop:Generator_UserColumnName="SDVSN_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SREGN_NAME" msprop:Generator_ColumnVarNameInTable="columnSREGN_NAME" msprop:Generator_ColumnPropNameInRow="SREGN_NAME" msprop:Generator_ColumnPropNameInTable="SREGN_NAMEColumn" msprop:Generator_UserColumnName="SREGN_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnSZONE_NAME" msprop:Generator_ColumnPropNameInRow="SZONE_NAME" msprop:Generator_ColumnPropNameInTable="SZONE_NAMEColumn" msprop:Generator_UserColumnName="SZONE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DESIGNATION" msprop:Generator_ColumnVarNameInTable="columnDESIGNATION" msprop:Generator_ColumnPropNameInRow="DESIGNATION" msprop:Generator_ColumnPropNameInTable="DESIGNATIONColumn" msprop:Generator_UserColumnName="DESIGNATION" type="xs:string" minOccurs="0" />
+              <xs:element name="SP_CODE" msprop:Generator_ColumnVarNameInTable="columnSP_CODE" msprop:Generator_ColumnPropNameInRow="SP_CODE" msprop:Generator_ColumnPropNameInTable="SP_CODEColumn" msprop:Generator_UserColumnName="SP_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SP_NAME" msprop:Generator_ColumnVarNameInTable="columnSP_NAME" msprop:Generator_ColumnPropNameInRow="SP_NAME" msprop:Generator_ColumnPropNameInTable="SP_NAMEColumn" msprop:Generator_UserColumnName="SP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SPRSN_CNNO" msprop:Generator_ColumnVarNameInTable="columnSPRSN_CNNO" msprop:Generator_ColumnPropNameInRow="SPRSN_CNNO" msprop:Generator_ColumnPropNameInTable="SPRSN_CNNOColumn" msprop:Generator_UserColumnName="SPRSN_CNNO" type="xs:string" minOccurs="0" />
+              <xs:element name="PARTY_CODE" msprop:Generator_ColumnVarNameInTable="columnPARTY_CODE" msprop:Generator_ColumnPropNameInRow="PARTY_CODE" msprop:Generator_ColumnPropNameInTable="PARTY_CODEColumn" msprop:Generator_UserColumnName="PARTY_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PARTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPARTY_NAME" msprop:Generator_ColumnPropNameInRow="PARTY_NAME" msprop:Generator_ColumnPropNameInTable="PARTY_NAMEColumn" msprop:Generator_UserColumnName="PARTY_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

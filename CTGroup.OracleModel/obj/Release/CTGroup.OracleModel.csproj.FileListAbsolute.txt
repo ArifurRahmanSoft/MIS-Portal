@@ -1,0 +1,14 @@
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Release\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Release\CTGroup.OracleModel.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Release\CTGroup.OracleModel.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Release\CTGroup.OracleModel.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Release\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Release\CTGroup.OracleModel.pdb

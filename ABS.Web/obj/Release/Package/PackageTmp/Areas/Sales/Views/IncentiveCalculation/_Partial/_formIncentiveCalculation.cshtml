@@ -1,0 +1,108 @@
+﻿<form novalidate name="frmIncentiveCalculation" id="frmIncentiveCalculation" class="form-horizontal row-border">
+    <input type="hidden" id="IncentiveCalculationID" readonly="readonly" ng-model="IncentiveCalculationID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Division</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00"
+                            ng-model="ngModelDivision"
+                            name="ddlDivision"
+                            data-placeholder="--Select Division--" ng-click="loadRegionRecords()"
+                            style="width: 100%" ng-options="div.DIVISION_ID as div.DIVISION_NAME for div in listDivision" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.ddlDivision.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Zone</label>
+                <div class="col-md-6">
+                    <select id="ddlZone" class="select2-select-00"
+                            ng-model="ngModelZone"
+                            name="ddlZone"
+                            data-placeholder="--Select Zone--" ng-click="loadDistributorRecords()"
+                            style="width: 100%" ng-options="zon.ZONE_ID as zon.ZONE_NAME for zon in listZone" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.ddlZone.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Start Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" ng-click="CalculatePrimarySale()">Calculate Primary Sale</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Region</label>
+                <div class="col-md-6">
+                    <select id="ddlRegion" class="select2-select-00"
+                            ng-model="ngModelRegion"
+                            name="ddlRegion"
+                            data-placeholder="--Select Region--" ng-click="loadZoneRecords()"
+                            style="width: 100%" ng-options="reg.REGION_ID as reg.REGION_NAME for reg in listRegion" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.ddlRegion.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Distributor</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.ddlDistributor.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> End Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveCalculation.$dirty||submitted) && frmIncentiveCalculation.dtEndDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" ng-click="CalculateTargetPrimarySecondarySale()">Calculate Target, Primary, Secondary Sale</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" ng-click="CalculateIncentive()">Calculate Incentive</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</form>

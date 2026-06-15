@@ -1,0 +1,31 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+    <thead class="grid-top-panel">
+        <tr>
+            <th>PROD&nbsp;LINE</th>
+            <th>DIST&nbsp;CODE</th>
+            <th>SO&nbsp;CODE</th>
+            <th ng-repeat="col in ListColumn">
+                {{col.COLNAME}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in ListTargetUploadedDataDisplay">
+            <td>{{dataModel.PROD_LINE}}</td>
+            <td>{{dataModel.DIST_CODE}}</td>
+            <td>{{dataModel.SO_CODE}}</td>
+            <td ng-repeat="col in ListColumn">{{dataModel[col.COLNAME]}}</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(ListTargetUploadedData).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

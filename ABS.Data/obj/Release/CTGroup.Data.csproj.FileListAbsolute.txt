@@ -1,0 +1,85 @@
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\ABS.Data.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Release\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\obj\Release\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\ABS.Data.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\ABS.Data.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\EntityFramework.SqlServer.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\Oracle.ManagedDataAccess.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\CTGroup.OracleModel.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\EntityFramework.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Data\bin\Release\EntityFramework.SqlServer.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csprojAssemblyReference.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csproj.CoreCompileInputs.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Release\CTGroup.Data.csproj.CopyComplete
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Release\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Data\obj\Release\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\ABS.Data.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\EntityFramework.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Release\CTGroup.Data.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Release\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Release\CTGroup.Data.csproj.CopyComplete
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Release\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Data\obj\Release\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\ABS.Data.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\CTGroup.OracleModel.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\CTGroup.OracleModel.pdb
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\EntityFramework.xml
+E:\ProjectsDev\TFS_Project\ABS.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Release\CTGroup.Data.csprojAssemblyReference.cache
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Release\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Release\CTGroup.Data.csproj.CopyComplete
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Release\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Data\obj\Release\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Release\CTGroup.Data.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Release\CTGroup.Data.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Release\CTGroup.Data.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Release\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Data\obj\Release\ABS.Data.pdb

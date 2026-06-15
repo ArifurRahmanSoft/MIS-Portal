@@ -1,0 +1,42 @@
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\CTGroup.OracleModel\obj\Debug\CTGroup.OracleModel.pdb

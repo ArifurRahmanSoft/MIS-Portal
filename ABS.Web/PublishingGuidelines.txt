@@ -1,0 +1,3 @@
+﻿Need to changes in all CTGroup_App_v1.js files
+Changes in this file: Utils.cs
+Changes in the login page background image _Layout.cshtml file

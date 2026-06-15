@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Stock, Order, Delivery";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="stockOrderDeliveryCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Stock, Order, Delivery</h4>
+                            <div class="toolbar no-padding">
+
+                                @*<span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                        <i class="icon-refresh"></i> Reset
+                                    </span>*@
+
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="CommonQueryString(); ShowStockOrderDeliveryReport()"
+                                      ng-disabled="IsShowReportButtonDisabled">
+                                    <i class="icon-table"></i> Show Report
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/SECONDARYSALESMISREPORT/Views/StockOrderDelivery/_Partial/_formStockOrderDeliveryReport.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    @*<script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/SecondaryReportCommonCtrl_V2.js"></script>*@
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Controllers/StockOrderDeliveryCtrl.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/SECONDARYSALESMISREPORT/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+}

@@ -1,0 +1,19 @@
+﻿<form novalidate name="frmAutoRiceSalesUpload" id="frmAutoRiceSalesUpload" class="form-horizontal row-border">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Browse <span class="error">*</span> </label>
+                <div class="col-md-6">
+                    <input type="file" name="file" id="file" ng-model="docfile" onchange="onFileChange()" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-primary" ng-disabled="SelectedFile==null" ng-click="convertExcel(true)" ng-show="!loaderMore">View File Data</button>
+            <div ng-show="loaderMore" ng-class="result">
+                <img src="~/Content/img/ng-loader.gif" />
+                loading......
+            </div>
+        </div>
+    </div>
+</form>

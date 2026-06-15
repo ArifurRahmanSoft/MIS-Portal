@@ -1,0 +1,29 @@
+﻿<form novalidate name="frmActivityReport" id="frmActivityReport" class="form-horizontal row-border">
+ 
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"   ng-click="LoadAllProduct()"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+
+
+        </div>
+        </div>
+
+    </form>

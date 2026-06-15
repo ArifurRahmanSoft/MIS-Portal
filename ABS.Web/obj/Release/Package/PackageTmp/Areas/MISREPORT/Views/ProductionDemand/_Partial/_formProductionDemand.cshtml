@@ -1,0 +1,91 @@
+﻿<form novalidate name="formProductionDemand" id="formProductionDemand" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+        <div class="col-md-6">         
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Company</label>
+                <div class="col-md-6">
+                    <select id="ddlSalesCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelSalesCompany"
+                            name="ddlSalesCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product Company</label>
+                <div class="col-md-6">
+                    <select id="ddlProductCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelProductCompany" ng-click="loadCompanyWiseBrand()"
+                            name="ddlProductCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listUserWiseCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formCustomerWiseDelivery.$dirty||submitted) && formCustomerWiseDelivery.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlProductBrand" class="select2-select-00"
+                            ng-model="ngModelBrand"
+                            name="ddlProductBrand"
+                            data-placeholder="--Select Brand--" 
+                            style="width: 100%" ng-options="brnd.BRANDOID as brnd.BRANDNAME for brnd in listBrandCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                @*<span class="error" ng-show="(frmMonthwiseSalesDelivery.$dirty||submitted) && frmMonthwiseSalesDelivery.ddlDivision.$error.required">*</span>*@
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+                    @*<input type="radio" ng-model="ReportType" value="sales_statement_details">Sales Statement (Details)
+                    <input type="radio" ng-model="ReportType" value="sales_statement_summary">Sales Statement (Summary)*@
+                    <input type="radio" ng-model="ReportType" value="undelivered_statement_details">Undelivered Statement (Details)<br>
+                    @*<input type="radio" ng-model="ReportType" value="undelivered_statement_summary">Undelivered Statement (Summary)*@
+                    @*<input type="radio" ng-model="ReportType" value="delivery_statement_details">Delivery Statement (Details)
+                    <input type="radio" ng-model="ReportType" value="delivery_statement_summary">Delivery Statement (Summary)*@
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlZone.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+</form>

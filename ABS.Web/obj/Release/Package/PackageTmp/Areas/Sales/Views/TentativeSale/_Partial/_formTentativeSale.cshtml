@@ -1,0 +1,45 @@
+﻿<form novalidate name="frmTentativeSale" id="frmTentativeSale" class="form-horizontal row-border">
+    <input type="hidden" id="OID" readonly="readonly" ng-model="OID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Location</label>
+                <div class="col-md-8">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="--Select Location--"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formDeliveryStatement.$dirty||submitted) && formDeliveryStatement.ddlLocation.$error.required">*</span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-6 control-label">Today's Tentative Sale (Tk):</label>
+                <div class="col-md-6">
+                    <input type="number" style="width:180px;"
+                           id="txtMarketing" class="form-control"
+                           name="txtMarketing" ng-model="AMOUNT" />
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+<style type="text/css">
+    .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+        border-top-color: #333333 !important;
+        margin-top: 0;
+        margin-left: 125px !important;
+        vertical-align: middle;
+    }
+</style>

@@ -1,0 +1,144 @@
+﻿<form novalidate name="frmDistributorTarget" id="frmDistributorTarget" class="form-horizontal row-border">
+    <input type="hidden" id="DistributorTargetID" readonly="readonly" ng-model="DistributorTargetID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Type</label>
+                <div class="col-md-6">
+                    <select id="ddlSalesType" class="select2-select-00"
+                            ng-model="ngSalesType"
+                            name="ddlSalesType"
+                            data-placeholder="--Select Sales Type--"
+                            style="width: 100%" ng-options="st.value as st.text for st in listSalesType" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.ddlSalesType.$error.required">*</span>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Start Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Division</label>
+                <div class="col-md-6">
+                    <select id="ddlDivision" class="select2-select-00"
+                            ng-model="ngModelDivision"
+                            name="ddlDivision"
+                            data-placeholder="--Select Division--" ng-click="loadRegionRecords()"
+                            style="width: 100%" ng-options="div.DIVISION_ID as div.DIVISION_NAME for div in listDivision" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.ddlDivision.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Zone</label>
+                <div class="col-md-6">
+                    <select id="ddlZone" class="select2-select-00"
+                            ng-model="ngModelZone"
+                            name="ddlZone"
+                            data-placeholder="--Select Zone--" ng-click="loadDistributorRecords()"
+                            style="width: 100%" ng-options="zon.ZONE_ID as zon.ZONE_NAME for zon in listZone" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.ddlZone.$error.required">*</span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand</label>
+                <div class="col-md-2">
+                    <div class="loadmore_ddl">
+                        <div ng-show="loaderMoreForSampleNo" ng-class="result">
+                            <img src="~/Content/img/ng-loader.gif" />
+                            {{lblMessageForSampleNo}}
+                        </div>
+                    </div>
+                </div>
+                <span class="label label-success label-mini">
+                    <a href="javascript:void(0);" ng-click="loadSampleNoModalRecords(0)" class="bs-tooltip" title="Show Brand Info">
+                        <i class="icon-search"></i>
+                    </a>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Remarks</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtRemarks"
+                           class="form-control"
+                           name="txtRemarks" ng-model="Remarks" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Distributor Target No</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="DistributorTargetNO"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="DistributorTargetNO" ng-model="DistributorTargetNo" placeholder="New" ng-readonly="true" /> @*//     validation problem*@
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> End Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtEndDate"
+                               class="form-control datepicker"
+                               name="dtEndDate" ng-model="EndDate" required />
+                    </div>
+                    <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.dtEndDate.$error.required">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Region</label>
+                    <div class="col-md-6">
+                        <select id="ddlRegion" class="select2-select-00"
+                                ng-model="ngModelRegion"
+                                name="ddlRegion"
+                                data-placeholder="--Select Region--" ng-click="loadZoneRecords()"
+                                style="width: 100%" ng-options="reg.REGION_ID as reg.REGION_NAME for reg in listRegion" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.ddlRegion.$error.required">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Distributor</label>
+                    <div class="col-md-6">
+                        <select id="ddlDistributor" class="select2-select-00"
+                                ng-model="ngModelDistributor"
+                                name="ddlDistributor"
+                                data-placeholder="--Select Distributor--"
+                                style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(frmDistributorTarget.$dirty||submitted) && frmDistributorTarget.ddlDistributor.$error.required">*</span>
+                </div>
+                
+            </div>
+        </div>
+
+    </form>

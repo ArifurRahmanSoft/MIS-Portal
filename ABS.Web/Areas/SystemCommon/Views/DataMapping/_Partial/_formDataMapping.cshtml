@@ -1,0 +1,600 @@
+﻿<form novalidate name="frmDataMapping" id="frmDataMapping" class="form-horizontal row-border">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-1 control-label" for="input17">Mapping Type</label>
+                <div class="col-md-11">
+                    <select id="TRAN_TYPE_ID_0" class="select2-select-00"
+                            ng-model="TRAN_TYPE_ID"
+                            name="TRAN_TYPE_ID"
+                            ng-change="MappingTypeChange();"
+                            data-placeholder="--Select Mapping Type--"
+                            style="width: 100%" ng-options="rl.TRAN_TYPE_ID as rl.TRAN_TYPE_NAME for rl in mappingTypeList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.TRAN_TYPE_ID.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='1'">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Sales Type</label>
+                <div class="col-md-8">
+                    <select id="SSTYP_OID_1" class="select2-select-00"
+                            ng-model="SSTYP_OID"
+                            name="SSTYP_OID"
+                            data-placeholder="--Select Sales Type--"
+                            style="width: 100%" ng-options="sst.SSTYP_ID as sst.SSTYP_NAME for sst in ssTypList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SSTYP_OID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Company</label>
+                <div class="col-md-8">
+                    <select id="COMPANY_OID_1" class="select2-select-00"
+                            ng-model="COMPANY_OID"
+                            name="COMPANY_OID"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="comp.SCOMP_OID as comp.SCOMP_NAME for comp in companyList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.COMPANY_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='2'">
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Sales Group</label>
+                <div class="col-md-8">
+                    <select id="SDVNT_OID_2" class="select2-select-00"
+                            ng-model="SDVNT_OID"
+                            name="SDVNT_OID"
+                            data-placeholder="--Select Sales Group--"
+                            style="width: 100%" ng-options="sdv.SDVNT_OID as sdv.SDVNT_NAME for sdv in sdvntList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SDVNT_OID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Product Group</label>
+                <div class="col-md-8">
+                    <select id="SPROG_OID_2" class="select2-select-00"
+                            ng-model="SPROG_OID"
+                            name="SPROG_OID"
+                            data-placeholder="--Select Product Group--"
+                            style="width: 100%" ng-options="prdg.SPROG_OID as prdg.SPROG_NAME for prdg in prdGroupList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SPROG_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='3'">
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Staff</label>
+                <div class="col-md-8">
+                    <select id="USER_OID_3" class="select2-select-00"
+                            ng-model="USER_OID"
+                            name="USER_OID"
+                            data-placeholder="--Select Staff--"
+                            style="width: 100%" ng-options="usr.USERID as usr.USERFULLNAME for usr in staffList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Brand Group</label>
+                <div class="col-md-8">
+                    <select id="GROUP_OID_3" class="select2-select-00"
+                            ng-model="GROUP_OID"
+                            name="GROUP_OID"
+                            data-placeholder="--Select Brand Group--"
+                            style="width: 100%" ng-options="bgrp.GROUP_OID as bgrp.GROUP_NAME for bgrp in brndGroupList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.GROUP_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Brand</label>
+                <div class="col-md-8">
+                    <select id="BRAND_OID_3" class="select2-select-00"
+                            ng-model="BRAND_OID"
+                            name="BRAND_OID"
+                            data-placeholder="--Select Brand--"
+                            style="width: 100%" ng-options="brnd.BRANDID as brnd.SBRND_NAME for brnd in brandList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.BRAND_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='4'">
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Staff</label>
+                <div class="col-md-8">
+                    <select id="USER_OID_4" class="select2-select-00"
+                            ng-model="USER_OID"
+                            name="USER_OID"
+                            data-placeholder="--Select Staff--"
+                            style="width: 100%" ng-options="usr.USERID as usr.USERFULLNAME for usr in staffList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Brand Group</label>
+                <div class="col-md-8">
+                    <select id="GROUP_OID_4" class="select2-select-00"
+                            ng-model="GROUP_OID"
+                            name="GROUP_OID"
+                            data-placeholder="--Select Brand Group--"
+                            style="width: 100%" ng-options="bgrp.GROUP_OID as bgrp.GROUP_NAME for bgrp in brndGroupList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.GROUP_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Brand</label>
+                <div class="col-md-10">
+                    <select id="BRAND_OID_4" class="select2-select-00"
+                            ng-model="BRAND_OID"
+                            name="BRAND_OID" ng-change="loadSKURecords()"
+                            data-placeholder="--Select Brand--"
+                            style="width: 100%" ng-options="brnd.BRANDID as brnd.SBRND_NAME for brnd in brandList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.BRAND_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">SKU</label>
+                <div class="col-md-10">
+                    <select id="SKU_OID_4" class="select2-select-00"
+                            ng-model="SKU_OID"
+                            name="SKU_OID"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="sku.PROD_OID as sku.PROD_NAME for sku in listSKU">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SKU_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='5'">
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Staff</label>
+                <div class="col-md-8">
+                    <select id="USER_OID_5" class="select2-select-00"
+                            ng-model="USER_OID"
+                            name="USER_OID"
+                            data-placeholder="--Select Staff--"
+                            style="width: 100%" ng-options="usr.USERID as usr.USERFULLNAME for usr in staffList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Role</label>
+                <div class="col-md-8">
+                    <select id="ROLE_OID_5" class="select2-select-00"
+                            ng-model="ROLE_OID"
+                            name="ROLE_OID"
+                            data-placeholder="--Select Role--"
+                            style="width: 100%" ng-options="rl.ROLE_OID as rl.ROLE_NAME for rl in roleList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ROLE_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">National</label>
+                <div class="col-md-8">
+                    <select id="NTNAL_OID_5" class="select2-select-00"
+                            ng-model="NTNAL_OID"
+                            name="NTNAL_OID"
+                            data-placeholder="--Select National--"
+                            style="width: 100%" ng-options="ntnl.NTNAL_OID as ntnl.NTNAL_NAME for ntnl in listNational">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.NTNAL_OID.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <div class="checkbox-column col-md-8">
+                    <input id="ntnalEn_5" type="checkbox" ng-model="IS_ENABLE">&nbsp;<label class="control-label" for="ntnalEn">Is Enable</label>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ntnalEn_5.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='6'">
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Staff ID</label>
+                <div class="col-md-8">
+                    <input id="USER_OID_6" ng-model="USER_OID" ng-disabled="IS_UPDATE"
+                           name="USER_OID"
+                           placeholder="Input Text as USER ID"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID_6.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Full Name</label>
+                <div class="col-md-8">
+                    <input id="USER_FULLNAME" ng-model="USER_FULLNAME"
+                           name="USER_FULLNAME"
+                           placeholder="Input Text as Full Name"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_FULLNAME.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">PASSWORD</label>
+                <div class="col-md-8">
+                    <input id="USER_PASS" ng-model="USER_PASS"
+                           name="USER_PASS"
+                           placeholder="Input Text as Password"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_PASS.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <div class="checkbox-column col-md-8">
+                    <input id="ntnalEn_6" type="checkbox" ng-model="IS_ENABLE">&nbsp;<label class="control-label" for="ntnalEn">Is Active</label>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ntnalEn_6.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='7'">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Staff</label>
+                <div class="col-md-8">
+                    <select id="USER_OID_7" class="select2-select-00"
+                            ng-model="USER_OID"
+                            name="USER_OID_7"
+                            data-placeholder="--Select Staff--"
+                            style="width: 100%" ng-options="usr.USERID as usr.USERFULLNAME for usr in staffList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID_6.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Module</label>
+                <div class="col-md-8">
+                    <select id="MODULEID_7" class="select2-select-00"
+                            ng-model="CMN_OID"
+                            name="MODULEID_7" data-placeholder="--Select Module--"
+                            style="width: 100%" ng-options="mdl.MODULEID as mdl.MODULENAME for mdl in ListModule">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID_6.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-1">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='8'">
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Staff</label>
+                <div class="col-md-8">
+                    <select id="USER_OID_8" class="select2-select-00"
+                            ng-model="USER_OID"
+                            name="USER_OID_8"
+                            data-placeholder="--Select Staff--"
+                            style="width: 100%" ng-options="usr.USERID as usr.USERFULLNAME for usr in staffList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID_8.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Sales Group</label>
+                <div class="col-md-8">
+                    <select id="SDVNT_OID_8" class="select2-select-00"
+                            ng-model="SDVNT_OID"
+                            name="SDVNT_OID_8"
+                            data-placeholder="--Select Sales Group--"
+                            style="width: 100%" ng-options="sdv.SDVNT_OID as sdv.SDVNT_NAME for sdv in sdvntList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SDVNT_OID_8.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <div class="checkbox-column col-md-8">
+                    <input id="ntnalEn_8" type="checkbox" ng-model="IS_ENABLE">&nbsp;<label class="control-label" for="ntnalEn">Is Active</label>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ntnalEn_6.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='9'">
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Staff ID</label>
+                <div class="col-md-8">
+                    <input id="USER_OID_9" ng-model="USER_OID" ng-disabled="IS_UPDATE"
+                           name="USER_OID_9"
+                           placeholder="Input Text as USER ID"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_OID_9.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Full Name</label>
+                <div class="col-md-8">
+                    <input id="USER_FULLNAME_9" ng-model="USER_FULLNAME"
+                           name="USER_FULLNAME_9"
+                           placeholder="Input Text as Full Name"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_FULLNAME_9.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">PASSWORD</label>
+                <div class="col-md-8">
+                    <input id="USER_PASS_9" ng-model="USER_PASS"
+                           name="USER_PASS_9"
+                           placeholder="Input Text as Password"
+                           style="width: 100%">
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.USER_PASS_9.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <div class="checkbox-column col-md-8">
+                    <input id="ntnalEn_9" type="checkbox" ng-model="IS_ENABLE">&nbsp;<label class="control-label" for="ntnalEn">Is Active</label>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ntnalEn_9.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="mode1" ng-show="TRAN_TYPE_ID=='10'">
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Sales Group</label>
+                <div class="col-md-8">
+                    <select id="SDVNT_OID_10" class="select2-select-00"
+                            ng-model="SDVNT_OID"
+                            name="SDVNT_OID_10" ng-change="loadFilteredProduct()"
+                            data-placeholder="--Select Sales Group--"
+                            style="width: 100%" ng-options="sdv.SDVNT_OID as sdv.SDVNT_NAME for sdv in sdvntList">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SDVNT_OID_10.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">SKU</label>
+                <div class="col-md-10">
+                    <select id="SKU_OID_10" class="select2-select-00"
+                            ng-model="SKU_OID"
+                            name="SKU_OID_10"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="sku.PROD_OID as sku.PROD_NAME for sku in listSKU">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.SKU_OID_10.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="form-group">
+                <div class="checkbox-column col-md-8">
+                    <input id="ntnalEn_10" type="checkbox" ng-model="IS_ENABLE">&nbsp;<label class="control-label" for="ntnalEn">Is Active</label>
+                </div>
+                <span class="error" ng-show="(frmDataMapping.$dirty||submitted) && frmDataMapping.ntnalEn_9.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group pull-right">
+                <span id="load" class="btn btn-info margin-right-btn" ng-click="loadList()">
+                    <i class="icon-refresh"></i> Load List
+                </span>
+            </div>
+        </div>
+    </div>
+</form>

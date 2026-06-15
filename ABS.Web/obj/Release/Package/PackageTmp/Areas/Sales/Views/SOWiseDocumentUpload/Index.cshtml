@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "SO-Wise Distributor Target Upload";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="SOWiseDistTargetDocumentUploadCtrl">
+
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    @Html.Partial("~/Areas/SystemCommon/Views/CommonButton/_cmnButton.cshtml")
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/Sales/Views/SOWiseDocumentUpload/_Partial/_formSOWiseDocumentUpload.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <img ng-show="IsLoadingIcon" src="~/Content/img/pleasewait.gif" />
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+            <div class="row" ng-hide="IsHiddenDetail">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{UploadedFileData}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/SOWiseDocumentUpload/_Partial/_tableSOWiseDocumentUploadData.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="frmList">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{DocumentMasterList}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/SOWiseDocumentUpload/_Partial/_tableSOWiseDocumentUploadMasterInfo.cshtml")
+                        </div>
+                    </div>
+                </div> <!-- /.col-md-12 -->
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Modal dialog -->
+            <div class="modal fade" id="FileModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><i class="icon-folder-open"></i>Uploaded File</h4>
+                        </div>
+                        <div class="modal-body no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/SOWiseDocumentUpload/_Partial/_tableFilesInfo.cshtml")
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div> <!-- /.row -->
+
+    </div>
+</div>
+    <!-- /.container -->
+    @section AngularScript{
+        <script src="~/Areas/Sales/ScriptsNg/Controllers/SOWiseDistTargetDocumentUploadOldCtrl.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Service/CrudService.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Directives/Conversion.js"></script>
+        <script src="~/Scripts/CustomToastrMessage.js"></script>
+        <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+        <script src="~/Areas/Token/TokenController.js"></script>
+    }

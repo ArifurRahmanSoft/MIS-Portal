@@ -1,0 +1,30 @@
+﻿<form novalidate name="formEmployeeProductConsumption" id="formEmployeeProductConsumption" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formPartyLedger.$dirty||submitted) && formPartyLedger.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formPartyLedger.$dirty||submitted) && formPartyLedger.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+</form>

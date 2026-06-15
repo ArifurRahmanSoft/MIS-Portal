@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DO_CHAL_CHEC_IN_HAN_BALXSD" targetNamespace="http://tempuri.org/DO_CHAL_CHEC_IN_HAN_BALXSD.xsd" xmlns:mstns="http://tempuri.org/DO_CHAL_CHEC_IN_HAN_BALXSD.xsd" xmlns="http://tempuri.org/DO_CHAL_CHEC_IN_HAN_BALXSD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DO_CHAL_CHEC_IN_HAN_BALXSD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DO_CHAL_CHEC_IN_HAN_BALXSD" msprop:Generator_UserDSName="DO_CHAL_CHEC_IN_HAN_BALXSD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTDO_CHAL_CHEC_IN_HAN_BAL" msprop:Generator_TableClassName="DTDO_CHAL_CHEC_IN_HAN_BALDataTable" msprop:Generator_TableVarName="tableDTDO_CHAL_CHEC_IN_HAN_BAL" msprop:Generator_TablePropName="DTDO_CHAL_CHEC_IN_HAN_BAL" msprop:Generator_RowDeletingName="DTDO_CHAL_CHEC_IN_HAN_BALRowDeleting" msprop:Generator_RowChangingName="DTDO_CHAL_CHEC_IN_HAN_BALRowChanging" msprop:Generator_RowEvHandlerName="DTDO_CHAL_CHEC_IN_HAN_BALRowChangeEventHandler" msprop:Generator_RowDeletedName="DTDO_CHAL_CHEC_IN_HAN_BALRowDeleted" msprop:Generator_UserTableName="DTDO_CHAL_CHEC_IN_HAN_BAL" msprop:Generator_RowChangedName="DTDO_CHAL_CHEC_IN_HAN_BALRowChanged" msprop:Generator_RowEvArgName="DTDO_CHAL_CHEC_IN_HAN_BALRowChangeEvent" msprop:Generator_RowClassName="DTDO_CHAL_CHEC_IN_HAN_BALRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cust" msprop:Generator_ColumnVarNameInTable="columncust" msprop:Generator_ColumnPropNameInRow="cust" msprop:Generator_ColumnPropNameInTable="custColumn" msprop:Generator_UserColumnName="cust" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_name" msprop:Generator_ColumnVarNameInTable="columnscust_info_name" msprop:Generator_ColumnPropNameInRow="scust_info_name" msprop:Generator_ColumnPropNameInTable="scust_info_nameColumn" msprop:Generator_UserColumnName="scust_info_name" type="xs:string" minOccurs="0" />
+              <xs:element name="opamnt" msprop:Generator_ColumnVarNameInTable="columnopamnt" msprop:Generator_ColumnPropNameInRow="opamnt" msprop:Generator_ColumnPropNameInTable="opamntColumn" msprop:Generator_UserColumnName="opamnt" type="xs:string" minOccurs="0" />
+              <xs:element name="doamnt" msprop:Generator_ColumnVarNameInTable="columndoamnt" msprop:Generator_ColumnPropNameInRow="doamnt" msprop:Generator_ColumnPropNameInTable="doamntColumn" msprop:Generator_UserColumnName="doamnt" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_add1" msprop:Generator_ColumnVarNameInTable="columnscust_info_add1" msprop:Generator_ColumnPropNameInRow="scust_info_add1" msprop:Generator_ColumnPropNameInTable="scust_info_add1Column" msprop:Generator_UserColumnName="scust_info_add1" type="xs:string" minOccurs="0" />
+              <xs:element name="rtnamt" msprop:Generator_ColumnVarNameInTable="columnrtnamt" msprop:Generator_ColumnPropNameInRow="rtnamt" msprop:Generator_ColumnPropNameInTable="rtnamtColumn" msprop:Generator_UserColumnName="rtnamt" type="xs:string" minOccurs="0" />
+              <xs:element name="chamt" msprop:Generator_ColumnVarNameInTable="columnchamt" msprop:Generator_ColumnPropNameInRow="chamt" msprop:Generator_ColumnPropNameInTable="chamtColumn" msprop:Generator_UserColumnName="chamt" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_text" msprop:Generator_ColumnVarNameInTable="columnscust_info_text" msprop:Generator_ColumnPropNameInRow="scust_info_text" msprop:Generator_ColumnPropNameInTable="scust_info_textColumn" msprop:Generator_UserColumnName="scust_info_text" type="xs:string" minOccurs="0" />
+              <xs:element name="DUEAMNT" msprop:Generator_ColumnVarNameInTable="columnDUEAMNT" msprop:Generator_ColumnPropNameInRow="DUEAMNT" msprop:Generator_ColumnPropNameInTable="DUEAMNTColumn" msprop:Generator_UserColumnName="DUEAMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="clsamnt" msprop:Generator_ColumnVarNameInTable="columnclsamnt" msprop:Generator_ColumnPropNameInRow="clsamnt" msprop:Generator_ColumnPropNameInTable="clsamntColumn" msprop:Generator_UserColumnName="clsamnt" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

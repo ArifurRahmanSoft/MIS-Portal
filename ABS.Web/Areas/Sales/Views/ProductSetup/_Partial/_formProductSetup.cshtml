@@ -1,0 +1,43 @@
+﻿<form novalidate name="frmProductSetup" id="frmProductSetup" class="form-horizontal row-border">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Product Name</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="productName"
+                           class="form-control"
+                           ng-init="productName=''"
+                           name="productName" ng-model="productName" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">            
+
+            <div class="form-group">
+                <div ng-show="false">
+                    <label class="col-md-4 control-label">Product Code </label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="productCode"
+                               class="form-control "
+                               name="productCode" ng-model="productCode"
+                               ng-init="productCode=''" />
+                    </div>
+                </div>
+         
+
+                <div   class="text-right" style="margin-right: 25px;">
+                    <span id="save" class="btn btn-success margin-right-btn" ng-href="#menuModal" data-toggle="modal" ng-click="GetProductDetails()" ng-disabled="frmExpenseEntry.$invalid">
+                        <i class="icon-search"></i> Search
+                    </span>
+                    
+                </div>
+            </div>
+
+      
+        </div>
+    </div>
+</form>

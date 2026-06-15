@@ -1,0 +1,248 @@
+﻿<form novalidate name="formDailySalesSummary" id="formDailySalesSummary" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label class="col-md-6 control-label">
+                    <u>Report part:</u>
+                </label>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddModelreportProduct" class="select2-select-00"
+                            ng-model="ngModelreportProduct"
+                            name="ddModelreportProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListProducts" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+
+            @*<div class="form-group">
+            <label class="col-md-4 control-label" for="input17"> - </label>
+            <div class="col-md-6">
+            </div>
+        </div>*@
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtreportFromDate"
+                           class="form-control datepicker"
+                           name="dtreportFromDate" ng-model="ngmReportFromDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtreportToDate"
+                           class="form-control datepicker"
+                           name="dtreportToDate" ng-model="ngmReportToDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label class="col-md-6 control-label">
+                    <u>Opening Stock:</u>
+                </label>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany" ng-click="LoadAllProduct()"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlProduct" class="select2-select-00"
+                            ng-model="ngModelProduct"
+                            name="ddlProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListProducts" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"></label>
+                <div class="col-md-2">
+                    <span id="saveupdate" class="btn btn-success margin-right-btn" ng-click="clearOpeningStock()">
+                        <i class="icon-save" ng-if="UserCommonEntity.SaveIcon"></i>{{"Clear"}}
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span id="saveupdate" class="btn btn-success margin-right-btn" ng-click="saveOpeningStock()">
+                        <i class="icon-save" ng-if="UserCommonEntity.SaveIcon"></i>{{"Save"}}
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span id="Show" class="btn btn-info margin-right-btn" ng-click="ShowHideOpeningStock()">
+                        <i class="icon-search" ng-show="IsListIcon"></i> <i ng-show="IsCreateIcon" class="icon-plus-sign"></i> {{btnShowText}}
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+
+            @*<div class="form-group">
+                <label class="col-md-4 control-label" for="input17"> - </label>
+                <div class="col-md-6">
+                </div>
+            </div>*@
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Stock Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStockDate"
+                           class="form-control datepicker"
+                           name="dtStockDate" ng-model="ngmStockDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">  Opening Quantity </label>
+                <div class="col-md-6">
+                    <input type="number"
+                           id="txtQuantity"
+                           class="form-control"
+                           name="txtQuantity" ng-model="ngmQuantity" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label class="col-md-6 control-label">
+                    <u>LC Received (Raw Material):</u>
+                </label>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlReceivedCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelReceivedCompany"
+                            name="ddlReceivedCompany" ng-click="LoadAllProduct()"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlReceivedProduct" class="select2-select-00"
+                            ng-model="ngModelReceivedProduct"
+                            name="ddlReceivedProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListProducts" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"></label>
+                <div class="col-md-3">
+                    <span id="saveupdate" class="btn btn-success margin-right-btn" ng-click="Receivedclear()">
+                        <i class="icon-save" ng-if="UserCommonEntity.SaveIcon"></i>{{"Clear"}}
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <span id="saveupdate" class="btn btn-success margin-right-btn" ng-click="Receivedsave()">
+                        <i class="icon-save" ng-if="UserCommonEntity.SaveIcon"></i>{{"Save"}}
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+
+            @*<div class="form-group">
+                    <label class="col-md-4 control-label" for="input17"> - </label>
+                    <div class="col-md-6">
+                    </div>
+                </div>*@
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Received Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtReceivedDate"
+                           class="form-control datepicker"
+                           name="dtReceivedDate" ng-model="ngmReceivedDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">  Received Quantity </label>
+                <div class="col-md-6">
+                    <input type="number"
+                           id="txtReceivedQuantity"
+                           class="form-control"
+                           name="txtReceivedQuantity" ng-model="ngmReceivedQuantity" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</form>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NationalModernTradeSalesXSD" targetNamespace="http://tempuri.org/NationalModernTradeSalesXSD.xsd" xmlns:mstns="http://tempuri.org/NationalModernTradeSalesXSD.xsd" xmlns="http://tempuri.org/NationalModernTradeSalesXSD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NationalModernTradeSalesXSD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="NationalModernTradeSalesXSD" msprop:Generator_UserDSName="NationalModernTradeSalesXSD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTNationalModernTradeSales" msprop:Generator_TableClassName="DTNationalModernTradeSalesDataTable" msprop:Generator_TableVarName="tableDTNationalModernTradeSales" msprop:Generator_RowChangedName="DTNationalModernTradeSalesRowChanged" msprop:Generator_TablePropName="DTNationalModernTradeSales" msprop:Generator_RowDeletingName="DTNationalModernTradeSalesRowDeleting" msprop:Generator_RowChangingName="DTNationalModernTradeSalesRowChanging" msprop:Generator_RowEvHandlerName="DTNationalModernTradeSalesRowChangeEventHandler" msprop:Generator_RowDeletedName="DTNationalModernTradeSalesRowDeleted" msprop:Generator_RowClassName="DTNationalModernTradeSalesRow" msprop:Generator_UserTableName="DTNationalModernTradeSales" msprop:Generator_RowEvArgName="DTNationalModernTradeSalesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sdvsn_text" msprop:Generator_ColumnVarNameInTable="columnsdvsn_text" msprop:Generator_ColumnPropNameInRow="sdvsn_text" msprop:Generator_ColumnPropNameInTable="sdvsn_textColumn" msprop:Generator_UserColumnName="sdvsn_text" type="xs:string" minOccurs="0" />
+              <xs:element name="sdvsn_name" msprop:Generator_ColumnVarNameInTable="columnsdvsn_name" msprop:Generator_ColumnPropNameInRow="sdvsn_name" msprop:Generator_ColumnPropNameInTable="sdvsn_nameColumn" msprop:Generator_UserColumnName="sdvsn_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sregn_text" msprop:Generator_ColumnVarNameInTable="columnsregn_text" msprop:Generator_ColumnPropNameInRow="sregn_text" msprop:Generator_ColumnPropNameInTable="sregn_textColumn" msprop:Generator_UserColumnName="sregn_text" type="xs:string" minOccurs="0" />
+              <xs:element name="sregn_name" msprop:Generator_ColumnVarNameInTable="columnsregn_name" msprop:Generator_ColumnPropNameInRow="sregn_name" msprop:Generator_ColumnPropNameInTable="sregn_nameColumn" msprop:Generator_UserColumnName="sregn_name" type="xs:string" minOccurs="0" />
+              <xs:element name="szone_text" msprop:Generator_ColumnVarNameInTable="columnszone_text" msprop:Generator_ColumnPropNameInRow="szone_text" msprop:Generator_ColumnPropNameInTable="szone_textColumn" msprop:Generator_UserColumnName="szone_text" type="xs:string" minOccurs="0" />
+              <xs:element name="szone_name" msprop:Generator_ColumnVarNameInTable="columnszone_name" msprop:Generator_ColumnPropNameInRow="szone_name" msprop:Generator_ColumnPropNameInTable="szone_nameColumn" msprop:Generator_UserColumnName="szone_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sprsn_name" msprop:Generator_ColumnVarNameInTable="columnsprsn_name" msprop:Generator_ColumnPropNameInRow="sprsn_name" msprop:Generator_ColumnPropNameInTable="sprsn_nameColumn" msprop:Generator_UserColumnName="sprsn_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_text" msprop:Generator_ColumnVarNameInTable="columnscust_info_text" msprop:Generator_ColumnPropNameInRow="scust_info_text" msprop:Generator_ColumnPropNameInTable="scust_info_textColumn" msprop:Generator_UserColumnName="scust_info_text" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_name" msprop:Generator_ColumnVarNameInTable="columnscust_info_name" msprop:Generator_ColumnPropNameInRow="scust_info_name" msprop:Generator_ColumnPropNameInTable="scust_info_nameColumn" msprop:Generator_UserColumnName="scust_info_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_add1" msprop:Generator_ColumnVarNameInTable="columnscust_info_add1" msprop:Generator_ColumnPropNameInRow="scust_info_add1" msprop:Generator_ColumnPropNameInTable="scust_info_add1Column" msprop:Generator_UserColumnName="scust_info_add1" type="xs:string" minOccurs="0" />
+              <xs:element name="div_mgr" msprop:Generator_ColumnVarNameInTable="columndiv_mgr" msprop:Generator_ColumnPropNameInRow="div_mgr" msprop:Generator_ColumnPropNameInTable="div_mgrColumn" msprop:Generator_UserColumnName="div_mgr" type="xs:string" minOccurs="0" />
+              <xs:element name="reg_mgr" msprop:Generator_ColumnVarNameInTable="columnreg_mgr" msprop:Generator_ColumnPropNameInRow="reg_mgr" msprop:Generator_ColumnPropNameInTable="reg_mgrColumn" msprop:Generator_UserColumnName="reg_mgr" type="xs:string" minOccurs="0" />
+              <xs:element name="zone_mgr" msprop:Generator_ColumnVarNameInTable="columnzone_mgr" msprop:Generator_ColumnPropNameInRow="zone_mgr" msprop:Generator_ColumnPropNameInTable="zone_mgrColumn" msprop:Generator_UserColumnName="zone_mgr" type="xs:string" minOccurs="0" />
+              <xs:element name="brnd" msprop:Generator_ColumnVarNameInTable="columnbrnd" msprop:Generator_ColumnPropNameInRow="brnd" msprop:Generator_ColumnPropNameInTable="brndColumn" msprop:Generator_UserColumnName="brnd" type="xs:string" minOccurs="0" />
+              <xs:element name="qnty" msprop:Generator_ColumnVarNameInTable="columnqnty" msprop:Generator_ColumnPropNameInRow="qnty" msprop:Generator_ColumnPropNameInTable="qntyColumn" msprop:Generator_UserColumnName="qnty" type="xs:string" minOccurs="0" />
+              <xs:element name="qton" msprop:Generator_ColumnVarNameInTable="columnqton" msprop:Generator_ColumnPropNameInRow="qton" msprop:Generator_ColumnPropNameInTable="qtonColumn" msprop:Generator_UserColumnName="qton" type="xs:string" minOccurs="0" />
+              <xs:element name="pfdate" msprop:Generator_ColumnVarNameInTable="columnpfdate" msprop:Generator_ColumnPropNameInRow="pfdate" msprop:Generator_ColumnPropNameInTable="pfdateColumn" msprop:Generator_UserColumnName="pfdate" type="xs:string" minOccurs="0" />
+              <xs:element name="ptdate" msprop:Generator_ColumnVarNameInTable="columnptdate" msprop:Generator_ColumnPropNameInRow="ptdate" msprop:Generator_ColumnPropNameInTable="ptdateColumn" msprop:Generator_UserColumnName="ptdate" type="xs:string" minOccurs="0" />
+              <xs:element name="user" msprop:Generator_ColumnVarNameInTable="columnuser" msprop:Generator_ColumnPropNameInRow="user" msprop:Generator_ColumnPropNameInTable="userColumn" msprop:Generator_UserColumnName="user" type="xs:string" minOccurs="0" />
+              <xs:element name="ntnal_text" msprop:Generator_ColumnVarNameInTable="columnntnal_text" msprop:Generator_ColumnPropNameInRow="ntnal_text" msprop:Generator_ColumnPropNameInTable="ntnal_textColumn" msprop:Generator_UserColumnName="ntnal_text" type="xs:string" minOccurs="0" />
+              <xs:element name="ntnal_name" msprop:Generator_ColumnVarNameInTable="columnntnal_name" msprop:Generator_ColumnPropNameInRow="ntnal_name" msprop:Generator_ColumnPropNameInTable="ntnal_nameColumn" msprop:Generator_UserColumnName="ntnal_name" type="xs:string" minOccurs="0" />
+              <xs:element name="national_mgr" msprop:Generator_ColumnVarNameInTable="columnnational_mgr" msprop:Generator_ColumnPropNameInRow="national_mgr" msprop:Generator_ColumnPropNameInTable="national_mgrColumn" msprop:Generator_UserColumnName="national_mgr" type="xs:string" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

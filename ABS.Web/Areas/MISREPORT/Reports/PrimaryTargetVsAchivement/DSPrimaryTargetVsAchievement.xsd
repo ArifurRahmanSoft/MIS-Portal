@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSPrimaryTargetVsAchievement" targetNamespace="http://tempuri.org/DSPrimaryTargetVsAchievement.xsd" xmlns:mstns="http://tempuri.org/DSPrimaryTargetVsAchievement.xsd" xmlns="http://tempuri.org/DSPrimaryTargetVsAchievement.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPrimaryTargetVsAchievement" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSPrimaryTargetVsAchievement" msprop:Generator_UserDSName="DSPrimaryTargetVsAchievement">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Report_Dist_Primary_Target_Sales" msprop:Generator_TableClassName="DT_Report_Dist_Primary_Target_SalesDataTable" msprop:Generator_TableVarName="tableDT_Report_Dist_Primary_Target_Sales" msprop:Generator_TablePropName="DT_Report_Dist_Primary_Target_Sales" msprop:Generator_RowDeletingName="DT_Report_Dist_Primary_Target_SalesRowDeleting" msprop:Generator_RowChangingName="DT_Report_Dist_Primary_Target_SalesRowChanging" msprop:Generator_RowEvHandlerName="DT_Report_Dist_Primary_Target_SalesRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_Report_Dist_Primary_Target_SalesRowDeleted" msprop:Generator_UserTableName="DT_Report_Dist_Primary_Target_Sales" msprop:Generator_RowChangedName="DT_Report_Dist_Primary_Target_SalesRowChanged" msprop:Generator_RowEvArgName="DT_Report_Dist_Primary_Target_SalesRowChangeEvent" msprop:Generator_RowClassName="DT_Report_Dist_Primary_Target_SalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRAND_OID" msprop:Generator_ColumnVarNameInTable="columnBRAND_OID" msprop:Generator_ColumnPropNameInRow="BRAND_OID" msprop:Generator_ColumnPropNameInTable="BRAND_OIDColumn" msprop:Generator_UserColumnName="BRAND_OID" type="xs:string" minOccurs="0" />
+              <xs:element name="BRAND_SNAME" msprop:Generator_ColumnVarNameInTable="columnBRAND_SNAME" msprop:Generator_ColumnPropNameInRow="BRAND_SNAME" msprop:Generator_ColumnPropNameInTable="BRAND_SNAMEColumn" msprop:Generator_UserColumnName="BRAND_SNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BRAND_NAME" msprop:Generator_ColumnVarNameInTable="columnBRAND_NAME" msprop:Generator_ColumnPropNameInRow="BRAND_NAME" msprop:Generator_ColumnPropNameInTable="BRAND_NAMEColumn" msprop:Generator_UserColumnName="BRAND_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TARGET_QTY_MT" msprop:Generator_ColumnVarNameInTable="columnTARGET_QTY_MT" msprop:Generator_ColumnPropNameInRow="TARGET_QTY_MT" msprop:Generator_ColumnPropNameInTable="TARGET_QTY_MTColumn" msprop:Generator_UserColumnName="TARGET_QTY_MT" type="xs:string" minOccurs="0" />
+              <xs:element name="TARGET_QTY_CTN" msprop:Generator_ColumnVarNameInTable="columnTARGET_QTY_CTN" msprop:Generator_ColumnPropNameInRow="TARGET_QTY_CTN" msprop:Generator_ColumnPropNameInTable="TARGET_QTY_CTNColumn" msprop:Generator_UserColumnName="TARGET_QTY_CTN" type="xs:string" minOccurs="0" />
+              <xs:element name="SALES_QTY_MT" msprop:Generator_ColumnVarNameInTable="columnSALES_QTY_MT" msprop:Generator_ColumnPropNameInRow="SALES_QTY_MT" msprop:Generator_ColumnPropNameInTable="SALES_QTY_MTColumn" msprop:Generator_UserColumnName="SALES_QTY_MT" type="xs:string" minOccurs="0" />
+              <xs:element name="SALES_QTY_CTN" msprop:Generator_ColumnVarNameInTable="columnSALES_QTY_CTN" msprop:Generator_ColumnPropNameInRow="SALES_QTY_CTN" msprop:Generator_ColumnPropNameInTable="SALES_QTY_CTNColumn" msprop:Generator_UserColumnName="SALES_QTY_CTN" type="xs:string" minOccurs="0" />
+              <xs:element name="SALES_AMNT" msprop:Generator_ColumnVarNameInTable="columnSALES_AMNT" msprop:Generator_ColumnPropNameInRow="SALES_AMNT" msprop:Generator_ColumnPropNameInTable="SALES_AMNTColumn" msprop:Generator_UserColumnName="SALES_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TARGET_ACHV" msprop:Generator_ColumnVarNameInTable="columnTARGET_ACHV" msprop:Generator_ColumnPropNameInRow="TARGET_ACHV" msprop:Generator_ColumnPropNameInTable="TARGET_ACHVColumn" msprop:Generator_UserColumnName="TARGET_ACHV" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_ID" msprop:Generator_ColumnVarNameInTable="columnDIST_ID" msprop:Generator_ColumnPropNameInRow="DIST_ID" msprop:Generator_ColumnPropNameInTable="DIST_IDColumn" msprop:Generator_UserColumnName="DIST_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_NAME" msprop:Generator_ColumnVarNameInTable="columnDIST_NAME" msprop:Generator_ColumnPropNameInRow="DIST_NAME" msprop:Generator_ColumnPropNameInTable="DIST_NAMEColumn" msprop:Generator_UserColumnName="DIST_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQUENCE_ON_REPORT" msprop:Generator_ColumnVarNameInTable="columnSEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInRow="SEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInTable="SEQUENCE_ON_REPORTColumn" msprop:Generator_UserColumnName="SEQUENCE_ON_REPORT" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnDIST_ADDRESS" msprop:Generator_ColumnPropNameInRow="DIST_ADDRESS" msprop:Generator_ColumnPropNameInTable="DIST_ADDRESSColumn" msprop:Generator_UserColumnName="DIST_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="DIFF_QTY_MT" msprop:Generator_ColumnVarNameInTable="columnDIFF_QTY_MT" msprop:Generator_ColumnPropNameInRow="DIFF_QTY_MT" msprop:Generator_ColumnPropNameInTable="DIFF_QTY_MTColumn" msprop:Generator_UserColumnName="DIFF_QTY_MT" type="xs:string" minOccurs="0" />
+              <xs:element name="DIFF_QTY_CTN" msprop:Generator_ColumnVarNameInTable="columnDIFF_QTY_CTN" msprop:Generator_ColumnPropNameInRow="DIFF_QTY_CTN" msprop:Generator_ColumnPropNameInTable="DIFF_QTY_CTNColumn" msprop:Generator_UserColumnName="DIFF_QTY_CTN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

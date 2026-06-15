@@ -1,0 +1,9 @@
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\CTGroup.Reports.Sales.rptSalNationalTargetSheet.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\CTGroup.Reports.csproj.GenerateResource.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\CTGroup.Reports.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\CTGroup.Reports.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.pdb

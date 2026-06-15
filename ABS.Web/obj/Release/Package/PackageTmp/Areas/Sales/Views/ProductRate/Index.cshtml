@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Product Rate Setup";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="ProductRateCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">     
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                            <div class="toolbar no-padding">
+                                <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                    <i class="icon-refresh"></i> Reset
+                                </span>
+
+                                @*<span id="Show" class="btn btn-info margin-right-btn" ng-click="ShowHide()">
+                                    <i class="icon-search" ng-show="IsListIcon"></i> <i ng-show="IsCreateIcon" class="icon-plus-sign"></i> {{btnShowText}}
+                                </span>*@
+
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="Save()" ng-disabled="frmExpenseEntry.$invalid">
+                                    <i class="icon-save"></i> {{btnSaveText}}
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" ng-show="IsShow">
+                            @Html.Partial("~/Areas/Sales/Views/ProductRate/_Partial/_formProductRate.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-hide="IsHiddenRateDetail">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{ListTitlePIDeatails}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/ProductRate/_Partial/_tableProductRateDetailInfo.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-hide="IsHiddenBrandSku">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Product Rate List</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <input type="button" id="Generate" style="width:300px; margin-right: 350px;" class="btn btn-info margin-right-btn" value="Add to List"
+                                           ng-click="AddToList(ddlModule, ListModule)">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/ProductRate/_Partial/_tableBrandSkuList.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-hide="IsHidden">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>Product Rate Information</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/ProductRate/_Partial/_tableProductRateMasterInfo.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>         
+    </div>
+</div>
+    <!-- /.container -->
+    @section AngularScript{
+        <script src="~/Areas/Sales/ScriptsNg/Controllers/ProductRateCtrl.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Service/CrudService.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Directives/Conversion.js"></script>
+        <script src="~/Scripts/CustomToastrMessage.js"></script>
+        <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+        <script src="~/Areas/Token/TokenController.js"></script>
+    }

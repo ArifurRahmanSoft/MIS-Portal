@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Line Product Mapping";
+}
+
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="LineProductMappingCtrl">
+        <!-- Breadcrumbs line -->
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <!-- /Breadcrumbs line -->
+        <!--=== Page Header ===-->
+        <div class="page-header">
+
+        </div>
+        <!-- /Page Header -->
+        <!--==Delete Modal From System Common==-->
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+        <!--==Delete Modal From System Common==-->
+        <!--=== Page Content ===-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget box">
+                    <div class="widget-header">
+                        <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                        <div class="toolbar no-padding">
+                            <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                <i class="icon-refresh"></i> Reset
+                            </span>
+                            <span id="save" class="btn btn-success margin-right-btn" ng-click="Save()"
+                                  ng-disabled="frmLineProductMapping.$invalid">
+                                <i class="icon-save"></i> {{IS_UPDATE?'Update':'Save'}}
+                            </span>
+                            <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="widget-content no-padding">
+                        @Html.Partial("~/Areas/SystemCommon/Views/LineProductMapping/_Partial/_formLineProductMapping.cshtml")
+                    </div>
+                    <div class="widget-content no-padding" ng-show="isShowList" when-scrolled="loadRecords(1)" data-height="430px" data-always-visible="1" data-rail-visible="0">
+                        @Html.Partial("~/Areas/SystemCommon/Views/LineProductMapping/_Partial/_tableLineProductMapping.cshtml")
+                    </div>
+                </div>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <!-- /Page Content -->
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/LineProductMappingCtrl.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+
+}
+

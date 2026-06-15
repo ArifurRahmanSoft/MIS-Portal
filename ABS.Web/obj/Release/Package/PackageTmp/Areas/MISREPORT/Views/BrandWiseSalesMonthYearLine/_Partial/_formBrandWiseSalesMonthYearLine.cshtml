@@ -1,0 +1,134 @@
+﻿<form novalidate name="frmBrandWiseSalesMonthYearLine" id="frmBrandWiseSalesMonthYearLine" class="form-horizontal row-border">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Mode</label>
+                <div class="col-md-10">
+                    <div ng-repeat="ump in userMenuModePermissionList" class="radio-group pull-left" style="margin-right:10px; display:flex">
+                        <input type="radio" ng-model="ReportType" value="{{ump.COLID}}" id="{{ump.COLID}}" ng-click="setPermissionMode(ump.COLID);"> <label style="font-weight: normal; color: red;" for="{{ump.COLID}}"> &nbsp; {{ump.COLDISPLAY}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div ng-show="ReportType=='LineWise'">
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Sales Line <span class="error">*</span></label>
+                    <div class="col-md-6">
+                        <select id="ddlLine" class="select2-select-00"
+                                ng-model="salesLineId"
+                                ng-change="GetAllSalesCompany('SALES_COMPANY')"
+                                name="ddlLine"
+                                data-placeholder="--Select Sales Line--"
+                                style="width: 100%" ng-options="sl.OID as sl.SDVNT_NAME for sl in listSalesLine"
+                                ng-disabled="ReportType === 'CompanyWise'" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Sales Company <span class="error">*</span></label>
+                    <div class="col-md-6">
+                        <select id="salesCompanyId_Line" class="select2-select-00"
+                                ng-model="salesCompanyId"
+                                ng-change="GetAllSalesCustomer()"
+                                name="salesCompanyId"
+                                data-placeholder="--Select Sales Company--"
+                                style="width: 100%" ng-options="sc.OID as sc.SCOMP_NAME for sc in listSalesCompany" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" ng-show="ReportType=='CompanyWise'">
+                <label class="col-md-4 control-label" for="input17">Sales Company <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <select id="salesCompanyId_Other" class="select2-select-00"
+                            ng-model="salesCompanyId"
+                            ng-change="GetFilteredCustomer()"
+                            name="salesCompanyId"
+                            data-placeholder="--Select Sales Company--"
+                            style="width: 100%" ng-options="sc.OID as sc.SCOMP_NAME for sc in listSalesCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Customer</label>
+                <div class="col-md-6">
+                    <select id="salesCustomerId" class="select2-select-00"
+                            ng-model="salesCustomerId"
+                            name="salesCustomerId"
+                            data-placeholder="--Select Sales Customer--"
+                            style="width: 100%" ng-options="sc.OID as sc.CUSTOMER for sc in listSalesCustomer" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtStartDate" ng-change="ReportType == 'LineWise'?restrictedDate('StartDate'):null"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesMonthYearLine.$dirty||submitted) && frmBrandWiseSalesMonthYearLine.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtEndDate" ng-change="ReportType == 'LineWise'?restrictedDate('EndDate'):null"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmBrandWiseSalesMonthYearLine.$dirty||submitted) && frmBrandWiseSalesMonthYearLine.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type <span class="error">*</span></label>
+                <div class="col-md-10">
+                    <div class="radio-group">
+                        <input type="radio" ng-model="ReportType0" value="daily" id="daily"> <label style="font-weight: normal; color: red;" for="daily">Daily</label>
+                        <input type="radio" ng-model="ReportType0" value="monthly" id="monthly"> <label style="font-weight: normal; color: red;" for="monthly">Monthly</label>
+                        <input type="radio" ng-model="ReportType0" value="yearly" id="yearly"> <label style="font-weight: normal; color: red;" for="yearly">Yearly</label>
+                    </div>
+                    <br />
+                    <div>
+                        <div class="col-md-2 no-padding">
+                            <input type="radio" ng-model="ReportType1" value="brand" id="brand"> <label style="font-weight:normal" for="brand">Brand Wise</label><br />
+                            <input type="radio" ng-model="ReportType1" value="sku" id="sku"> <label style="font-weight:normal" for="sku">Sku Wise</label><br />
+                            <input type="radio" ng-model="ReportType1" value="partybrand" id="partybrand"> <label style="font-weight:normal" for="partybrand">Party-Brand</label><br />
+                            <input ng-show="ReportType=='LineWise'" type="radio" ng-model="ReportType1" value="partybrandaream" id="partybrandaream"> <label ng-show="ReportType=='LineWise'" style="font-weight:normal" for="partybrandaream">Party-Brand-Area(MT)</label><br ng-show="ReportType=='LineWise'" />
+                            <input ng-show="ReportType=='LineWise'" type="radio" ng-model="ReportType1" value="partybrandareav" id="partybrandareav"> <label ng-show="ReportType=='LineWise'" style="font-weight:normal" for="partybrandareav">Party-Brand-Area(Value)</label><br ng-show="ReportType=='LineWise'" />
+                        </div>
+                        <div class="col-md-2 no-padding">
+                            <input type="radio" ng-model="ReportType1" value="brand_mton" id="brand_mton"> <label style="font-weight:normal" for="brand_mton">Brand Wise(M.Ton)</label><br />
+                            <input type="radio" ng-model="ReportType1" value="sku_mton" id="sku_mton"> <label style="font-weight:normal" for="sku_mton">Sku Wise(M.Ton)</label><br />
+                            <input type="radio" ng-model="ReportType1" value="partybrandsku" id="partybrandsku"> <label style="font-weight:normal" for="partybrandsku">Party-Brand-SKU</label><br />
+                        </div>
+                        <div class="col-md-2 no-padding">
+                            <input type="radio" ng-model="ReportType1" value="category_mton" id="category_mton"> <label style="font-weight:normal" for="category_mton">Category Wise(M.Ton)</label><br />
+                            @*<input type="radio" ng-model="ReportType1" value="sku_mton" id="sku_mton"> <label style="font-weight:normal" for="sku_mton">Sku Wise(M.Ton)</label><br />
+                                <input type="radio" ng-model="ReportType1" value="partybrandsku" id="partybrandsku"> <label style="font-weight:normal" for="partybrandsku">Party-Brand-SKU</label><br />*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

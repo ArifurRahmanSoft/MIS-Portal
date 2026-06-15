@@ -1,0 +1,14 @@
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\ABS.Models.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\ABS.Models.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\ABS.Models.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\bin\Release\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Release\CTGroup.Models.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Release\CTGroup.Models.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Release\CTGroup.Models.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Release\ABS.Models.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Models\obj\Release\ABS.Models.pdb

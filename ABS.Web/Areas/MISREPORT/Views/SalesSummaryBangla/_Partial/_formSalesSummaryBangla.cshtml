@@ -1,0 +1,81 @@
+﻿<form novalidate name="formProductGroupWiseSale" id="formProductGroupWiseSale" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formProductGroupWiseSale.$dirty||submitted) && formProductGroupWiseSale.dtStartDate.$error.required">*</span>
+            </div>
+
+            @*<div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Company</label>
+                    <div class="col-md-6">
+                        <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                                ng-model="ngModelCompany"
+                                name="ddlCompany"
+                                data-placeholder="--Select Company--"
+                                style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(formProductGroupWiseSale.$dirty||submitted) && formProductGroupWiseSale.ddlZone.$error.required">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Location</label>
+                    <div class="col-md-6">
+                        <select id="ddlLocation" class="select2-select-00"
+                                ng-model="ngModelLocation"
+                                name="ddlLocation"
+                                data-placeholder="--Select Location--"
+                                style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(formProductGroupWiseSale.$dirty||submitted) && formProductGroupWiseSale.ddlLocation.$error.required">*</span>
+                </div>*@
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formProductGroupWiseSale.$dirty||submitted) && formProductGroupWiseSale.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+
+    @*<div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+
+                    <input type="radio" ng-model="ReportType" value="mastergroup">Master Group
+                    <input type="radio" ng-model="ReportType" value="productgroup">Product Group
+
+                    <input type="radio" ng-model="ReportType" value="brandwise">Brand-Wise
+                    <input type="radio" ng-model="ReportType" value="skuwise">SKU-Wise
+                </div>
+                <span class="error" ng-show="(formProductGroupWiseSale.$dirty||submitted) && formProductGroupWiseSale.ReportType.$error.required">*</span>
+            </div>
+        </div>
+    </div>*@
+
+</form>

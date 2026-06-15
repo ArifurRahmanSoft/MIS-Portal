@@ -1,0 +1,382 @@
+﻿.widget.box.borderless {
+    border: 0px solid #d9d9d9 !important;
+    border-top: 2px solid #d9d9d9 !important;
+}
+
+.widget-header.borderless {
+    border-left: 2px solid #d9d9d9 !important;
+}
+
+.hrCustomClass {
+    margin-top: 11px !important;
+    margin-bottom: -1px !important;
+    border: 0 !important;
+    border-top: 1px solid #000 !important;
+}
+
+.widget {
+    margin-top: 0px;
+    margin-bottom: 10px !important;
+    padding: 0px;
+}
+
+body {
+    text-align: left;
+}
+
+label {
+    text-align: left;
+}
+
+
+/*
+    input[type=checkbox] {
+	visibility: hidden;
+}
+ 
+.squaredFour {
+	width: 20px;	
+	margin: 20px auto;
+	position: relative;
+}
+
+.squaredFour label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 4px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squaredFour label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}*/
+
+.defaultAlign {
+    /* text-align: right; */
+    text-align: left !important;
+}
+
+
+.TextTransformCapitalize {
+    text-transform: capitalize;
+}
+
+.backgorund-info {
+    background-color: #e25856;
+    font-size: 14px !important;
+}
+
+
+    .backgorund-info > a {
+        color: #FFFFFF !important;
+    }
+
+        .backgorund-info > a:hover {
+            color: #e25856 !important;
+        }
+
+.backgorund-info {
+}
+
+
+.middleAlign {
+    display: block;
+    text-align: center;
+}
+
+.fontCaption {
+    font-size: 14px;
+}
+
+.halfopacity {
+    opacity: 0.5;
+}
+
+.modal-header-btn {
+    padding: 2px 7px !important;
+}
+
+.modal-header-right-btn {
+    padding: 2px 7px !important;
+    margin-right: 15px !important;
+}
+
+
+.modal-Custom {
+    WIDTH: 58%;
+    display: block;
+    margin-left: 33%;
+    margin-top: 5%;
+    overflow-y: auto !important;
+}
+
+.modal-Custom-content {
+    overflow-y: auto !important;
+}
+
+.modal-Custom-Body {
+    overflow-y: scroll;
+}
+
+.right-bottom-scroll-s {
+    display: block;
+    overflow: auto;
+    max-height: 200px;
+}
+
+.right-bottom-scroll-m {
+    display: block;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.right-bottom-scroll-l {
+    display: block;
+    overflow: auto;
+    max-height: 360px;
+}
+
+.modal-top {
+    z-index: 1800 !important;
+    padding-top: 90px !important;
+}
+
+/*Make the placeholder text red*/
+.form-control #bookingNO {
+    font-weight: bold;
+    color: red !important;
+}
+/*Make the placeholder text red*/
+
+
+.icon-cl-info {
+    color: blue !important;
+}
+
+.icon-cl-success {
+    color: green !important;
+}
+
+.icon-cl-warning {
+    color: orange !important;
+}
+
+.icon-cl-danger {
+    color: red !important;
+}
+
+.lot-auto-complete {
+    position: absolute;
+    float:left;
+    width: 300px;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    opacity: 0.95;
+
+}
+
+/*Region scrollable table*/  
+#customScrolledTable table thead > tr >th.defaultClass
+{
+    min-width:80px;
+}
+ 
+#customScrolledTable table thead tr th.inputClass
+{
+   min-width:116px;
+} 
+#customScrolledTable table thead tr th.inputDateClass
+{
+   min-width:150px;
+} 
+
+#customScrolledTable table thead tr th.inputOptionClass
+{
+    min-width: 130px;
+}
+
+#customScrolledTable .rowdiv  table >tbody> tr > td.defaultClass
+{ 
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+#customScrolledTable .rowdiv  table >tbody> tr > td.inputClass
+{
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 116px;
+}
+
+
+#customScrolledTable .rowdiv  table >tbody> tr > td.inputDateClass
+{
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+  
+#customScrolledTableInspac table thead > tr >th.defaultClass
+{
+    min-width:80px;
+}
+ 
+#customScrolledTableInspac table thead tr th.inputClass
+{
+   min-width:80px;
+} 
+#customScrolledTableInspac table thead tr th.inputDateClass
+{
+   min-width:140px;
+} 
+
+#customScrolledTableInspac table thead tr th.inputOptionClass
+{
+    min-width: 80px;
+}
+
+#customScrolledTableInspac .rowdiv  table >tbody> tr > td.defaultClass
+{ 
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+#customScrolledTableInspac .rowdiv  table >tbody> tr > td.inputClass
+{
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+
+#customScrolledTableInspac .rowdiv  table >tbody> tr > td.inputDateClass
+{
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 140px;
+}
+/*EndRegion scrollable table*/
+
+
+/* Table Row Selected CSS  Begin*/
+
+.Customselected {
+    background-color: rgba(41, 103, 182, 0.89);
+    color: #FFF;
+}
+
+
+.notCustomselected {
+    background-color: #fff;
+    color: #FFF;
+}
+
+.rowselected {
+        background-color: #a9ceef; /*#F8FBFC;*/ 
+        font-weight: bold;
+       /* opacity: 0.89; */
+      /* color: white; */
+}
+
+.rowdiv input[type=text]:focus
+{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 3px solid rgba(81, 203, 238, 1);
+  font-weight: bold; 
+}
+
+.rowdiv input[type=number]:focus
+{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 3px solid rgba(81, 203, 238, 1);
+  font-weight: bold; 
+}
+
+.rowdiv .cellSelection {
+     width: 100%; 
+    border: 3px solid #419641;
+    color: Red;
+    font-weight: bold; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Table Row Selected CSS  END */

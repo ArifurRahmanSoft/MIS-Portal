@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeviceLogDS" targetNamespace="http://tempuri.org/DeviceLogDS.xsd" xmlns:mstns="http://tempuri.org/DeviceLogDS.xsd" xmlns="http://tempuri.org/DeviceLogDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DeviceLogDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DeviceLogDS" msprop:Generator_UserDSName="DeviceLogDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DeviceLogDS" msprop:Generator_TableClassName="DeviceLogDSDataTable" msprop:Generator_TableVarName="tableDeviceLogDS" msprop:Generator_RowChangedName="DeviceLogDSRowChanged" msprop:Generator_TablePropName="_DeviceLogDS" msprop:Generator_RowDeletingName="DeviceLogDSRowDeleting" msprop:Generator_RowChangingName="DeviceLogDSRowChanging" msprop:Generator_RowEvHandlerName="DeviceLogDSRowChangeEventHandler" msprop:Generator_RowDeletedName="DeviceLogDSRowDeleted" msprop:Generator_RowClassName="DeviceLogDSRow" msprop:Generator_UserTableName="DeviceLogDS" msprop:Generator_RowEvArgName="DeviceLogDSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SO_ID" msprop:Generator_ColumnVarNameInTable="columnSO_ID" msprop:Generator_ColumnPropNameInRow="SO_ID" msprop:Generator_ColumnPropNameInTable="SO_IDColumn" msprop:Generator_UserColumnName="SO_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SO_NAME" msprop:Generator_ColumnVarNameInTable="columnSO_NAME" msprop:Generator_ColumnPropNameInRow="SO_NAME" msprop:Generator_ColumnPropNameInTable="SO_NAMEColumn" msprop:Generator_UserColumnName="SO_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnZONE_NAME" msprop:Generator_ColumnPropNameInRow="ZONE_NAME" msprop:Generator_ColumnPropNameInTable="ZONE_NAMEColumn" msprop:Generator_UserColumnName="ZONE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REGION_NAME" msprop:Generator_ColumnVarNameInTable="columnREGION_NAME" msprop:Generator_ColumnPropNameInRow="REGION_NAME" msprop:Generator_ColumnPropNameInTable="REGION_NAMEColumn" msprop:Generator_UserColumnName="REGION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DIVISION_NAME" msprop:Generator_ColumnVarNameInTable="columnDIVISION_NAME" msprop:Generator_ColumnPropNameInRow="DIVISION_NAME" msprop:Generator_ColumnPropNameInTable="DIVISION_NAMEColumn" msprop:Generator_UserColumnName="DIVISION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_ID" msprop:Generator_ColumnVarNameInTable="columnDIST_ID" msprop:Generator_ColumnPropNameInRow="DIST_ID" msprop:Generator_ColumnPropNameInTable="DIST_IDColumn" msprop:Generator_UserColumnName="DIST_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_NAME" msprop:Generator_ColumnVarNameInTable="columnDIST_NAME" msprop:Generator_ColumnPropNameInRow="DIST_NAME" msprop:Generator_ColumnPropNameInTable="DIST_NAMEColumn" msprop:Generator_UserColumnName="DIST_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnDIST_ADDRESS" msprop:Generator_ColumnPropNameInRow="DIST_ADDRESS" msprop:Generator_ColumnPropNameInTable="DIST_ADDRESSColumn" msprop:Generator_UserColumnName="DIST_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_TYPE" msprop:Generator_ColumnVarNameInTable="columnUSER_TYPE" msprop:Generator_ColumnPropNameInRow="USER_TYPE" msprop:Generator_ColumnPropNameInTable="USER_TYPEColumn" msprop:Generator_UserColumnName="USER_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="LAPTOP" msprop:Generator_ColumnVarNameInTable="columnLAPTOP" msprop:Generator_ColumnPropNameInRow="LAPTOP" msprop:Generator_ColumnPropNameInTable="LAPTOPColumn" msprop:Generator_UserColumnName="LAPTOP" type="xs:string" minOccurs="0" />
+              <xs:element name="PRINTER" msprop:Generator_ColumnVarNameInTable="columnPRINTER" msprop:Generator_ColumnPropNameInRow="PRINTER" msprop:Generator_ColumnPropNameInTable="PRINTERColumn" msprop:Generator_UserColumnName="PRINTER" type="xs:string" minOccurs="0" />
+              <xs:element name="MODEM" msprop:Generator_ColumnVarNameInTable="columnMODEM" msprop:Generator_ColumnPropNameInRow="MODEM" msprop:Generator_ColumnPropNameInTable="MODEMColumn" msprop:Generator_UserColumnName="MODEM" type="xs:string" minOccurs="0" />
+              <xs:element name="MOUSE" msprop:Generator_ColumnVarNameInTable="columnMOUSE" msprop:Generator_ColumnPropNameInRow="MOUSE" msprop:Generator_ColumnPropNameInTable="MOUSEColumn" msprop:Generator_UserColumnName="MOUSE" type="xs:string" minOccurs="0" />
+              <xs:element name="APN_SIM" msprop:Generator_ColumnVarNameInTable="columnAPN_SIM" msprop:Generator_ColumnPropNameInRow="APN_SIM" msprop:Generator_ColumnPropNameInTable="APN_SIMColumn" msprop:Generator_UserColumnName="APN_SIM" type="xs:string" minOccurs="0" />
+              <xs:element name="SIM_NUMBER" msprop:Generator_ColumnVarNameInTable="columnSIM_NUMBER" msprop:Generator_ColumnPropNameInRow="SIM_NUMBER" msprop:Generator_ColumnPropNameInTable="SIM_NUMBERColumn" msprop:Generator_UserColumnName="SIM_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="SPEC" msprop:Generator_ColumnVarNameInTable="columnSPEC" msprop:Generator_ColumnPropNameInRow="SPEC" msprop:Generator_ColumnPropNameInTable="SPECColumn" msprop:Generator_UserColumnName="SPEC" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+              <xs:element name="ZONE_CODE" msprop:Generator_ColumnVarNameInTable="columnZONE_CODE" msprop:Generator_ColumnPropNameInRow="ZONE_CODE" msprop:Generator_ColumnPropNameInTable="ZONE_CODEColumn" msprop:Generator_UserColumnName="ZONE_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MOBILE" msprop:Generator_ColumnVarNameInTable="columnMOBILE" msprop:Generator_ColumnPropNameInRow="MOBILE" msprop:Generator_ColumnPropNameInTable="MOBILEColumn" msprop:Generator_UserColumnName="MOBILE" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnDataColumn1" msprop:Generator_ColumnPropNameInRow="DataColumn1" msprop:Generator_ColumnPropNameInTable="DataColumn1Column" msprop:Generator_UserColumnName="DataColumn1" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn2" msprop:Generator_ColumnVarNameInTable="columnDataColumn2" msprop:Generator_ColumnPropNameInRow="DataColumn2" msprop:Generator_ColumnPropNameInTable="DataColumn2Column" msprop:Generator_UserColumnName="DataColumn2" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn3" msprop:Generator_ColumnVarNameInTable="columnDataColumn3" msprop:Generator_ColumnPropNameInRow="DataColumn3" msprop:Generator_ColumnPropNameInTable="DataColumn3Column" msprop:Generator_UserColumnName="DataColumn3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

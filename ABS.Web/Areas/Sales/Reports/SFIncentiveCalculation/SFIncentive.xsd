@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SFIncentive" targetNamespace="http://tempuri.org/SFIncentive.xsd" xmlns:mstns="http://tempuri.org/SFIncentive.xsd" xmlns="http://tempuri.org/SFIncentive.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SFIncentive" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SFIncentive" msprop:Generator_UserDSName="SFIncentive">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DISTRIBUTOR" msprop:Generator_ColumnVarNameInTable="columnDISTRIBUTOR" msprop:Generator_ColumnPropNameInRow="DISTRIBUTOR" msprop:Generator_ColumnPropNameInTable="DISTRIBUTORColumn" msprop:Generator_UserColumnName="DISTRIBUTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="SCUST_INFO_NAME" msprop:Generator_ColumnVarNameInTable="columnSCUST_INFO_NAME" msprop:Generator_ColumnPropNameInRow="SCUST_INFO_NAME" msprop:Generator_ColumnPropNameInTable="SCUST_INFO_NAMEColumn" msprop:Generator_UserColumnName="SCUST_INFO_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SBRND_NAME" msprop:Generator_ColumnVarNameInTable="columnSBRND_NAME" msprop:Generator_ColumnPropNameInRow="SBRND_NAME" msprop:Generator_ColumnPropNameInTable="SBRND_NAMEColumn" msprop:Generator_UserColumnName="SBRND_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SF" msprop:Generator_ColumnVarNameInTable="columnSF" msprop:Generator_ColumnPropNameInRow="SF" msprop:Generator_ColumnPropNameInTable="SFColumn" msprop:Generator_UserColumnName="SF" type="xs:string" minOccurs="0" />
+              <xs:element name="TARGETQUANTITY" msprop:Generator_ColumnVarNameInTable="columnTARGETQUANTITY" msprop:Generator_ColumnPropNameInRow="TARGETQUANTITY" msprop:Generator_ColumnPropNameInTable="TARGETQUANTITYColumn" msprop:Generator_UserColumnName="TARGETQUANTITY" type="xs:string" minOccurs="0" />
+              <xs:element name="TAMSWTARGET" msprop:Generator_ColumnVarNameInTable="columnTAMSWTARGET" msprop:Generator_ColumnPropNameInRow="TAMSWTARGET" msprop:Generator_ColumnPropNameInTable="TAMSWTARGETColumn" msprop:Generator_UserColumnName="TAMSWTARGET" type="xs:string" minOccurs="0" />
+              <xs:element name="SUGARTARGET" msprop:Generator_ColumnVarNameInTable="columnSUGARTARGET" msprop:Generator_ColumnPropNameInRow="SUGARTARGET" msprop:Generator_ColumnPropNameInTable="SUGARTARGETColumn" msprop:Generator_UserColumnName="SUGARTARGET" type="xs:string" minOccurs="0" />
+              <xs:element name="SECONDARYSALE" msprop:Generator_ColumnVarNameInTable="columnSECONDARYSALE" msprop:Generator_ColumnPropNameInRow="SECONDARYSALE" msprop:Generator_ColumnPropNameInTable="SECONDARYSALEColumn" msprop:Generator_UserColumnName="SECONDARYSALE" type="xs:string" minOccurs="0" />
+              <xs:element name="TAMSWSecondary" msprop:Generator_ColumnVarNameInTable="columnTAMSWSecondary" msprop:Generator_ColumnPropNameInRow="TAMSWSecondary" msprop:Generator_ColumnPropNameInTable="TAMSWSecondaryColumn" msprop:Generator_UserColumnName="TAMSWSecondary" type="xs:string" minOccurs="0" />
+              <xs:element name="SUGARSECONDARY" msprop:Generator_ColumnVarNameInTable="columnSUGARSECONDARY" msprop:Generator_ColumnPropNameInRow="SUGARSECONDARY" msprop:Generator_ColumnPropNameInTable="SUGARSECONDARYColumn" msprop:Generator_UserColumnName="SUGARSECONDARY" type="xs:string" minOccurs="0" />
+              <xs:element name="secondarypercentage" msprop:Generator_ColumnVarNameInTable="columnsecondarypercentage" msprop:Generator_ColumnPropNameInRow="secondarypercentage" msprop:Generator_ColumnPropNameInTable="secondarypercentageColumn" msprop:Generator_UserColumnName="secondarypercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="TAMSWSECONDARYPERCENT" msprop:Generator_ColumnVarNameInTable="columnTAMSWSECONDARYPERCENT" msprop:Generator_ColumnPropNameInRow="TAMSWSECONDARYPERCENT" msprop:Generator_ColumnPropNameInTable="TAMSWSECONDARYPERCENTColumn" msprop:Generator_UserColumnName="TAMSWSECONDARYPERCENT" type="xs:string" minOccurs="0" />
+              <xs:element name="SUGARSECONDARYSALEPERCENTAGE" msprop:Generator_ColumnVarNameInTable="columnSUGARSECONDARYSALEPERCENTAGE" msprop:Generator_ColumnPropNameInRow="SUGARSECONDARYSALEPERCENTAGE" msprop:Generator_ColumnPropNameInTable="SUGARSECONDARYSALEPERCENTAGEColumn" msprop:Generator_UserColumnName="SUGARSECONDARYSALEPERCENTAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="Incentive" msprop:Generator_ColumnVarNameInTable="columnIncentive" msprop:Generator_ColumnPropNameInRow="Incentive" msprop:Generator_ColumnPropNameInTable="IncentiveColumn" msprop:Generator_UserColumnName="Incentive" type="xs:string" minOccurs="0" />
+              <xs:element name="NOOFSODSR" msprop:Generator_ColumnVarNameInTable="columnNOOFSODSR" msprop:Generator_ColumnPropNameInRow="NOOFSODSR" msprop:Generator_ColumnPropNameInTable="NOOFSODSRColumn" msprop:Generator_UserColumnName="NOOFSODSR" type="xs:string" minOccurs="0" />
+              <xs:element name="SALESFORCE" msprop:Generator_ColumnVarNameInTable="columnSALESFORCE" msprop:Generator_ColumnPropNameInRow="SALESFORCE" msprop:Generator_ColumnPropNameInTable="SALESFORCEColumn" msprop:Generator_UserColumnName="SALESFORCE" type="xs:string" minOccurs="0" />
+              <xs:element name="persodsr" msprop:Generator_ColumnVarNameInTable="columnpersodsr" msprop:Generator_ColumnPropNameInRow="persodsr" msprop:Generator_ColumnPropNameInTable="persodsrColumn" msprop:Generator_UserColumnName="persodsr" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

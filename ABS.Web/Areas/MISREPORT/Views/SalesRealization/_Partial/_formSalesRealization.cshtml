@@ -1,0 +1,76 @@
+﻿<form novalidate name="formSalesRealization" id="formSalesRealization" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formSalesRealization.$dirty||submitted) && formSalesRealization.ddlZone.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Location</label>
+                <div class="col-md-6">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="--Select Location--"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formSalesRealization.$dirty||submitted) && formSalesRealization.ddlLocation.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Distributor</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listAllDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formSalesRealization.$dirty||submitted) && formSalesRealization.ddlDistributor.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formSalesRealization.$dirty||submitted) && formSalesRealization.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formSalesRealization.$dirty||submitted) && formSalesRealization.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+</form>

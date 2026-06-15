@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSCASHTRANSFER" targetNamespace="http://tempuri.org/DSCASHTRANSFER.xsd" xmlns:mstns="http://tempuri.org/DSCASHTRANSFER.xsd" xmlns="http://tempuri.org/DSCASHTRANSFER.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSCASHTRANSFER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCASHTRANSFER" msprop:Generator_UserDSName="DSCASHTRANSFER">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTCASHTRANSFER" msprop:Generator_TableClassName="DTCASHTRANSFERDataTable" msprop:Generator_TableVarName="tableDTCASHTRANSFER" msprop:Generator_RowChangedName="DTCASHTRANSFERRowChanged" msprop:Generator_TablePropName="DTCASHTRANSFER" msprop:Generator_RowDeletingName="DTCASHTRANSFERRowDeleting" msprop:Generator_RowChangingName="DTCASHTRANSFERRowChanging" msprop:Generator_RowEvHandlerName="DTCASHTRANSFERRowChangeEventHandler" msprop:Generator_RowDeletedName="DTCASHTRANSFERRowDeleted" msprop:Generator_RowClassName="DTCASHTRANSFERRow" msprop:Generator_UserTableName="DTCASHTRANSFER" msprop:Generator_RowEvArgName="DTCASHTRANSFERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SCOMP_NAME" msprop:Generator_ColumnVarNameInTable="columnSCOMP_NAME" msprop:Generator_ColumnPropNameInRow="SCOMP_NAME" msprop:Generator_ColumnPropNameInTable="SCOMP_NAMEColumn" msprop:Generator_UserColumnName="SCOMP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRM_MRNO" msprop:Generator_ColumnVarNameInTable="columnSMNYRM_MRNO" msprop:Generator_ColumnPropNameInRow="SMNYRM_MRNO" msprop:Generator_ColumnPropNameInTable="SMNYRM_MRNOColumn" msprop:Generator_UserColumnName="SMNYRM_MRNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRM_MRDT" msprop:Generator_ColumnVarNameInTable="columnSMNYRM_MRDT" msprop:Generator_ColumnPropNameInRow="SMNYRM_MRDT" msprop:Generator_ColumnPropNameInTable="SMNYRM_MRDTColumn" msprop:Generator_UserColumnName="SMNYRM_MRDT" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRM_NOTE" msprop:Generator_ColumnVarNameInTable="columnSMNYRM_NOTE" msprop:Generator_ColumnPropNameInRow="SMNYRM_NOTE" msprop:Generator_ColumnPropNameInTable="SMNYRM_NOTEColumn" msprop:Generator_UserColumnName="SMNYRM_NOTE" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRM_DOCN" msprop:Generator_ColumnVarNameInTable="columnSMNYRM_DOCN" msprop:Generator_ColumnPropNameInRow="SMNYRM_DOCN" msprop:Generator_ColumnPropNameInTable="SMNYRM_DOCNColumn" msprop:Generator_UserColumnName="SMNYRM_DOCN" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRM_DATE" msprop:Generator_ColumnVarNameInTable="columnSMNYRM_DATE" msprop:Generator_ColumnPropNameInRow="SMNYRM_DATE" msprop:Generator_ColumnPropNameInTable="SMNYRM_DATEColumn" msprop:Generator_UserColumnName="SMNYRM_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="SMNYRD_AMNT" msprop:Generator_ColumnVarNameInTable="columnSMNYRD_AMNT" msprop:Generator_ColumnPropNameInRow="SMNYRD_AMNT" msprop:Generator_ColumnPropNameInTable="SMNYRD_AMNTColumn" msprop:Generator_UserColumnName="SMNYRD_AMNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

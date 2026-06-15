@@ -1,0 +1,370 @@
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csprojAssemblyReference.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Utility.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Utility.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\EntityFramework.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Razor.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\ABS.Data.dll.config
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\EntityFramework.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.Razor.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\obj\Debug\CTGroup.Utility.csprojAssemblyReference.cache
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\obj\Debug\ABS.Utility.dll
+F:\ASP.Net Workspace\MIS Report\ABS.Utility\obj\Debug\ABS.Utility.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll.config
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csprojAssemblyReference.cache
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+F:\ASP.Net Workspace\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\obj\Debug\CTGroup.Utility.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ProjectsDev\TFS_Project\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.AssemblyReference.cache
+E:\ProjectsDev\TFS_Project\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\TFS_Project\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\ProjectsDev\TFS_Project\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\ProjectsDev\TFS_Project\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\Newtonsoft.Json.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS_demo\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Project-2\New Project\MIS_v2\MIS\MIS\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\CTGroup.OracleModel.dll.config
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\ExcelDataReader.DataSet.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\Newtonsoft.Json.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.AssemblyReference.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CoreCompileInputs.cache
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\obj\Debug\CTGroup.Utility.csproj.CopyComplete
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Project-2\New Project\MIS_v3\MIS\MIS\ABS.Utility\obj\Debug\ABS.Utility.pdb

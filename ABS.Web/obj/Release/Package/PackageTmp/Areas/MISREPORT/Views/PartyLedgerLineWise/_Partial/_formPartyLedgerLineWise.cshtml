@@ -1,0 +1,135 @@
+﻿<form novalidate name="frmPartyLedgerLine" id="frmPartyLedgerLine" class="form-horizontal row-border">
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Sales Type <span class="error">*</span></label>
+                <div class="col-md-10">
+                    <div ng-repeat="st in SalesTypeList" class="radio-group pull-left" style="margin-right:10px; display:flex">
+                        <input type="radio" ng-model="SalesType" value="{{st.TypeName}}" id="{{st.TypeName}}" ng-click="setSalesType(st.TypeName);"> <label style="font-weight: normal; color: black;" for="{{st.TypeName}}"> &nbsp; {{st.TypeName}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Mode</label>
+                <div class="col-md-10">
+                    <div ng-repeat="ump in userMenuModePermissionList" class="radio-group pull-left" style="margin-right:10px; display:flex">
+                        <input type="radio" ng-model="ReportType" value="{{ump.COLID}}" id="{{ump.COLID}}" ng-click="setPermissionMode(ump.COLID);"> <label style="font-weight: normal; color: red;" for="{{ump.COLID}}"> &nbsp; {{ump.COLDISPLAY}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div ng-show="ReportType=='LineWise'">
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Sales Line <span class="error">*</span></label>
+                    <div class="col-md-6">
+                        <select id="ddlLine" class="select2-select-00"
+                                ng-model="salesLineId"
+                                ng-change="ChangedLine('SALES_COMPANY')"
+                                name="ddlLine"
+                                data-placeholder="--Select Sales Line--"
+                                style="width: 100%" ng-options="sl.OID as sl.SDVNT_NAME for sl in listSalesLine"
+                                ng-disabled="ReportType === 'CompanyWise'" required>
+                            <option></option>
+                        </select>                        
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Sales Company <span class="error">*</span></label>
+                    <div class="col-md-6">
+                        <select id="salesCompanyId_Line" class="select2-select-00"
+                                ng-model="salesCompanyId"
+                                ng-change="ChangedCompany()"
+                                name="salesCompanyId"
+                                data-placeholder="--Select Sales Company--"
+                                style="width: 100%" ng-options="sc.OID as sc.SCOMP_NAME for sc in listSalesCompany" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" ng-show="ReportType=='CompanyWise'">
+                <label class="col-md-4 control-label" for="input17">Sales Company <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <select id="salesCompanyId_Other" class="select2-select-00"
+                            ng-model="salesCompanyId"
+                            ng-change="ChangedCompany()"
+                            name="salesCompanyId"
+                            data-placeholder="--Select Sales Company--"
+                            style="width: 100%" ng-options="sc.OID as sc.SCOMP_NAME for sc in listSalesCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Customer</label>
+                <div class="col-md-6">
+                    <select id="salesCustomerId" class="select2-select-00"
+                            ng-model="salesCustomerId"
+                            name="salesCustomerId"
+                            data-placeholder="--Select Sales Customer--"
+                            style="width: 100%" ng-options="sc.OID as sc.CUSTOMER for sc in listSalesCustomer" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>            
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtStartDate" ng-change="restrictedDate('StartDate')"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmPartyLedgerLine.$dirty||submitted) && frmPartyLedgerLine.dtStartDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date <span class="error">*</span></label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtEndDate" ng-change="restrictedDate('EndDate')"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmPartyLedgerLine.$dirty||submitted) && frmPartyLedgerLine.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type <span class="error">*</span></label>
+                <div class="col-md-3" ng-hide="SalesType=='Consumer' && ReportType=='LineWise' && salesLineId=='SDVNTxxxxxxxxxxx1009' && salesCompanyId=='SCOMPxxxxxxxxxxxxx96'">
+                    <input type="radio" ng-model="ReportType1" value="Details" id="Details"> <label style="font-weight:normal" for="Details">Detalis</label><br />
+                    <input type="radio" ng-model="ReportType1" value="Summary" id="Summary"> <label style="font-weight:normal" for="Summary">Summary</label><br />
+                    <input type="radio" ng-model="ReportType1" value="SumDueADV" id="SumDueADV"> <label style="font-weight:normal" for="SumDueADV">Summary(Due-Adv)</label><br />
+                    <input type="radio" ng-model="ReportType1" value="SumDueADVAmo" id="SumDueADVAmo"> <label style="font-weight:normal" for="SumDueADVAmo">Summary Only Due Amount</label><br />
+                </div>
+                <div class="col-md-7" ng-show="SalesType!='Consumer'">
+                    <input type="radio" ng-model="ReportType1" value="DetailsParty" id="DetailsParty"> <label style="font-weight:normal" for="DetailsParty">Party Ledger Details (Party Wise)</label><br />
+                    <input type="radio" ng-model="ReportType1" value="SummaryParty" id="SummaryParty"> <label style="font-weight:normal" for="SummaryParty">Party Ledger Summary (Party Wise)</label><br />
+                    <input type="radio" ng-model="ReportType1" value="SummaryItem" id="SummaryItem"> <label style="font-weight:normal" for="SummaryItem">Party Ledger Summary (Item Wise)</label><br />
+                    <input type="radio" ng-model="ReportType1" value="DetailsItem" id="DetailsItem"> <label style="font-weight:normal" for="DetailsItem">Party Ledger Details (Item Wise)</label><br />
+                </div>
+                <div class="col-md-7" ng-show="SalesType=='Consumer' && ReportType=='LineWise' && salesLineId=='SDVNTxxxxxxxxxxx1009' && salesCompanyId=='SCOMPxxxxxxxxxxxxx96'">
+                    <input type="radio" ng-model="ReportType1" value="CrateLedgerDetails" id="CrateLedgerDetails"> <label style="font-weight:normal" for="CrateLedgerDetails">Crate Ledger Details (Party Wise)</label><br />
+                    <input type="radio" ng-model="ReportType1" value="CrateLedgerSummary" id="CrateLedgerSummary"> <label style="font-weight:normal" for="CrateLedgerSummary">Crate Ledger Summary (Party Wise)</label><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

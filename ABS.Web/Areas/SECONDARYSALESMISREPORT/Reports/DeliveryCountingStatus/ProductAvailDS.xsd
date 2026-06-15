@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductAvailDS" targetNamespace="http://tempuri.org/ProductAvailDS.xsd" xmlns:mstns="http://tempuri.org/ProductAvailDS.xsd" xmlns="http://tempuri.org/ProductAvailDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductAvailDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProductAvailDS" msprop:Generator_UserDSName="ProductAvailDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSDeliveryCountingStatus" msprop:Generator_TableClassName="DSDeliveryCountingStatusDataTable" msprop:Generator_TableVarName="tableDSDeliveryCountingStatus" msprop:Generator_RowChangedName="DSDeliveryCountingStatusRowChanged" msprop:Generator_TablePropName="DSDeliveryCountingStatus" msprop:Generator_RowDeletingName="DSDeliveryCountingStatusRowDeleting" msprop:Generator_RowChangingName="DSDeliveryCountingStatusRowChanging" msprop:Generator_RowEvHandlerName="DSDeliveryCountingStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="DSDeliveryCountingStatusRowDeleted" msprop:Generator_RowClassName="DSDeliveryCountingStatusRow" msprop:Generator_UserTableName="DSDeliveryCountingStatus" msprop:Generator_RowEvArgName="DSDeliveryCountingStatusRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIVISION_NAME" msprop:Generator_ColumnVarNameInTable="columnDIVISION_NAME" msprop:Generator_ColumnPropNameInRow="DIVISION_NAME" msprop:Generator_ColumnPropNameInTable="DIVISION_NAMEColumn" msprop:Generator_UserColumnName="DIVISION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REGION_NAME" msprop:Generator_ColumnVarNameInTable="columnREGION_NAME" msprop:Generator_ColumnPropNameInRow="REGION_NAME" msprop:Generator_ColumnPropNameInTable="REGION_NAMEColumn" msprop:Generator_UserColumnName="REGION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnZONE_NAME" msprop:Generator_ColumnPropNameInRow="ZONE_NAME" msprop:Generator_ColumnPropNameInTable="ZONE_NAMEColumn" msprop:Generator_UserColumnName="ZONE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DISTRIBUTOR_NAME" msprop:Generator_ColumnVarNameInTable="columnDISTRIBUTOR_NAME" msprop:Generator_ColumnPropNameInRow="DISTRIBUTOR_NAME" msprop:Generator_ColumnPropNameInTable="DISTRIBUTOR_NAMEColumn" msprop:Generator_UserColumnName="DISTRIBUTOR_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BRAND_NAME" msprop:Generator_ColumnVarNameInTable="columnBRAND_NAME" msprop:Generator_ColumnPropNameInRow="BRAND_NAME" msprop:Generator_ColumnPropNameInTable="BRAND_NAMEColumn" msprop:Generator_UserColumnName="BRAND_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RETAILER_COUNT" msprop:Generator_ColumnVarNameInTable="columnRETAILER_COUNT" msprop:Generator_ColumnPropNameInRow="RETAILER_COUNT" msprop:Generator_ColumnPropNameInTable="RETAILER_COUNTColumn" msprop:Generator_UserColumnName="RETAILER_COUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DLV_COUNT" msprop:Generator_ColumnVarNameInTable="columnDLV_COUNT" msprop:Generator_ColumnPropNameInRow="DLV_COUNT" msprop:Generator_ColumnPropNameInTable="DLV_COUNTColumn" msprop:Generator_UserColumnName="DLV_COUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="ROUTE_NAME" msprop:Generator_ColumnVarNameInTable="columnROUTE_NAME" msprop:Generator_ColumnPropNameInRow="ROUTE_NAME" msprop:Generator_ColumnPropNameInTable="ROUTE_NAMEColumn" msprop:Generator_UserColumnName="ROUTE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SPROD_RNAM" msprop:Generator_ColumnVarNameInTable="columnSPROD_RNAM" msprop:Generator_ColumnPropNameInRow="SPROD_RNAM" msprop:Generator_ColumnPropNameInTable="SPROD_RNAMColumn" msprop:Generator_UserColumnName="SPROD_RNAM" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQUENCE_ON_REPORT" msprop:Generator_ColumnVarNameInTable="columnSEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInRow="SEQUENCE_ON_REPORT" msprop:Generator_ColumnPropNameInTable="SEQUENCE_ON_REPORTColumn" msprop:Generator_UserColumnName="SEQUENCE_ON_REPORT" type="xs:string" minOccurs="0" />
+              <xs:element name="distributor_text" msprop:Generator_ColumnVarNameInTable="columndistributor_text" msprop:Generator_ColumnPropNameInRow="distributor_text" msprop:Generator_ColumnPropNameInTable="distributor_textColumn" msprop:Generator_UserColumnName="distributor_text" type="xs:string" minOccurs="0" />
+              <xs:element name="SDVSN_TEXT" msprop:Generator_ColumnVarNameInTable="columnSDVSN_TEXT" msprop:Generator_ColumnPropNameInRow="SDVSN_TEXT" msprop:Generator_ColumnPropNameInTable="SDVSN_TEXTColumn" msprop:Generator_UserColumnName="SDVSN_TEXT" type="xs:string" minOccurs="0" />
+              <xs:element name="SREGN_TEXT" msprop:Generator_ColumnVarNameInTable="columnSREGN_TEXT" msprop:Generator_ColumnPropNameInRow="SREGN_TEXT" msprop:Generator_ColumnPropNameInTable="SREGN_TEXTColumn" msprop:Generator_UserColumnName="SREGN_TEXT" type="xs:string" minOccurs="0" />
+              <xs:element name="SZONE_TEXT" msprop:Generator_ColumnVarNameInTable="columnSZONE_TEXT" msprop:Generator_ColumnPropNameInRow="SZONE_TEXT" msprop:Generator_ColumnPropNameInTable="SZONE_TEXTColumn" msprop:Generator_UserColumnName="SZONE_TEXT" type="xs:string" minOccurs="0" />
+              <xs:element name="NTNAL_TEXT" msprop:Generator_ColumnVarNameInTable="columnNTNAL_TEXT" msprop:Generator_ColumnPropNameInRow="NTNAL_TEXT" msprop:Generator_ColumnPropNameInTable="NTNAL_TEXTColumn" msprop:Generator_UserColumnName="NTNAL_TEXT" type="xs:string" minOccurs="0" />
+              <xs:element name="NTNAL_NAME" msprop:Generator_ColumnVarNameInTable="columnNTNAL_NAME" msprop:Generator_ColumnPropNameInRow="NTNAL_NAME" msprop:Generator_ColumnPropNameInTable="NTNAL_NAMEColumn" msprop:Generator_UserColumnName="NTNAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ROUTE_ID" msprop:Generator_ColumnVarNameInTable="columnROUTE_ID" msprop:Generator_ColumnPropNameInRow="ROUTE_ID" msprop:Generator_ColumnPropNameInTable="ROUTE_IDColumn" msprop:Generator_UserColumnName="ROUTE_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

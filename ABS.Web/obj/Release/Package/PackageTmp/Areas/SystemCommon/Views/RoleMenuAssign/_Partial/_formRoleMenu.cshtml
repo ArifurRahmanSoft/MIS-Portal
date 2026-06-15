@@ -1,0 +1,30 @@
+﻿<form novalidate name="frmRoleMenu" id="frmRoleMenu" class="form-horizontal row-border">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="form-group">
+                <label class="col-md-1 control-label" for="input17">Role</label>
+                <div class="col-md-5">
+                    <select id="ROLEID" class="select2-select-00"
+                            ng-model="ROLEID"
+                            name="ROLEID" ng-change="loadRoleMenuList(0)"
+                            data-placeholder="--Select Role--"
+                            style="width: 100%" ng-options="rl.ROLEID as rl.ROLENAME for rl in listRole" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmUserRole.$dirty||submitted) && frmUserRole.ROLEID.$error.required">*</span>
+                <span id="addUser" class="btn btn-success btn-sm">
+                    <a href="javascript:void(0)" style="text-decoration:none" ng-href="#roleCreation" data-toggle="modal" title="Create Role">
+                        <i class="icon-ok-sign"></i> Create Role
+                    </a>
+                </span>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+</form>

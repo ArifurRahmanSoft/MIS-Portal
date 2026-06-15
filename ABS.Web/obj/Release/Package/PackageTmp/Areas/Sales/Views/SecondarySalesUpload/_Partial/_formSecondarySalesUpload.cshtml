@@ -1,0 +1,42 @@
+﻿<form novalidate name="frmSecondarySalesUpload" id="frmSecondarySalesUpload" class="form-horizontal row-border">
+    <input type="hidden" id="SecondarySalesUploadID" readonly="readonly" ng-model="SecondarySalesUploadID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Browse rrr <span class="error">*</span> </label>
+                <div class="col-md-6">
+                    <input type="file" name="file" id="file"
+                           ng-model="docfile" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-3 control-label"> Start Date <span class="error">*</span>  </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+
+                <label class="col-md-3 control-label"> End Date   </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required /><span class="error">*</span>
+                </div>
+
+                <span class="error" ng-show="(frmDocumentUpload.$dirty||submitted) && frmDocumentUpload.dtStartDate.$error.required"></span>
+                <span class="error" ng-show="(frmDocumentUpload.$dirty||submitted) && frmDocumentUpload.dtEndDate.$error.required"></span>
+
+            </div>
+        </div>
+    </div>
+
+</form>

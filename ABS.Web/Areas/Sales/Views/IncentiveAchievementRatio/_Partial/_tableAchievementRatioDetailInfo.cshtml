@@ -1,0 +1,50 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+
+    <thead class="grid-top-panel">
+        <tr>
+            <td style="display:none">BrandID</td>
+            <th>Brand Name</th>
+            <th>Primary Percentage(%)</th>       
+            <th>Secondary Percentage(%)</th>
+            <th>Percentage(Tk.)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in ListAchievementRatioDetail">
+
+            <td style="display:none">{{dataModel.BRAND_ID}}</td>
+            <td>{{dataModel.SBRND_NAME}}</td>
+            <td>
+                <input type="number" id="txtPrimaryPercentage" name="txtPrimaryPercentage" class="form-control" style="width:100px;"
+                       ng-model="dataModel.PRIMARY_PERC" min="0.00" required />
+            </td>
+            <td>
+                <input type="number" id="txtSecondaryPercentage" name="txtSecondaryPercentage" class="form-control" style="width:100px;"
+                       ng-model="dataModel.SECONDARY_PERC" min="0.00" required />
+            </td>
+            <td>
+                <input type="number" id="txtPercentageTK" name="txtPercentageTK" class="form-control" style="width:100px;"
+                       ng-model="dataModel.PERCENTAGE_TK" min="0.00" required />
+            </td>
+            <td style="text-align:right; color:white">
+                <span class="label label-danger label-mini">
+                    <a href="javascript:void(0);" data-toggle="modal" class="bs-tooltip" title="Select">
+                        <i class="icon-trash" ng-click="deleteRow($index, dataModel)"></i>
+                    </a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(ListPIDetails).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

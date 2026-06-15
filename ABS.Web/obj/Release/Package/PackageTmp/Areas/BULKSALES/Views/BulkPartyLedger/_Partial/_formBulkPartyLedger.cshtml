@@ -1,0 +1,113 @@
+﻿
+<form novalidate name="formBulkPartyLedger" id="formBulkPartyLedger" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+    <div class="row">
+        <div class="col-md-12">
+            <div><input type="checkbox" id="chAll" ng-model="ngmAllLocationSelected" ng-change="selectAllLocations()"><label for="chAll" class="control-label" style="font-weight:normal">&nbsp;All Locations&nbsp;</label></div>
+            <table style="border:1px solid darkgrey">
+                <tbody>
+                    <tr style="border:none">
+                        <td style="margin-left:5px; border: none; width: 20em; white-space: normal; vertical-align: top; display: inline-block; line-break: auto;" ng-repeat="entity in listLocationCB" ng-class="{selected: entity.isChecked}">
+                            <input type="checkbox" id="{{entity.SGLOC_ID}}" ng-model="entity.isChecked" ng-change="selectSingleLocation()">
+                            <label for="{{entity.SGLOC_ID}}" class="control-label" style="font-weight:normal">&nbsp;{{entity.SGLOC_NAME}}&nbsp;</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00" ng-disabled="IsDisableCompany"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany" ng-change="GetSKUByCompany()"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listUserWiseCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.ddlZone.$error.required">*</span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Customer</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor" ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Customer--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.ddlDistributor.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product</label>
+                <div class="col-md-6">
+                    <select id="ddlProduct" class="select2-select-00"
+                            ng-model="ngModelProduct"
+                            name="ddlProduct"
+                            data-placeholder="--Select Product--"
+                            style="width: 100%" ng-options="prod.PRODUCTOID as prod.PRODUCTNAME for prod in ListProducts" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.ddlProduct.$error.required">*</span>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label"> From Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> To Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label>
+                Include Export :
+                <input type="checkbox" ng-model="ngChkBoxExport" />
+            </label>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="Itemdetails" id="itemDetl"><label for="itemDetl" class="control-label" style="font-weight:normal">&nbsp;Party Ledger Company Wise ( Item X Party ) (Details)</label></br>
+                    @*<input type="radio" ng-model="ReportType" value="partysummary">Party Ledger Company Wise ( Item X Party ) (Summary) </br>*@
+                    <input type="radio" ng-model="ReportType" value="partydetails" id="partyDetl"><label for="partyDetl" class="control-label" style="font-weight:normal">&nbsp;Party Ledger Company Wise ( Party X Item ) (Details)</label></br>
+                    <input type="radio" ng-model="ReportType" value="partyaging" id="partyaging"><label for="partyaging" class="control-label" style="font-weight:normal">&nbsp;Party Ledger (Due Balance)</label></br>
+                    @*<input type="radio" ng-model="ReportType" value="Itemsummary">Party Ledger Company Wise ( Party X Item ) (Summary) </br>*@
+
+                </div>
+                @* <span class="error" ng-show="(frmBrandWiseSalesStatement.$dirty||submitted) && frmBrandWiseSalesStatement.ddlZone.$error.required">*</span>*@
+            </div>
+        </div>
+    </div>
+</form>

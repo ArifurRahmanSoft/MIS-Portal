@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OracleModelEntity" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ERRORLOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ERRORMESSAGE" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_BRAND_MAPPING">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MARKETING_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BRAND_OID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="BRAND_FULL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_CMNCOMPANY">
+    <Key>
+      <PropertyRef Name="COMPANYID" />
+    </Key>
+    <Property Name="COMPANYID" Type="Int32" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANYSHORTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANYNAME" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CITYID" Type="Int32" />
+    <Property Name="COUNTRYID" Type="Int32" />
+    <Property Name="STAETID" Type="Int32" />
+    <Property Name="CREATEBY" Type="Int32" />
+    <Property Name="CREATEON" Type="DateTime" Precision="6" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Int32" />
+    <Property Name="UPDATEON" Type="DateTime" Precision="6" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+    <Property Name="DELETEBY" Type="Int32" />
+    <Property Name="DELETEON" Type="DateTime" Precision="6" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LOGO" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNMENU">
+    <Key>
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Name="MENUID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MENUNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MENUSHORTNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MENUPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="REPORTNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="REPORTPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="PARENTID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MENUTYPEID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MENUICONCSS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNMENUPERMISSION">
+    <Key>
+      <PropertyRef Name="MENUPERMISSIONID" />
+    </Key>
+    <Property Name="MENUPERMISSIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MENUID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="USERGROUPID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="USERID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ENABLEVIEW" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ENABLEINSERT" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ENABLEUPDATE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ENABLEDELETE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ORGANOGRAMID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISACTIVE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EFFECTIVEDATE" Type="DateTime" />
+    <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNMODULE">
+    <Key>
+      <PropertyRef Name="MODULEID" />
+    </Key>
+    <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MODULENAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGEURL" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="MODULEPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNMODULEPERMISSION">
+    <Key>
+      <PropertyRef Name="MODULEPERMISSIONID" />
+    </Key>
+    <Property Name="MODULEPERMISSIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MENULISTID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNUSER">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="Int32" Nullable="false" />
+    <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TRANSACTIONTYPEID" Type="Int32" />
+    <Property Name="EMPLOYEEID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERTYPEID" Type="Int32" />
+    <Property Name="USERDESIGNATIONID" Type="Int32" />
+    <Property Name="USERGROUPID" Type="Int32" />
+    <Property Name="USERTITLEID" Type="Int32" />
+    <Property Name="USERPARENTID" Type="Int32" />
+    <Property Name="USERFIRSTNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="USERMIDDLENAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="USERLASTNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="USERFULLNAME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TELEPHONE" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEPARTMENTNAME" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="USERJOBTITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="APPOINTMENT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="REMARKS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMERACCOUNTID" Type="Int32" />
+    <Property Name="SAPCUSTOMERID" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACTEMAILID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SKYPEID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="FACEBOOKID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="WHATSAPP" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="VIBER" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="LINKEDIN" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="RELIGIONID" Type="Int32" />
+    <Property Name="MOBILENO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PHONENO" Type="Int32" />
+    <Property Name="UNIQUEIDENTITY" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="OFFICEID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GENDERID" Type="Int32" />
+    <Property Name="ISACTIVE" Type="Boolean" />
+    <Property Name="EFFECTIVEDATE" Type="DateTime" />
+    <Property Name="STATUSID" Type="Int32" />
+    <Property Name="COMPANYID" Type="Int32" Nullable="false" />
+    <Property Name="CREATEBY" Type="Int32" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Int32" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+    <Property Name="DELETEBY" Type="Int32" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_CMNUSERAUTHENTICATION">
+    <Key>
+      <PropertyRef Name="AUTHENTICATIONID" />
+    </Key>
+    <Property Name="AUTHENTICATIONID" Type="Int32" Nullable="false" />
+    <Property Name="USERID" Type="Int32" Nullable="false" />
+    <Property Name="LOGINID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LOGINEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LOGINPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CONFIRMPASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="REGISTRATIONDATE" Type="DateTime" />
+    <Property Name="EXPIREDATE" Type="DateTime" />
+    <Property Name="ACTIVATIONDATE" Type="DateTime" />
+    <Property Name="ACTIVATIONCODE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="STATUSID" Type="Int32" />
+    <Property Name="LANGUAGEID" Type="Int32" />
+    <Property Name="TIMEZONEID" Type="Int32" />
+    <Property Name="ALLOWMULTIPLELOGIN" Type="Boolean" />
+    <Property Name="NOOFLOGIN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ISFIRSTLOGIN" Type="Boolean" />
+    <Property Name="CREATEBY" Type="Int32" />
+    <Property Name="CREATEON" Type="DateTime" />
+    <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEBY" Type="Int32" />
+    <Property Name="UPDATEON" Type="DateTime" />
+    <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+    <Property Name="DELETEBY" Type="Int32" />
+    <Property Name="DELETEON" Type="DateTime" />
+    <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_DIST_BRND_TAR_PRI_SECON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DISTRIBUTORID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BRANDID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TARGETQUANTITY" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="PRIMARYSALE" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SECONDARYSALE" Type="Decimal" Precision="38" Scale="5" />
+  </EntityType>
+  <EntityType Name="T_DIST_PRIMARY_INCENTIVE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRIMARY_ACHI_PERC" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SECONDARY_ACHI_PERC" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="INCENTIVE_AMOUN" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="CREATED_ON" Type="DateTime" />
+    <Property Name="INCENTIVE_UOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MIN_ACHI_NEXT_MONTH_CONSI" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="END_DATE" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="T_DIST_SECON_SALE_ACH_D">
+    <Key>
+      <PropertyRef Name="DIST_SECON_ACH_DETAIL_ID" />
+    </Key>
+    <Property Name="DIST_SECON_ACH_DETAIL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UOM_ID" Type="Decimal" Precision="35" Scale="5" Nullable="false" />
+    <Property Name="QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+    <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETED_ON" Type="DateTime" />
+    <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DIST_SECON_ACH_ID" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_DIST_SECON_SALE_ACH_M">
+    <Key>
+      <PropertyRef Name="DIST_SECON_ACH_ID" />
+    </Key>
+    <Property Name="DIST_SECON_ACH_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="DISTRIBUTOR_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SALES_TYPE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETED_ON" Type="DateTime" />
+    <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_DIST_SECON_SALE_TEMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+    <Property Name="CUST_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUST_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TASO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SSO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TCR_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TMO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TSG_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TMR" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="JMW_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TLD_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="NVO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="BCT" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TA_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="MD_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SZ_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TWA_C" Type="Decimal" Precision="38" Scale="5" />
+  </EntityType>
+  <EntityType Name="T_DIST_TAR_DETAIL">
+    <Key>
+      <PropertyRef Name="DIST_TARGET_DETAIL_ID" />
+    </Key>
+    <Property Name="DIST_TARGET_DETAIL_ID" Type="Int64" Nullable="false" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UOM_ID" Type="Int32" Nullable="false" />
+    <Property Name="QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+    <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETED_ON" Type="DateTime" />
+    <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DIST_TARGET_ID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="T_DIST_TAR_MASTER" Relationship="Self.T_DIST_TAR_DETAIL_FK1" FromRole="T_DIST_TAR_DETAIL" ToRole="T_DIST_TAR_MASTER" />
+  </EntityType>
+  <EntityType Name="T_DIST_TAR_MASTER">
+    <Key>
+      <PropertyRef Name="DIST_TARGET_ID" />
+    </Key>
+    <Property Name="DIST_TARGET_ID" Type="Int64" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="DISTRIBUTOR_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SALES_TYPE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETED_ON" Type="DateTime" />
+    <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="T_DIST_TAR_DETAIL" Relationship="Self.T_DIST_TAR_DETAIL_FK1" FromRole="T_DIST_TAR_MASTER" ToRole="T_DIST_TAR_DETAIL" />
+  </EntityType>
+  <EntityType Name="T_DISTRIBUTORTARGET_TEMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUST_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUST_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TASO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SSO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TCR_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TMO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TSG_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TMR" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="JMW_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TLD_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="NVO_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="BCT" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TA_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="MD_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SZ_C" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="TWA_C" Type="Decimal" Precision="38" Scale="5" />
+  </EntityType>
+  <EntityType Name="T_INCEN_ACHIEV_RATIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="INCEN_FORMU_ID" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="SF_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="CREATED_ON" Type="DateTime" />
+    <Property Name="ACH_RATIO_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_INCEN_ACHIEV_RATIO_DETAIL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ACH_RATIO_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_PERC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_PERC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PERCENTAGE_TK" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="CREATED_ON" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="T_INCEN_FORMULA">
+    <Key>
+      <PropertyRef Name="INCEN_ID" />
+    </Key>
+    <Property Name="INCEN_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SALES_FORCE_TYPE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="P_SALE_PERCENT" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="S_SALE_PERCENT" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="INCEN_PERCEN" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="MINACHNEXTMONTHCONS" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DELETED_ON" Type="DateTime" />
+    <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_INCEN_RATE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PER_QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+    <Property Name="PER_UOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TAKA_AMOUNT" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_INCEN_RATE_DIST_RATIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="SF_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TK_AMOUNT" Type="Decimal" Precision="38" Scale="5" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="T_DIST_TAR_DETAIL_FK1">
+    <End Role="T_DIST_TAR_MASTER" Type="Self.T_DIST_TAR_MASTER" Multiplicity="1" />
+    <End Role="T_DIST_TAR_DETAIL" Type="Self.T_DIST_TAR_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_DIST_TAR_MASTER">
+        <PropertyRef Name="DIST_TARGET_ID" />
+      </Principal>
+      <Dependent Role="T_DIST_TAR_DETAIL">
+        <PropertyRef Name="DIST_TARGET_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ERRORLOGs" EntityType="Self.ERRORLOG" />
+    <EntitySet Name="T_BRAND_MAPPING" EntityType="Self.T_BRAND_MAPPING" />
+    <EntitySet Name="T_CMNCOMPANY" EntityType="Self.T_CMNCOMPANY" />
+    <EntitySet Name="T_CMNMENU" EntityType="Self.T_CMNMENU" />
+    <EntitySet Name="T_CMNMENUPERMISSION" EntityType="Self.T_CMNMENUPERMISSION" />
+    <EntitySet Name="T_CMNMODULE" EntityType="Self.T_CMNMODULE" />
+    <EntitySet Name="T_CMNMODULEPERMISSION" EntityType="Self.T_CMNMODULEPERMISSION" />
+    <EntitySet Name="T_CMNUSER" EntityType="Self.T_CMNUSER" />
+    <EntitySet Name="T_CMNUSERAUTHENTICATION" EntityType="Self.T_CMNUSERAUTHENTICATION" />
+    <EntitySet Name="T_DIST_BRND_TAR_PRI_SECON" EntityType="Self.T_DIST_BRND_TAR_PRI_SECON" />
+    <EntitySet Name="T_DIST_PRIMARY_INCENTIVE" EntityType="Self.T_DIST_PRIMARY_INCENTIVE" />
+    <EntitySet Name="T_DIST_SECON_SALE_ACH_D" EntityType="Self.T_DIST_SECON_SALE_ACH_D" />
+    <EntitySet Name="T_DIST_SECON_SALE_ACH_M" EntityType="Self.T_DIST_SECON_SALE_ACH_M" />
+    <EntitySet Name="T_DIST_SECON_SALE_TEMP" EntityType="Self.T_DIST_SECON_SALE_TEMP" />
+    <EntitySet Name="T_DIST_TAR_DETAIL" EntityType="Self.T_DIST_TAR_DETAIL" />
+    <EntitySet Name="T_DIST_TAR_MASTER" EntityType="Self.T_DIST_TAR_MASTER" />
+    <EntitySet Name="T_DISTRIBUTORTARGET_TEMP" EntityType="Self.T_DISTRIBUTORTARGET_TEMP" />
+    <EntitySet Name="T_INCEN_ACHIEV_RATIO" EntityType="Self.T_INCEN_ACHIEV_RATIO" />
+    <EntitySet Name="T_INCEN_ACHIEV_RATIO_DETAIL" EntityType="Self.T_INCEN_ACHIEV_RATIO_DETAIL" />
+    <EntitySet Name="T_INCEN_FORMULA" EntityType="Self.T_INCEN_FORMULA" />
+    <EntitySet Name="T_INCEN_RATE" EntityType="Self.T_INCEN_RATE" />
+    <EntitySet Name="T_INCEN_RATE_DIST_RATIO" EntityType="Self.T_INCEN_RATE_DIST_RATIO" />
+    <AssociationSet Name="T_DIST_TAR_DETAIL_FK1" Association="Self.T_DIST_TAR_DETAIL_FK1">
+      <End Role="T_DIST_TAR_MASTER" EntitySet="T_DIST_TAR_MASTER" />
+      <End Role="T_DIST_TAR_DETAIL" EntitySet="T_DIST_TAR_DETAIL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

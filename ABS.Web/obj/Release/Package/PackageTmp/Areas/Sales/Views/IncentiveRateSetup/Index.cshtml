@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Incentive Rate Setup";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="IncentiveRateSetupCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i>{{PageTitle}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    @Html.Partial("~/Areas/SystemCommon/Views/CommonButton/_cmnButton.cshtml")
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntryRate">
+                            @Html.Partial("~/Areas/Sales/Views/IncentiveRateSetup/_Partial/_formIncentiveRate.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-hide="IsHiddenDetail">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{ListTitlePIDeatails}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/IncentiveRateSetup/_Partial/_tableIncentiveRateDistributionRatio.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="frmList">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{ListTitleActivePIMasters}}</h4>
+                            <div class="toolbar no-padding">
+                                <div class="btn-group">
+                                    <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/IncentiveRateSetup/_Partial/_tableIncentiveRateMasterInfo.cshtml")
+                        </div>
+                    </div>
+                </div> <!-- /.col-md-12 -->
+            </div>
+
+        </div>
+        <div class="row">
+            @Html.Partial("~/Areas/Sales/Views/IncentiveRateSetup/_Partial/_tableSampleNoInfoModal.cshtml")
+        </div> 
+    </div>
+</div>
+    <!-- /.container -->
+    @section AngularScript{
+        <script src="~/Areas/Sales/ScriptsNg/Controllers/IncentiveRateSetupCtrl.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Service/CrudService.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Directives/Conversion.js"></script>
+        <script src="~/Scripts/CustomToastrMessage.js"></script>
+        <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+        <script src="~/Areas/Token/TokenController.js"></script>
+    }

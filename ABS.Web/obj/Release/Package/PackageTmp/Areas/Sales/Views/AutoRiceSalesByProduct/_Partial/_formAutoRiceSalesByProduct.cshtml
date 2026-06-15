@@ -1,0 +1,66 @@
+﻿<form novalidate name="frmAutoRiceSalesByProduct" id="frmAutoRiceSalesByProduct" class="form-horizontal row-border">
+    <input type="hidden" id="OID" readonly="readonly" ng-model="OID" />
+
+    <div class="row" ng-hide="marketinghide">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="col-md-4 control-label">CINIGURA SALE - BULK (MT):</label>
+                <div class="col-md-3">
+                    <input type="number" 
+                           id="txtCash" class="form-control" style="width: 100%"
+                           name="txtCash" ng-model="CINIGURASALE_BULK" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">MASUR DAL SALE - BULK (MT):</label>
+                <div class="col-md-3">
+                    <input type="number" 
+                           id="txtCheque" class="form-control" style="width: 100%"
+                           name="txtCheque" ng-model="MASURDALSALE_BULK" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">RICE SALE - BULK (MT):</label>
+                <div class="col-md-3">
+                    <input type="number"
+                           id="txtTT" class="form-control" style="width: 100%"
+                           name="txtTT" ng-model="RICESALE_BULK" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">CINIGURA SALE - CONSUMER (MT):</label>
+                <div class="col-md-3">
+                    <input type="number" 
+                           id="txtCash" class="form-control" style="width: 100%"
+                           name="txtCash" ng-model="CINIGURASALE_CONSUMER" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">MASUR DAL SALE - CONSUMER (MT):</label>
+                <div class="col-md-3">
+                    <input type="number" 
+                           id="txtCheque" class="form-control" style="width: 100%"
+                           name="txtCheque" ng-model="MASURDALSALE_CONSUMER" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">RICE SALE - CONSUMER (MT):</label>
+                <div class="col-md-3">
+                    <input type="number"
+                           id="txtTT" class="form-control" style="width: 100%"
+                           name="txtTT" ng-model="RICESALE_CONSUMER" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+    <style type="text/css">
+        .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+            border-top-color: #333333 !important;
+            margin-top: 0;
+            margin-left: 125px !important;
+            vertical-align: middle;
+        }
+    </style>

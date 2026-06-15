@@ -1,0 +1,1529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OracleModelEntity.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ERRORLOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ERRORMESSAGE" Type="varchar2" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="T_BRAND_MAPPING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="MARKETING_CODE" Type="varchar2" MaxLength="20" />
+          <Property Name="BRAND_OID" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_ACTIVE" Type="char" MaxLength="1" />
+          <Property Name="BRAND_FULL_NAME" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNCOMPANY">
+          <Key>
+            <PropertyRef Name="COMPANYID" />
+          </Key>
+          <Property Name="COMPANYID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" />
+          <Property Name="COMPANYSHORTNAME" Type="nvarchar2" MaxLength="50" />
+          <Property Name="COMPANYNAME" Type="nvarchar2" MaxLength="250" />
+          <Property Name="ADDRESS1" Type="nvarchar2" MaxLength="250" />
+          <Property Name="ADDRESS2" Type="nvarchar2" MaxLength="250" />
+          <Property Name="ADDRESS3" Type="nvarchar2" MaxLength="250" />
+          <Property Name="CITYID" Type="number" Precision="10" Scale="0" />
+          <Property Name="COUNTRYID" Type="number" Precision="10" Scale="0" />
+          <Property Name="STAETID" Type="number" Precision="10" Scale="0" />
+          <Property Name="CREATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="CREATEON" Type="timestamp" Precision="6" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="UPDATEON" Type="timestamp" Precision="6" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="1" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="DELETEON" Type="timestamp" Precision="6" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="LOGO" Type="nvarchar2" MaxLength="350" />
+        </EntityType>
+        <EntityType Name="T_CMNMENU">
+          <Key>
+            <PropertyRef Name="MENUID" />
+          </Key>
+          <Property Name="MENUID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="MENUNAME" Type="nvarchar2" MaxLength="100" />
+          <Property Name="MENUSHORTNAME" Type="nvarchar2" MaxLength="100" />
+          <Property Name="MODULEID" Type="number" Precision="38" Scale="0" />
+          <Property Name="MENUPATH" Type="nvarchar2" MaxLength="300" />
+          <Property Name="REPORTNAME" Type="nvarchar2" MaxLength="100" />
+          <Property Name="REPORTPATH" Type="nvarchar2" MaxLength="300" />
+          <Property Name="PARENTID" Type="number" Precision="38" Scale="0" />
+          <Property Name="SEQUENCE" Type="number" Precision="38" Scale="0" />
+          <Property Name="MENUTYPEID" Type="number" Precision="38" Scale="0" />
+          <Property Name="MENUICONCSS" Type="nvarchar2" MaxLength="50" />
+          <Property Name="STATUSID" Type="number" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNMENUPERMISSION">
+          <Key>
+            <PropertyRef Name="MENUPERMISSIONID" />
+          </Key>
+          <Property Name="MENUPERMISSIONID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" />
+          <Property Name="MENUID" Type="number" Precision="38" Scale="0" />
+          <Property Name="USERGROUPID" Type="number" Precision="38" Scale="0" />
+          <Property Name="USERID" Type="number" Precision="38" Scale="0" />
+          <Property Name="ENABLEVIEW" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEINSERT" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEUPDATE" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEDELETE" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ORGANOGRAMID" Type="number" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="number" Precision="38" Scale="0" />
+          <Property Name="ISACTIVE" Type="number" Precision="38" Scale="0" />
+          <Property Name="EFFECTIVEDATE" Type="date" />
+          <Property Name="STATUSID" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNMODULE">
+          <Key>
+            <PropertyRef Name="MODULEID" />
+          </Key>
+          <Property Name="MODULEID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="MODULENAME" Type="nvarchar2" MaxLength="150" />
+          <Property Name="DESCRIPTION" Type="nvarchar2" MaxLength="250" />
+          <Property Name="IMAGEURL" Type="nvarchar2" MaxLength="300" />
+          <Property Name="MODULEPATH" Type="nvarchar2" MaxLength="300" />
+          <Property Name="SEQUENCE" Type="number" Precision="38" Scale="0" />
+          <Property Name="STATUSID" Type="number" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNMODULEPERMISSION">
+          <Key>
+            <PropertyRef Name="MODULEPERMISSIONID" />
+          </Key>
+          <Property Name="MODULEPERMISSIONID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="MODULEID" Type="number" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="STATUSID" Type="number" Precision="38" Scale="0" />
+          <Property Name="MENULISTID" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNUSER">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="TRANSACTIONTYPEID" Type="number" Precision="10" Scale="0" />
+          <Property Name="EMPLOYEEID" Type="nvarchar2" MaxLength="50" />
+          <Property Name="USERTYPEID" Type="number" Precision="10" Scale="0" />
+          <Property Name="USERDESIGNATIONID" Type="number" Precision="10" Scale="0" />
+          <Property Name="USERGROUPID" Type="number" Precision="10" Scale="0" />
+          <Property Name="USERTITLEID" Type="number" Precision="10" Scale="0" />
+          <Property Name="USERPARENTID" Type="number" Precision="10" Scale="0" />
+          <Property Name="USERFIRSTNAME" Type="varchar2" MaxLength="150" />
+          <Property Name="USERMIDDLENAME" Type="varchar2" MaxLength="150" />
+          <Property Name="USERLASTNAME" Type="varchar2" MaxLength="150" />
+          <Property Name="USERFULLNAME" Type="nvarchar2" MaxLength="200" />
+          <Property Name="TELEPHONE" Type="nvarchar2" MaxLength="250" />
+          <Property Name="DEPARTMENTNAME" Type="nvarchar2" MaxLength="250" />
+          <Property Name="USERJOBTITLE" Type="nvarchar2" MaxLength="100" />
+          <Property Name="APPOINTMENT" Type="nvarchar2" MaxLength="250" />
+          <Property Name="REMARKS" Type="nvarchar2" MaxLength="250" />
+          <Property Name="CUSTOMERACCOUNTID" Type="number" Precision="10" Scale="0" />
+          <Property Name="SAPCUSTOMERID" Type="varchar2" MaxLength="250" />
+          <Property Name="CONTRACTEMAILID" Type="nvarchar2" MaxLength="250" />
+          <Property Name="SKYPEID" Type="nvarchar2" MaxLength="250" />
+          <Property Name="FACEBOOKID" Type="nvarchar2" MaxLength="250" />
+          <Property Name="WHATSAPP" Type="nvarchar2" MaxLength="250" />
+          <Property Name="VIBER" Type="nvarchar2" MaxLength="250" />
+          <Property Name="LINKEDIN" Type="nvarchar2" MaxLength="250" />
+          <Property Name="RELIGIONID" Type="number" Precision="10" Scale="0" />
+          <Property Name="MOBILENO" Type="nvarchar2" MaxLength="20" />
+          <Property Name="PHONENO" Type="number" Precision="10" Scale="0" />
+          <Property Name="UNIQUEIDENTITY" Type="nvarchar2" MaxLength="250" />
+          <Property Name="OFFICEID" Type="nvarchar2" MaxLength="50" />
+          <Property Name="GENDERID" Type="number" Precision="10" Scale="0" />
+          <Property Name="ISACTIVE" Type="number" Precision="1" Scale="0" />
+          <Property Name="EFFECTIVEDATE" Type="date" />
+          <Property Name="STATUSID" Type="number" Precision="10" Scale="0" />
+          <Property Name="COMPANYID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="CREATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="1" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_CMNUSERAUTHENTICATION">
+          <Key>
+            <PropertyRef Name="AUTHENTICATIONID" />
+          </Key>
+          <Property Name="AUTHENTICATIONID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="USERID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="LOGINID" Type="nvarchar2" MaxLength="50" />
+          <Property Name="LOGINEMAIL" Type="nvarchar2" MaxLength="50" />
+          <Property Name="LOGINPHONE" Type="nvarchar2" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CONFIRMPASSWORD" Type="nvarchar2" MaxLength="50" />
+          <Property Name="REGISTRATIONDATE" Type="date" />
+          <Property Name="EXPIREDATE" Type="date" />
+          <Property Name="ACTIVATIONDATE" Type="date" />
+          <Property Name="ACTIVATIONCODE" Type="nvarchar2" MaxLength="200" />
+          <Property Name="STATUSID" Type="number" Precision="10" Scale="0" />
+          <Property Name="LANGUAGEID" Type="number" Precision="10" Scale="0" />
+          <Property Name="TIMEZONEID" Type="number" Precision="10" Scale="0" />
+          <Property Name="ALLOWMULTIPLELOGIN" Type="number" Precision="1" Scale="0" />
+          <Property Name="NOOFLOGIN" Type="nchar" MaxLength="10" />
+          <Property Name="ISFIRSTLOGIN" Type="number" Precision="1" Scale="0" />
+          <Property Name="CREATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="CREATEON" Type="date" />
+          <Property Name="CREATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="UPDATEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="UPDATEON" Type="date" />
+          <Property Name="UPDATEPC" Type="nvarchar2" MaxLength="50" />
+          <Property Name="ISDELETED" Type="number" Precision="1" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="number" Precision="10" Scale="0" />
+          <Property Name="DELETEON" Type="date" />
+          <Property Name="DELETEPC" Type="nvarchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T_DIST_BRND_TAR_PRI_SECON">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DISTRIBUTORID" Type="varchar2" MaxLength="100" />
+          <Property Name="BRANDID" Type="varchar2" MaxLength="100" />
+          <Property Name="TARGETQUANTITY" Type="number" Precision="38" Scale="5" />
+          <Property Name="PRIMARYSALE" Type="number" Precision="38" Scale="5" />
+          <Property Name="SECONDARYSALE" Type="number" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_DIST_PRIMARY_INCENTIVE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="PRIMARY_ACHI_PERC" Type="number" Precision="38" Scale="0" />
+          <Property Name="SECONDARY_ACHI_PERC" Type="number" Precision="38" Scale="0" />
+          <Property Name="INCENTIVE_AMOUN" Type="number" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="date" />
+          <Property Name="INCENTIVE_UOM" Type="varchar2" MaxLength="20" />
+          <Property Name="MIN_ACHI_NEXT_MONTH_CONSI" Type="number" Precision="38" Scale="0" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_ACH_D">
+          <Key>
+            <PropertyRef Name="DIST_SECON_ACH_DETAIL_ID" />
+          </Key>
+          <Property Name="DIST_SECON_ACH_DETAIL_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="UOM_ID" Type="number" Precision="35" Scale="5" Nullable="false" />
+          <Property Name="QUANTITY" Type="number" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CREATED_BY" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+          <Property Name="CREATED_IP" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="date" />
+          <Property Name="UPDATED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_DELETED" Type="char" MaxLength="1" />
+          <Property Name="DELETED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="date" />
+          <Property Name="DELETED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="DIST_SECON_ACH_ID" Type="number" Precision="19" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_ACH_M">
+          <Key>
+            <PropertyRef Name="DIST_SECON_ACH_ID" />
+          </Key>
+          <Property Name="DIST_SECON_ACH_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="START_DATE" Type="date" Nullable="false" />
+          <Property Name="END_DATE" Type="date" Nullable="false" />
+          <Property Name="DISTRIBUTOR_ID" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="SALES_TYPE" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="CREATED_BY" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+          <Property Name="CREATED_IP" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="date" />
+          <Property Name="UPDATED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_DELETED" Type="char" MaxLength="1" />
+          <Property Name="DELETED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="date" />
+          <Property Name="DELETED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_ACTIVE" Type="char" MaxLength="1" />
+          <Property Name="REMARKS" Type="varchar2" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_TEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CUST_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="CUST_NAME" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="TASO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="SSO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TCR_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TMO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TSG_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TMR" Type="number" Precision="38" Scale="5" />
+          <Property Name="JMW_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TLD_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="NVO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="BCT" Type="number" Precision="38" Scale="5" />
+          <Property Name="TA_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="MD_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="SZ_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TWA_C" Type="number" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_DIST_TAR_DETAIL">
+          <Key>
+            <PropertyRef Name="DIST_TARGET_DETAIL_ID" />
+          </Key>
+          <Property Name="DIST_TARGET_DETAIL_ID" Type="number" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="UOM_ID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="QUANTITY" Type="number" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CREATED_BY" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+          <Property Name="CREATED_IP" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="date" />
+          <Property Name="UPDATED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_DELETED" Type="char" MaxLength="1" />
+          <Property Name="DELETED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="date" />
+          <Property Name="DELETED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="DIST_TARGET_ID" Type="number" Precision="19" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_DIST_TAR_MASTER">
+          <Key>
+            <PropertyRef Name="DIST_TARGET_ID" />
+          </Key>
+          <Property Name="DIST_TARGET_ID" Type="number" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="START_DATE" Type="date" Nullable="false" />
+          <Property Name="END_DATE" Type="date" Nullable="false" />
+          <Property Name="DISTRIBUTOR_ID" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="SALES_TYPE" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="CREATED_BY" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+          <Property Name="CREATED_IP" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="date" />
+          <Property Name="UPDATED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_DELETED" Type="char" MaxLength="1" />
+          <Property Name="DELETED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="date" />
+          <Property Name="DELETED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_ACTIVE" Type="char" MaxLength="1" />
+          <Property Name="REMARKS" Type="varchar2" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_DISTRIBUTORTARGET_TEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUST_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="CUST_NAME" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="TASO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="SSO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TCR_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TMO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TSG_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TMR" Type="number" Precision="38" Scale="5" />
+          <Property Name="JMW_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TLD_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="NVO_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="BCT" Type="number" Precision="38" Scale="5" />
+          <Property Name="TA_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="MD_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="SZ_C" Type="number" Precision="38" Scale="5" />
+          <Property Name="TWA_C" Type="number" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_INCEN_ACHIEV_RATIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="INCEN_FORMU_ID" Type="number" Precision="38" Scale="5" />
+          <Property Name="SF_TYPE" Type="varchar2" MaxLength="20" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="CREATED_ON" Type="date" />
+          <Property Name="ACH_RATIO_ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_INCEN_ACHIEV_RATIO_DETAIL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ACH_RATIO_ID" Type="number" Precision="38" Scale="0" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="PRIMARY_PERC" Type="varchar2" MaxLength="20" />
+          <Property Name="SECONDARY_PERC" Type="varchar2" MaxLength="20" />
+          <Property Name="PERCENTAGE_TK" Type="number" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="date" />
+        </EntityType>
+        <EntityType Name="T_INCEN_FORMULA">
+          <Key>
+            <PropertyRef Name="INCEN_ID" />
+          </Key>
+          <Property Name="INCEN_ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SALES_FORCE_TYPE_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="P_SALE_PERCENT" Type="number" Precision="38" Scale="5" />
+          <Property Name="S_SALE_PERCENT" Type="number" Precision="38" Scale="5" />
+          <Property Name="INCEN_PERCEN" Type="number" Precision="38" Scale="5" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="MINACHNEXTMONTHCONS" Type="number" Precision="38" Scale="5" />
+          <Property Name="CREATED_BY" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+          <Property Name="CREATED_IP" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="date" />
+          <Property Name="UPDATED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_DELETED" Type="char" MaxLength="1" />
+          <Property Name="DELETED_BY" Type="number" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="date" />
+          <Property Name="DELETED_IP" Type="varchar2" MaxLength="20" />
+          <Property Name="IS_ACTIVE" Type="char" MaxLength="1" />
+          <Property Name="REMARKS" Type="varchar2" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_INCEN_RATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="RATE_ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="PER_QUANTITY" Type="number" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="PER_UOM" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="TAKA_AMOUNT" Type="number" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="START_DATE" Type="date" Nullable="false" />
+          <Property Name="END_DATE" Type="date" Nullable="false" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_INCEN_RATE_DIST_RATIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="RATE_ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="SF_TYPE" Type="varchar2" MaxLength="20" />
+          <Property Name="TK_AMOUNT" Type="number" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="date" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'SALESSUPPORT.TAMSTEMPORARY' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TAMSTEMPORARY">
+          <Property Name="DISTRIBUTORID" Type="varchar2" MaxLength="20" />
+          <Property Name="RATIO" Type="number" Precision="38" Scale="2" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'SALESSUPPORT.TESTTABLE' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TESTTABLE">
+          <Property Name="CUSTID" Type="number" Precision="38" Scale="0" />
+          <Property Name="CUSTNAME" Type="varchar2" MaxLength="500" />
+        </EntityType>-->
+        <Association Name="T_DIST_TAR_DETAIL_FK1">
+          <End Role="T_DIST_TAR_MASTER" Type="Self.T_DIST_TAR_MASTER" Multiplicity="1" />
+          <End Role="T_DIST_TAR_DETAIL" Type="Self.T_DIST_TAR_DETAIL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_DIST_TAR_MASTER">
+              <PropertyRef Name="DIST_TARGET_ID" />
+            </Principal>
+            <Dependent Role="T_DIST_TAR_DETAIL">
+              <PropertyRef Name="DIST_TARGET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OracleModelEntityStoreContainer">
+          <EntitySet Name="ERRORLOG" EntityType="Self.ERRORLOG" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_BRAND_MAPPING" EntityType="Self.T_BRAND_MAPPING" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNCOMPANY" EntityType="Self.T_CMNCOMPANY" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNMENU" EntityType="Self.T_CMNMENU" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNMENUPERMISSION" EntityType="Self.T_CMNMENUPERMISSION" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNMODULE" EntityType="Self.T_CMNMODULE" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNMODULEPERMISSION" EntityType="Self.T_CMNMODULEPERMISSION" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNUSER" EntityType="Self.T_CMNUSER" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_CMNUSERAUTHENTICATION" EntityType="Self.T_CMNUSERAUTHENTICATION" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_BRND_TAR_PRI_SECON" EntityType="Self.T_DIST_BRND_TAR_PRI_SECON" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_PRIMARY_INCENTIVE" EntityType="Self.T_DIST_PRIMARY_INCENTIVE" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_SECON_SALE_ACH_D" EntityType="Self.T_DIST_SECON_SALE_ACH_D" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_SECON_SALE_ACH_M" EntityType="Self.T_DIST_SECON_SALE_ACH_M" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_SECON_SALE_TEMP" EntityType="Self.T_DIST_SECON_SALE_TEMP" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_TAR_DETAIL" EntityType="Self.T_DIST_TAR_DETAIL" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DIST_TAR_MASTER" EntityType="Self.T_DIST_TAR_MASTER" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_DISTRIBUTORTARGET_TEMP" EntityType="Self.T_DISTRIBUTORTARGET_TEMP" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_INCEN_ACHIEV_RATIO" EntityType="Self.T_INCEN_ACHIEV_RATIO" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_INCEN_ACHIEV_RATIO_DETAIL" EntityType="Self.T_INCEN_ACHIEV_RATIO_DETAIL" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_INCEN_FORMULA" EntityType="Self.T_INCEN_FORMULA" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_INCEN_RATE" EntityType="Self.T_INCEN_RATE" Schema="SALESSUPPORT" store:Type="Tables" />
+          <EntitySet Name="T_INCEN_RATE_DIST_RATIO" EntityType="Self.T_INCEN_RATE_DIST_RATIO" Schema="SALESSUPPORT" store:Type="Tables" />
+          <AssociationSet Name="T_DIST_TAR_DETAIL_FK1" Association="Self.T_DIST_TAR_DETAIL_FK1">
+            <End Role="T_DIST_TAR_MASTER" EntitySet="T_DIST_TAR_MASTER" />
+            <End Role="T_DIST_TAR_DETAIL" EntitySet="T_DIST_TAR_DETAIL" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OracleModelEntity" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ERRORLOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ERRORMESSAGE" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_BRAND_MAPPING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="MARKETING_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BRAND_OID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="BRAND_FULL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_CMNCOMPANY">
+          <Key>
+            <PropertyRef Name="COMPANYID" />
+          </Key>
+          <Property Name="COMPANYID" Type="Int32" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANYSHORTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANYNAME" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CITYID" Type="Int32" />
+          <Property Name="COUNTRYID" Type="Int32" />
+          <Property Name="STAETID" Type="Int32" />
+          <Property Name="CREATEBY" Type="Int32" />
+          <Property Name="CREATEON" Type="DateTime" Precision="6" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Int32" />
+          <Property Name="UPDATEON" Type="DateTime" Precision="6" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+          <Property Name="DELETEBY" Type="Int32" />
+          <Property Name="DELETEON" Type="DateTime" Precision="6" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LOGO" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNMENU">
+          <Key>
+            <PropertyRef Name="MENUID" />
+          </Key>
+          <Property Name="MENUID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MENUNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MENUSHORTNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MENUPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="REPORTNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="REPORTPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="PARENTID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MENUTYPEID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MENUICONCSS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNMENUPERMISSION">
+          <Key>
+            <PropertyRef Name="MENUPERMISSIONID" />
+          </Key>
+          <Property Name="MENUPERMISSIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MENUID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="USERGROUPID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="USERID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ENABLEVIEW" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEINSERT" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEUPDATE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ENABLEDELETE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ORGANOGRAMID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ISACTIVE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="EFFECTIVEDATE" Type="DateTime" />
+          <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNMODULE">
+          <Key>
+            <PropertyRef Name="MODULEID" />
+          </Key>
+          <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MODULENAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="IMAGEURL" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="MODULEPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNMODULEPERMISSION">
+          <Key>
+            <PropertyRef Name="MODULEPERMISSIONID" />
+          </Key>
+          <Property Name="MODULEPERMISSIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MODULEID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPANYID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="STATUSID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MENULISTID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DELETEBY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNUSER">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="Int32" Nullable="false" />
+          <Property Name="CUSTOMCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TRANSACTIONTYPEID" Type="Int32" />
+          <Property Name="EMPLOYEEID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USERTYPEID" Type="Int32" />
+          <Property Name="USERDESIGNATIONID" Type="Int32" />
+          <Property Name="USERGROUPID" Type="Int32" />
+          <Property Name="USERTITLEID" Type="Int32" />
+          <Property Name="USERPARENTID" Type="Int32" />
+          <Property Name="USERFIRSTNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="USERMIDDLENAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="USERLASTNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="USERFULLNAME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="TELEPHONE" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DEPARTMENTNAME" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="USERJOBTITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="APPOINTMENT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="REMARKS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CUSTOMERACCOUNTID" Type="Int32" />
+          <Property Name="SAPCUSTOMERID" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="CONTRACTEMAILID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SKYPEID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="FACEBOOKID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="WHATSAPP" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="VIBER" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LINKEDIN" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="RELIGIONID" Type="Int32" />
+          <Property Name="MOBILENO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PHONENO" Type="Int32" />
+          <Property Name="UNIQUEIDENTITY" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="OFFICEID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GENDERID" Type="Int32" />
+          <Property Name="ISACTIVE" Type="Boolean" />
+          <Property Name="EFFECTIVEDATE" Type="DateTime" />
+          <Property Name="STATUSID" Type="Int32" />
+          <Property Name="COMPANYID" Type="Int32" Nullable="false" />
+          <Property Name="CREATEBY" Type="Int32" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Int32" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+          <Property Name="DELETEBY" Type="Int32" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_CMNUSERAUTHENTICATION">
+          <Key>
+            <PropertyRef Name="AUTHENTICATIONID" />
+          </Key>
+          <Property Name="AUTHENTICATIONID" Type="Int32" Nullable="false" />
+          <Property Name="USERID" Type="Int32" Nullable="false" />
+          <Property Name="LOGINID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LOGINEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LOGINPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CONFIRMPASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="REGISTRATIONDATE" Type="DateTime" />
+          <Property Name="EXPIREDATE" Type="DateTime" />
+          <Property Name="ACTIVATIONDATE" Type="DateTime" />
+          <Property Name="ACTIVATIONCODE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="STATUSID" Type="Int32" />
+          <Property Name="LANGUAGEID" Type="Int32" />
+          <Property Name="TIMEZONEID" Type="Int32" />
+          <Property Name="ALLOWMULTIPLELOGIN" Type="Boolean" />
+          <Property Name="NOOFLOGIN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ISFIRSTLOGIN" Type="Boolean" />
+          <Property Name="CREATEBY" Type="Int32" />
+          <Property Name="CREATEON" Type="DateTime" />
+          <Property Name="CREATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATEBY" Type="Int32" />
+          <Property Name="UPDATEON" Type="DateTime" />
+          <Property Name="UPDATEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISDELETED" Type="Boolean" Nullable="false" />
+          <Property Name="DELETEBY" Type="Int32" />
+          <Property Name="DELETEON" Type="DateTime" />
+          <Property Name="DELETEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_DIST_BRND_TAR_PRI_SECON">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DISTRIBUTORID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BRANDID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TARGETQUANTITY" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="PRIMARYSALE" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SECONDARYSALE" Type="Decimal" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_DIST_PRIMARY_INCENTIVE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRIMARY_ACHI_PERC" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SECONDARY_ACHI_PERC" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="INCENTIVE_AMOUN" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="DateTime" />
+          <Property Name="INCENTIVE_UOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MIN_ACHI_NEXT_MONTH_CONSI" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_ACH_D">
+          <Key>
+            <PropertyRef Name="DIST_SECON_ACH_DETAIL_ID" />
+          </Key>
+          <Property Name="DIST_SECON_ACH_DETAIL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UOM_ID" Type="Decimal" Precision="35" Scale="5" Nullable="false" />
+          <Property Name="QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="DateTime" />
+          <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="DateTime" />
+          <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DIST_SECON_ACH_ID" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_ACH_M">
+          <Key>
+            <PropertyRef Name="DIST_SECON_ACH_ID" />
+          </Key>
+          <Property Name="DIST_SECON_ACH_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="DISTRIBUTOR_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SALES_TYPE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="DateTime" />
+          <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="DateTime" />
+          <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_DIST_SECON_SALE_TEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CUST_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CUST_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TASO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SSO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TCR_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TMO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TSG_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TMR" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="JMW_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TLD_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="NVO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="BCT" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TA_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="MD_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SZ_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TWA_C" Type="Decimal" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_DIST_TAR_DETAIL">
+          <Key>
+            <PropertyRef Name="DIST_TARGET_DETAIL_ID" />
+          </Key>
+          <Property Name="DIST_TARGET_DETAIL_ID" Type="Int64" Nullable="false" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UOM_ID" Type="Int32" Nullable="false" />
+          <Property Name="QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="DateTime" />
+          <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="DateTime" />
+          <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DIST_TARGET_ID" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="T_DIST_TAR_MASTER" Relationship="Self.T_DIST_TAR_DETAIL_FK1" FromRole="T_DIST_TAR_DETAIL" ToRole="T_DIST_TAR_MASTER" />
+        </EntityType>
+        <EntityType Name="T_DIST_TAR_MASTER">
+          <Key>
+            <PropertyRef Name="DIST_TARGET_ID" />
+          </Key>
+          <Property Name="DIST_TARGET_ID" Type="Int64" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="DISTRIBUTOR_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SALES_TYPE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="DateTime" />
+          <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="DateTime" />
+          <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="T_DIST_TAR_DETAIL" Relationship="Self.T_DIST_TAR_DETAIL_FK1" FromRole="T_DIST_TAR_MASTER" ToRole="T_DIST_TAR_DETAIL" />
+        </EntityType>
+        <EntityType Name="T_DISTRIBUTORTARGET_TEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CUST_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CUST_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TASO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SSO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TCR_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TMO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TSG_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TMR" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="JMW_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TLD_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="NVO_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="BCT" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TA_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="MD_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SZ_C" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="TWA_C" Type="Decimal" Precision="38" Scale="5" />
+        </EntityType>
+        <EntityType Name="T_INCEN_ACHIEV_RATIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="INCEN_FORMU_ID" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="SF_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="CREATED_ON" Type="DateTime" />
+          <Property Name="ACH_RATIO_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_INCEN_ACHIEV_RATIO_DETAIL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ACH_RATIO_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PRIMARY_PERC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SECONDARY_PERC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PERCENTAGE_TK" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="T_INCEN_FORMULA">
+          <Key>
+            <PropertyRef Name="INCEN_ID" />
+          </Key>
+          <Property Name="INCEN_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SALES_FORCE_TYPE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="P_SALE_PERCENT" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="S_SALE_PERCENT" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="INCEN_PERCEN" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="MINACHNEXTMONTHCONS" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="CREATED_BY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UPDATED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UPDATED_ON" Type="DateTime" />
+          <Property Name="UPDATED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_DELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DELETED_BY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DELETED_ON" Type="DateTime" />
+          <Property Name="DELETED_IP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IS_ACTIVE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="REMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_INCEN_RATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="RATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="BRAND_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PER_QUANTITY" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="PER_UOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TAKA_AMOUNT" Type="Decimal" Precision="38" Scale="5" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="END_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_INCEN_RATE_DIST_RATIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="RATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="SF_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TK_AMOUNT" Type="Decimal" Precision="38" Scale="5" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <Association Name="T_DIST_TAR_DETAIL_FK1">
+          <End Role="T_DIST_TAR_MASTER" Type="Self.T_DIST_TAR_MASTER" Multiplicity="1" />
+          <End Role="T_DIST_TAR_DETAIL" Type="Self.T_DIST_TAR_DETAIL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_DIST_TAR_MASTER">
+              <PropertyRef Name="DIST_TARGET_ID" />
+            </Principal>
+            <Dependent Role="T_DIST_TAR_DETAIL">
+              <PropertyRef Name="DIST_TARGET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ERRORLOGs" EntityType="Self.ERRORLOG" />
+          <EntitySet Name="T_BRAND_MAPPING" EntityType="Self.T_BRAND_MAPPING" />
+          <EntitySet Name="T_CMNCOMPANY" EntityType="Self.T_CMNCOMPANY" />
+          <EntitySet Name="T_CMNMENU" EntityType="Self.T_CMNMENU" />
+          <EntitySet Name="T_CMNMENUPERMISSION" EntityType="Self.T_CMNMENUPERMISSION" />
+          <EntitySet Name="T_CMNMODULE" EntityType="Self.T_CMNMODULE" />
+          <EntitySet Name="T_CMNMODULEPERMISSION" EntityType="Self.T_CMNMODULEPERMISSION" />
+          <EntitySet Name="T_CMNUSER" EntityType="Self.T_CMNUSER" />
+          <EntitySet Name="T_CMNUSERAUTHENTICATION" EntityType="Self.T_CMNUSERAUTHENTICATION" />
+          <EntitySet Name="T_DIST_BRND_TAR_PRI_SECON" EntityType="Self.T_DIST_BRND_TAR_PRI_SECON" />
+          <EntitySet Name="T_DIST_PRIMARY_INCENTIVE" EntityType="Self.T_DIST_PRIMARY_INCENTIVE" />
+          <EntitySet Name="T_DIST_SECON_SALE_ACH_D" EntityType="Self.T_DIST_SECON_SALE_ACH_D" />
+          <EntitySet Name="T_DIST_SECON_SALE_ACH_M" EntityType="Self.T_DIST_SECON_SALE_ACH_M" />
+          <EntitySet Name="T_DIST_SECON_SALE_TEMP" EntityType="Self.T_DIST_SECON_SALE_TEMP" />
+          <EntitySet Name="T_DIST_TAR_DETAIL" EntityType="Self.T_DIST_TAR_DETAIL" />
+          <EntitySet Name="T_DIST_TAR_MASTER" EntityType="Self.T_DIST_TAR_MASTER" />
+          <EntitySet Name="T_DISTRIBUTORTARGET_TEMP" EntityType="Self.T_DISTRIBUTORTARGET_TEMP" />
+          <EntitySet Name="T_INCEN_ACHIEV_RATIO" EntityType="Self.T_INCEN_ACHIEV_RATIO" />
+          <EntitySet Name="T_INCEN_ACHIEV_RATIO_DETAIL" EntityType="Self.T_INCEN_ACHIEV_RATIO_DETAIL" />
+          <EntitySet Name="T_INCEN_FORMULA" EntityType="Self.T_INCEN_FORMULA" />
+          <EntitySet Name="T_INCEN_RATE" EntityType="Self.T_INCEN_RATE" />
+          <EntitySet Name="T_INCEN_RATE_DIST_RATIO" EntityType="Self.T_INCEN_RATE_DIST_RATIO" />
+          <AssociationSet Name="T_DIST_TAR_DETAIL_FK1" Association="Self.T_DIST_TAR_DETAIL_FK1">
+            <End Role="T_DIST_TAR_MASTER" EntitySet="T_DIST_TAR_MASTER" />
+            <End Role="T_DIST_TAR_DETAIL" EntitySet="T_DIST_TAR_DETAIL" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OracleModelEntityStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="ERRORLOGs">
+            <EntityTypeMapping TypeName="OracleModelEntity.ERRORLOG">
+              <MappingFragment StoreEntitySet="ERRORLOG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ERRORMESSAGE" ColumnName="ERRORMESSAGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_BRAND_MAPPING">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_BRAND_MAPPING">
+              <MappingFragment StoreEntitySet="T_BRAND_MAPPING">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MARKETING_CODE" ColumnName="MARKETING_CODE" />
+                <ScalarProperty Name="BRAND_OID" ColumnName="BRAND_OID" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="BRAND_FULL_NAME" ColumnName="BRAND_FULL_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNCOMPANY">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNCOMPANY">
+              <MappingFragment StoreEntitySet="T_CMNCOMPANY">
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="COMPANYSHORTNAME" ColumnName="COMPANYSHORTNAME" />
+                <ScalarProperty Name="COMPANYNAME" ColumnName="COMPANYNAME" />
+                <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+                <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+                <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+                <ScalarProperty Name="CITYID" ColumnName="CITYID" />
+                <ScalarProperty Name="COUNTRYID" ColumnName="COUNTRYID" />
+                <ScalarProperty Name="STAETID" ColumnName="STAETID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+                <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNMENU">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMENU">
+              <MappingFragment StoreEntitySet="T_CMNMENU">
+                <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="MENUNAME" ColumnName="MENUNAME" />
+                <ScalarProperty Name="MENUSHORTNAME" ColumnName="MENUSHORTNAME" />
+                <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+                <ScalarProperty Name="MENUPATH" ColumnName="MENUPATH" />
+                <ScalarProperty Name="REPORTNAME" ColumnName="REPORTNAME" />
+                <ScalarProperty Name="REPORTPATH" ColumnName="REPORTPATH" />
+                <ScalarProperty Name="PARENTID" ColumnName="PARENTID" />
+                <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+                <ScalarProperty Name="MENUTYPEID" ColumnName="MENUTYPEID" />
+                <ScalarProperty Name="MENUICONCSS" ColumnName="MENUICONCSS" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNMENUPERMISSION">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMENUPERMISSION">
+              <MappingFragment StoreEntitySet="T_CMNMENUPERMISSION">
+                <ScalarProperty Name="MENUPERMISSIONID" ColumnName="MENUPERMISSIONID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+                <ScalarProperty Name="USERGROUPID" ColumnName="USERGROUPID" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="ENABLEVIEW" ColumnName="ENABLEVIEW" />
+                <ScalarProperty Name="ENABLEINSERT" ColumnName="ENABLEINSERT" />
+                <ScalarProperty Name="ENABLEUPDATE" ColumnName="ENABLEUPDATE" />
+                <ScalarProperty Name="ENABLEDELETE" ColumnName="ENABLEDELETE" />
+                <ScalarProperty Name="ORGANOGRAMID" ColumnName="ORGANOGRAMID" />
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="EFFECTIVEDATE" ColumnName="EFFECTIVEDATE" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNMODULE">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMODULE">
+              <MappingFragment StoreEntitySet="T_CMNMODULE">
+                <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="MODULENAME" ColumnName="MODULENAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+                <ScalarProperty Name="MODULEPATH" ColumnName="MODULEPATH" />
+                <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNMODULEPERMISSION">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNMODULEPERMISSION">
+              <MappingFragment StoreEntitySet="T_CMNMODULEPERMISSION">
+                <ScalarProperty Name="MODULEPERMISSIONID" ColumnName="MODULEPERMISSIONID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="MODULEID" ColumnName="MODULEID" />
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="MENULISTID" ColumnName="MENULISTID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNUSER">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNUSER">
+              <MappingFragment StoreEntitySet="T_CMNUSER">
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="CUSTOMCODE" ColumnName="CUSTOMCODE" />
+                <ScalarProperty Name="TRANSACTIONTYPEID" ColumnName="TRANSACTIONTYPEID" />
+                <ScalarProperty Name="EMPLOYEEID" ColumnName="EMPLOYEEID" />
+                <ScalarProperty Name="USERTYPEID" ColumnName="USERTYPEID" />
+                <ScalarProperty Name="USERDESIGNATIONID" ColumnName="USERDESIGNATIONID" />
+                <ScalarProperty Name="USERGROUPID" ColumnName="USERGROUPID" />
+                <ScalarProperty Name="USERTITLEID" ColumnName="USERTITLEID" />
+                <ScalarProperty Name="USERPARENTID" ColumnName="USERPARENTID" />
+                <ScalarProperty Name="USERFIRSTNAME" ColumnName="USERFIRSTNAME" />
+                <ScalarProperty Name="USERMIDDLENAME" ColumnName="USERMIDDLENAME" />
+                <ScalarProperty Name="USERLASTNAME" ColumnName="USERLASTNAME" />
+                <ScalarProperty Name="USERFULLNAME" ColumnName="USERFULLNAME" />
+                <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+                <ScalarProperty Name="DEPARTMENTNAME" ColumnName="DEPARTMENTNAME" />
+                <ScalarProperty Name="USERJOBTITLE" ColumnName="USERJOBTITLE" />
+                <ScalarProperty Name="APPOINTMENT" ColumnName="APPOINTMENT" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+                <ScalarProperty Name="CUSTOMERACCOUNTID" ColumnName="CUSTOMERACCOUNTID" />
+                <ScalarProperty Name="SAPCUSTOMERID" ColumnName="SAPCUSTOMERID" />
+                <ScalarProperty Name="CONTRACTEMAILID" ColumnName="CONTRACTEMAILID" />
+                <ScalarProperty Name="SKYPEID" ColumnName="SKYPEID" />
+                <ScalarProperty Name="FACEBOOKID" ColumnName="FACEBOOKID" />
+                <ScalarProperty Name="WHATSAPP" ColumnName="WHATSAPP" />
+                <ScalarProperty Name="VIBER" ColumnName="VIBER" />
+                <ScalarProperty Name="LINKEDIN" ColumnName="LINKEDIN" />
+                <ScalarProperty Name="RELIGIONID" ColumnName="RELIGIONID" />
+                <ScalarProperty Name="MOBILENO" ColumnName="MOBILENO" />
+                <ScalarProperty Name="PHONENO" ColumnName="PHONENO" />
+                <ScalarProperty Name="UNIQUEIDENTITY" ColumnName="UNIQUEIDENTITY" />
+                <ScalarProperty Name="OFFICEID" ColumnName="OFFICEID" />
+                <ScalarProperty Name="GENDERID" ColumnName="GENDERID" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="EFFECTIVEDATE" ColumnName="EFFECTIVEDATE" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="COMPANYID" ColumnName="COMPANYID" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_CMNUSERAUTHENTICATION">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_CMNUSERAUTHENTICATION">
+              <MappingFragment StoreEntitySet="T_CMNUSERAUTHENTICATION">
+                <ScalarProperty Name="AUTHENTICATIONID" ColumnName="AUTHENTICATIONID" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="LOGINID" ColumnName="LOGINID" />
+                <ScalarProperty Name="LOGINEMAIL" ColumnName="LOGINEMAIL" />
+                <ScalarProperty Name="LOGINPHONE" ColumnName="LOGINPHONE" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="CONFIRMPASSWORD" ColumnName="CONFIRMPASSWORD" />
+                <ScalarProperty Name="REGISTRATIONDATE" ColumnName="REGISTRATIONDATE" />
+                <ScalarProperty Name="EXPIREDATE" ColumnName="EXPIREDATE" />
+                <ScalarProperty Name="ACTIVATIONDATE" ColumnName="ACTIVATIONDATE" />
+                <ScalarProperty Name="ACTIVATIONCODE" ColumnName="ACTIVATIONCODE" />
+                <ScalarProperty Name="STATUSID" ColumnName="STATUSID" />
+                <ScalarProperty Name="LANGUAGEID" ColumnName="LANGUAGEID" />
+                <ScalarProperty Name="TIMEZONEID" ColumnName="TIMEZONEID" />
+                <ScalarProperty Name="ALLOWMULTIPLELOGIN" ColumnName="ALLOWMULTIPLELOGIN" />
+                <ScalarProperty Name="NOOFLOGIN" ColumnName="NOOFLOGIN" />
+                <ScalarProperty Name="ISFIRSTLOGIN" ColumnName="ISFIRSTLOGIN" />
+                <ScalarProperty Name="CREATEBY" ColumnName="CREATEBY" />
+                <ScalarProperty Name="CREATEON" ColumnName="CREATEON" />
+                <ScalarProperty Name="CREATEPC" ColumnName="CREATEPC" />
+                <ScalarProperty Name="UPDATEBY" ColumnName="UPDATEBY" />
+                <ScalarProperty Name="UPDATEON" ColumnName="UPDATEON" />
+                <ScalarProperty Name="UPDATEPC" ColumnName="UPDATEPC" />
+                <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+                <ScalarProperty Name="DELETEBY" ColumnName="DELETEBY" />
+                <ScalarProperty Name="DELETEON" ColumnName="DELETEON" />
+                <ScalarProperty Name="DELETEPC" ColumnName="DELETEPC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_BRND_TAR_PRI_SECON">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_BRND_TAR_PRI_SECON">
+              <MappingFragment StoreEntitySet="T_DIST_BRND_TAR_PRI_SECON">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DISTRIBUTORID" ColumnName="DISTRIBUTORID" />
+                <ScalarProperty Name="BRANDID" ColumnName="BRANDID" />
+                <ScalarProperty Name="TARGETQUANTITY" ColumnName="TARGETQUANTITY" />
+                <ScalarProperty Name="PRIMARYSALE" ColumnName="PRIMARYSALE" />
+                <ScalarProperty Name="SECONDARYSALE" ColumnName="SECONDARYSALE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_PRIMARY_INCENTIVE">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_PRIMARY_INCENTIVE">
+              <MappingFragment StoreEntitySet="T_DIST_PRIMARY_INCENTIVE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="PRIMARY_ACHI_PERC" ColumnName="PRIMARY_ACHI_PERC" />
+                <ScalarProperty Name="SECONDARY_ACHI_PERC" ColumnName="SECONDARY_ACHI_PERC" />
+                <ScalarProperty Name="INCENTIVE_AMOUN" ColumnName="INCENTIVE_AMOUN" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="INCENTIVE_UOM" ColumnName="INCENTIVE_UOM" />
+                <ScalarProperty Name="MIN_ACHI_NEXT_MONTH_CONSI" ColumnName="MIN_ACHI_NEXT_MONTH_CONSI" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_SECON_SALE_ACH_D">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_ACH_D">
+              <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_ACH_D">
+                <ScalarProperty Name="DIST_SECON_ACH_DETAIL_ID" ColumnName="DIST_SECON_ACH_DETAIL_ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="UOM_ID" ColumnName="UOM_ID" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+                <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+                <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+                <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+                <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+                <ScalarProperty Name="DIST_SECON_ACH_ID" ColumnName="DIST_SECON_ACH_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_SECON_SALE_ACH_M">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_ACH_M">
+              <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_ACH_M">
+                <ScalarProperty Name="DIST_SECON_ACH_ID" ColumnName="DIST_SECON_ACH_ID" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="DISTRIBUTOR_ID" ColumnName="DISTRIBUTOR_ID" />
+                <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+                <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+                <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+                <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+                <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_SECON_SALE_TEMP">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_SECON_SALE_TEMP">
+              <MappingFragment StoreEntitySet="T_DIST_SECON_SALE_TEMP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+                <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+                <ScalarProperty Name="TASO_C" ColumnName="TASO_C" />
+                <ScalarProperty Name="SSO_C" ColumnName="SSO_C" />
+                <ScalarProperty Name="TCR_C" ColumnName="TCR_C" />
+                <ScalarProperty Name="TMO_C" ColumnName="TMO_C" />
+                <ScalarProperty Name="TSG_C" ColumnName="TSG_C" />
+                <ScalarProperty Name="TMR" ColumnName="TMR" />
+                <ScalarProperty Name="JMW_C" ColumnName="JMW_C" />
+                <ScalarProperty Name="TLD_C" ColumnName="TLD_C" />
+                <ScalarProperty Name="NVO_C" ColumnName="NVO_C" />
+                <ScalarProperty Name="BCT" ColumnName="BCT" />
+                <ScalarProperty Name="TA_C" ColumnName="TA_C" />
+                <ScalarProperty Name="MD_C" ColumnName="MD_C" />
+                <ScalarProperty Name="SZ_C" ColumnName="SZ_C" />
+                <ScalarProperty Name="TWA_C" ColumnName="TWA_C" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_TAR_DETAIL">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_TAR_DETAIL">
+              <MappingFragment StoreEntitySet="T_DIST_TAR_DETAIL">
+                <ScalarProperty Name="DIST_TARGET_DETAIL_ID" ColumnName="DIST_TARGET_DETAIL_ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="UOM_ID" ColumnName="UOM_ID" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+                <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+                <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+                <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+                <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+                <ScalarProperty Name="DIST_TARGET_ID" ColumnName="DIST_TARGET_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DIST_TAR_MASTER">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DIST_TAR_MASTER">
+              <MappingFragment StoreEntitySet="T_DIST_TAR_MASTER">
+                <ScalarProperty Name="DIST_TARGET_ID" ColumnName="DIST_TARGET_ID" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="DISTRIBUTOR_ID" ColumnName="DISTRIBUTOR_ID" />
+                <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+                <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+                <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+                <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+                <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_DISTRIBUTORTARGET_TEMP">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_DISTRIBUTORTARGET_TEMP">
+              <MappingFragment StoreEntitySet="T_DISTRIBUTORTARGET_TEMP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+                <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+                <ScalarProperty Name="TASO_C" ColumnName="TASO_C" />
+                <ScalarProperty Name="SSO_C" ColumnName="SSO_C" />
+                <ScalarProperty Name="TCR_C" ColumnName="TCR_C" />
+                <ScalarProperty Name="TMO_C" ColumnName="TMO_C" />
+                <ScalarProperty Name="TSG_C" ColumnName="TSG_C" />
+                <ScalarProperty Name="TMR" ColumnName="TMR" />
+                <ScalarProperty Name="JMW_C" ColumnName="JMW_C" />
+                <ScalarProperty Name="TLD_C" ColumnName="TLD_C" />
+                <ScalarProperty Name="NVO_C" ColumnName="NVO_C" />
+                <ScalarProperty Name="BCT" ColumnName="BCT" />
+                <ScalarProperty Name="TA_C" ColumnName="TA_C" />
+                <ScalarProperty Name="MD_C" ColumnName="MD_C" />
+                <ScalarProperty Name="SZ_C" ColumnName="SZ_C" />
+                <ScalarProperty Name="TWA_C" ColumnName="TWA_C" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_INCEN_ACHIEV_RATIO">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_ACHIEV_RATIO">
+              <MappingFragment StoreEntitySet="T_INCEN_ACHIEV_RATIO">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="INCEN_FORMU_ID" ColumnName="INCEN_FORMU_ID" />
+                <ScalarProperty Name="SF_TYPE" ColumnName="SF_TYPE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="ACH_RATIO_ID" ColumnName="ACH_RATIO_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_INCEN_ACHIEV_RATIO_DETAIL">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_ACHIEV_RATIO_DETAIL">
+              <MappingFragment StoreEntitySet="T_INCEN_ACHIEV_RATIO_DETAIL">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ACH_RATIO_ID" ColumnName="ACH_RATIO_ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="PRIMARY_PERC" ColumnName="PRIMARY_PERC" />
+                <ScalarProperty Name="SECONDARY_PERC" ColumnName="SECONDARY_PERC" />
+                <ScalarProperty Name="PERCENTAGE_TK" ColumnName="PERCENTAGE_TK" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_INCEN_FORMULA">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_FORMULA">
+              <MappingFragment StoreEntitySet="T_INCEN_FORMULA">
+                <ScalarProperty Name="INCEN_ID" ColumnName="INCEN_ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="SALES_FORCE_TYPE_ID" ColumnName="SALES_FORCE_TYPE_ID" />
+                <ScalarProperty Name="P_SALE_PERCENT" ColumnName="P_SALE_PERCENT" />
+                <ScalarProperty Name="S_SALE_PERCENT" ColumnName="S_SALE_PERCENT" />
+                <ScalarProperty Name="INCEN_PERCEN" ColumnName="INCEN_PERCEN" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="MINACHNEXTMONTHCONS" ColumnName="MINACHNEXTMONTHCONS" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_IP" ColumnName="CREATED_IP" />
+                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+                <ScalarProperty Name="UPDATED_ON" ColumnName="UPDATED_ON" />
+                <ScalarProperty Name="UPDATED_IP" ColumnName="UPDATED_IP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="DELETED_BY" ColumnName="DELETED_BY" />
+                <ScalarProperty Name="DELETED_ON" ColumnName="DELETED_ON" />
+                <ScalarProperty Name="DELETED_IP" ColumnName="DELETED_IP" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_INCEN_RATE">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_RATE">
+              <MappingFragment StoreEntitySet="T_INCEN_RATE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RATE_ID" ColumnName="RATE_ID" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="PER_QUANTITY" ColumnName="PER_QUANTITY" />
+                <ScalarProperty Name="PER_UOM" ColumnName="PER_UOM" />
+                <ScalarProperty Name="TAKA_AMOUNT" ColumnName="TAKA_AMOUNT" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_INCEN_RATE_DIST_RATIO">
+            <EntityTypeMapping TypeName="OracleModelEntity.T_INCEN_RATE_DIST_RATIO">
+              <MappingFragment StoreEntitySet="T_INCEN_RATE_DIST_RATIO">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RATE_ID" ColumnName="RATE_ID" />
+                <ScalarProperty Name="SF_TYPE" ColumnName="SF_TYPE" />
+                <ScalarProperty Name="TK_AMOUNT" ColumnName="TK_AMOUNT" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

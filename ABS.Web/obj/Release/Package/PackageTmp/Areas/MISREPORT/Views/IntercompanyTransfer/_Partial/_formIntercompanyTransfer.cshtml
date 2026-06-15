@@ -1,0 +1,72 @@
+﻿<form novalidate name="formIntercompanyTransfer" id="formIntercompanyTransfer" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Location</label>
+                <div class="col-md-6">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="--Select Location--"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Prodouct Group</label>
+                <div class="col-md-6">
+                    <select id="ddlProductGroup" class="select2-select-00"
+                            ng-model="ngModelProdGroup"
+                            name="ddlProductGroup"
+                            data-placeholder="--Select Prodouct Group--"
+                            style="width: 100%" ng-options="pg.PROD_GROUP_OID as pg.PROD_GROUP_NAME for pg in listProdGroup" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formIntercompanyTransfer.$dirty||submitted) && formIntercompanyTransfer.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formIntercompanyTransfer.$dirty||submitted) && formIntercompanyTransfer.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17"> Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="Daily">Daily
+                    &nbsp;  &nbsp; &nbsp;
+                    <input type="radio" ng-model="ReportType" value="Summary">Summary
+                </div>
+                <span class="error" ng-show="(formIntercompanyTransfer.$dirty||submitted) && formIntercompanyTransfer.ReportType.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+
+</form>

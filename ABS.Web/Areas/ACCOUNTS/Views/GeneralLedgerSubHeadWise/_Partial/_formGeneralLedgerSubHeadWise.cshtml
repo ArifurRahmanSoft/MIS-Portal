@@ -1,0 +1,160 @@
+﻿<form novalidate name="frmAccGenLedgerComparison" id="frmAccGenLedgerComparison" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany" ng-change="UserWiseCCompanyList();"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listUserWiseCompany">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlZone.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Child Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCCompany" class="select2-select-00"
+                            ng-model="ngModelCCompany"
+                            name="ddlCCompany" ng-change="UserWiseCCompanyList();"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listUserWiseCCompany">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.ddlCCompany.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Filter With Level 0</label>
+                <div class="col-md-6">
+                    <select id="lvlId1" class="select2-select-00"
+                            ng-model="lvlId1" ng-change="loadAllLevel('2')"
+                            name="lvlId1"
+                            data-placeholder="--Select Level--"
+                            style="width: 100%" ng-options="lvl.LVLID as lvl.LVLNAME for lvl in listlvl1">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.lvlId1.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Filter With Level 1</label>
+                <div class="col-md-6">
+                    <select id="lvlId2" class="select2-select-00"
+                            ng-model="lvlId2" ng-change="loadAllLevel('3')"
+                            name="lvlId2"
+                            data-placeholder="--Select Level 1--"
+                            style="width: 100%" ng-options="lvl.LVLID as lvl.LVLNAME for lvl in listlvl2">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.lvlId2.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Filter With Level 2</label>
+                <div class="col-md-6">
+                    <select id="lvlId3" class="select2-select-00"
+                            ng-model="lvlId3" ng-change="loadAllLevel('4')"
+                            name="lvlId3"
+                            data-placeholder="--Select Level 2--"
+                            style="width: 100%" ng-options="lvl.LVLID as lvl.LVLNAME for lvl in listlvl3">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.lvlId3.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Filter With Level 3</label>
+                <div class="col-md-6">
+                    <select id="lvlId4" class="select2-select-00"
+                            ng-model="lvlId4"
+                            name="lvlId4"
+                            data-placeholder="--Select Level 3--"
+                            style="width: 100%" ng-options="lvl.LVLID as lvl.LVLNAME for lvl in listlvl4">
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.lvlId4.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmAccGenLedgerComparison.$dirty||submitted) && frmAccGenLedgerComparison.dtEndDate.$error.required">*</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Category</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportCategory" value="general" id="general"><label class="label control-label" for="general" style="font-weight: normal; color: black;">General</label>
+                    @*<input type="radio" ng-model="ReportCategory" value="comparison" id="comparison"><label class="label control-label" for="comparison" style="font-weight: normal; color: black;">Comparison</label>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Mode</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportMode" value="monthly" id="monthly"><label class="label control-label" for="monthly" style="font-weight: normal; color: black;">Monthly</label>
+                    <input type="radio" ng-model="ReportMode" value="quarterly" id="quarterly"><label class="label control-label" for="quarterly" style="font-weight: normal; color: black;">Quarterly</label>
+                    <input type="radio" ng-model="ReportMode" value="halfyearly" id="halfyearly"><label class="label control-label" for="halfyearly" style="font-weight: normal; color: black;">Half Yearly</label>
+                    <input type="radio" ng-model="ReportMode" value="yearly" id="yearly"><label class="label control-label" for="yearly" style="font-weight: normal; color: black;">Yearly</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="input17">Report Type</label>
+                <div class="col-md-10">
+                    <input type="radio" ng-model="ReportType" value="level0" id="level0"><label class="label control-label" for="level0" style="font-weight: normal; color: black;">Level-0</label>
+                    <input type="radio" ng-model="ReportType" value="level1" id="level1"><label class="label control-label" for="level1" style="font-weight: normal; color: black;">Level-1</label>
+                    <input type="radio" ng-model="ReportType" value="level2" id="level2"><label class="label control-label" for="level2" style="font-weight: normal; color: black;">Level-2</label>
+                    <input type="radio" ng-model="ReportType" value="level3" id="level3"><label class="label control-label" for="level3" style="font-weight: normal; color: black;">Level-3</label>
+                    <input type="radio" ng-model="ReportType" value="level4" id="level4"><label class="label control-label" for="level4" style="font-weight: normal; color: black;">Level-4</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

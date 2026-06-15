@@ -1,0 +1,105 @@
+﻿<form novalidate name="_frmDailyCollection" id="_frmDailyCollection" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Company</label>
+                <div class="col-md-6">
+                    <select id="ddlCompany" class="select2-select-00"
+                            ng-model="ngModelCompany"
+                            name="ddlCompany"
+                            data-placeholder="--Select Company--"
+                            style="width: 100%" ng-options="com.SCOMP_OID as com.SCOMP_NAME for com in listCompany" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.ddlZone.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Customer</label>
+                <div class="col-md-6">
+                    <select id="ddlDistributor" class="select2-select-00"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Customer--"
+                            style="width: 100%" ng-options="dis.DIST_ID as dis.DIST_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(formUndeliveredStatement.$dirty||submitted) && formUndeliveredStatement.ddlDistributor.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Location</label>
+                <div class="col-md-6">
+                    <select id="ddlLocation" class="select2-select-00"
+                            ng-model="ngModelLocation"
+                            name="ddlLocation"
+                            data-placeholder="--Select Location--"
+                            style="width: 100%" ng-options="loc.SGLOC_ID as loc.SGLOC_NAME for loc in listLocation" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.ddlLocation.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Mode</label>
+                <div class="col-md-6">
+                    <select id="ddlTranMode" class="select2-select-00"
+                            ng-model="ngModelTranMode"
+                            name="ddlTranMode"
+                            data-placeholder="--Select Mode--"
+                            style="width: 100%" ng-options="mode.OID as mode.SPMOD_NAME for mode in listTranMode" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.ddlTranMode.$error.required">*</span>
+            </div>
+
+
+            
+
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Confirm</label>
+                <div class="col-md-6">
+                    <select id="ddlPostMode" class="select2-select-00"
+                            ng-model="ngModelPostMode"
+                            name="ddlPostMode"
+                            data-placeholder="--Post Confirm?--"
+                            style="width: 100%" ng-options="post.SMNYRM_POSF as post.SMNYRM_POSF for post in listPostMode" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.ddlPostMode.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">From Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">To Date</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(_frmDailyCollection.$dirty||submitted) && _frmDailyCollection.dtEndDate.$error.required">*</span>
+            </div>
+
+        </div>
+    </div>
+</form>

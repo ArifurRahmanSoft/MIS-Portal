@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDOVSDelivery" targetNamespace="http://tempuri.org/DSDOVSDelivery.xsd" xmlns:mstns="http://tempuri.org/DSDOVSDelivery.xsd" xmlns="http://tempuri.org/DSDOVSDelivery.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDOVSDelivery" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSDOVSDelivery" msprop:Generator_UserDSName="DSDOVSDelivery">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSDOVSDelivery" msprop:Generator_TableClassName="DSDOVSDeliveryDataTable" msprop:Generator_TableVarName="tableDSDOVSDelivery" msprop:Generator_TablePropName="_DSDOVSDelivery" msprop:Generator_RowDeletingName="DSDOVSDeliveryRowDeleting" msprop:Generator_RowChangingName="DSDOVSDeliveryRowChanging" msprop:Generator_RowEvHandlerName="DSDOVSDeliveryRowChangeEventHandler" msprop:Generator_RowDeletedName="DSDOVSDeliveryRowDeleted" msprop:Generator_UserTableName="DSDOVSDelivery" msprop:Generator_RowChangedName="DSDOVSDeliveryRowChanged" msprop:Generator_RowEvArgName="DSDOVSDeliveryRowChangeEvent" msprop:Generator_RowClassName="DSDOVSDeliveryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dodt" msprop:Generator_ColumnVarNameInTable="columndodt" msprop:Generator_ColumnPropNameInRow="dodt" msprop:Generator_ColumnPropNameInTable="dodtColumn" msprop:Generator_UserColumnName="dodt" type="xs:string" minOccurs="0" />
+              <xs:element name="chdt" msprop:Generator_ColumnVarNameInTable="columnchdt" msprop:Generator_ColumnPropNameInRow="chdt" msprop:Generator_ColumnPropNameInTable="chdtColumn" msprop:Generator_UserColumnName="chdt" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalHoursDiff" msprop:Generator_ColumnVarNameInTable="columnTotalHoursDiff" msprop:Generator_ColumnPropNameInRow="TotalHoursDiff" msprop:Generator_ColumnPropNameInTable="TotalHoursDiffColumn" msprop:Generator_UserColumnName="TotalHoursDiff" type="xs:string" minOccurs="0" />
+              <xs:element name="DayDiff" msprop:Generator_ColumnVarNameInTable="columnDayDiff" msprop:Generator_ColumnPropNameInRow="DayDiff" msprop:Generator_ColumnPropNameInTable="DayDiffColumn" msprop:Generator_UserColumnName="DayDiff" type="xs:string" minOccurs="0" />
+              <xs:element name="ActualHourAfterDay" msprop:Generator_ColumnVarNameInTable="columnActualHourAfterDay" msprop:Generator_ColumnPropNameInRow="ActualHourAfterDay" msprop:Generator_ColumnPropNameInTable="ActualHourAfterDayColumn" msprop:Generator_UserColumnName="ActualHourAfterDay" type="xs:string" minOccurs="0" />
+              <xs:element name="ActualMinAfterDayHour" msprop:Generator_ColumnVarNameInTable="columnActualMinAfterDayHour" msprop:Generator_ColumnPropNameInRow="ActualMinAfterDayHour" msprop:Generator_ColumnPropNameInTable="ActualMinAfterDayHourColumn" msprop:Generator_UserColumnName="ActualMinAfterDayHour" type="xs:string" minOccurs="0" />
+              <xs:element name="scomp_name" msprop:Generator_ColumnVarNameInTable="columnscomp_name" msprop:Generator_ColumnPropNameInRow="scomp_name" msprop:Generator_ColumnPropNameInTable="scomp_nameColumn" msprop:Generator_UserColumnName="scomp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_text" msprop:Generator_ColumnVarNameInTable="columnscust_info_text" msprop:Generator_ColumnPropNameInRow="scust_info_text" msprop:Generator_ColumnPropNameInTable="scust_info_textColumn" msprop:Generator_UserColumnName="scust_info_text" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_name" msprop:Generator_ColumnVarNameInTable="columnscust_info_name" msprop:Generator_ColumnPropNameInRow="scust_info_name" msprop:Generator_ColumnPropNameInTable="scust_info_nameColumn" msprop:Generator_UserColumnName="scust_info_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_add1" msprop:Generator_ColumnVarNameInTable="columnscust_info_add1" msprop:Generator_ColumnPropNameInRow="scust_info_add1" msprop:Generator_ColumnPropNameInTable="scust_info_add1Column" msprop:Generator_UserColumnName="scust_info_add1" type="xs:string" minOccurs="0" />
+              <xs:element name="sdogp_name" msprop:Generator_ColumnVarNameInTable="columnsdogp_name" msprop:Generator_ColumnPropNameInRow="sdogp_name" msprop:Generator_ColumnPropNameInTable="sdogp_nameColumn" msprop:Generator_UserColumnName="sdogp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sprod_name" msprop:Generator_ColumnVarNameInTable="columnsprod_name" msprop:Generator_ColumnPropNameInRow="sprod_name" msprop:Generator_ColumnPropNameInTable="sprod_nameColumn" msprop:Generator_UserColumnName="sprod_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sreqm_rqno" msprop:Generator_ColumnVarNameInTable="columnsreqm_rqno" msprop:Generator_ColumnPropNameInRow="sreqm_rqno" msprop:Generator_ColumnPropNameInTable="sreqm_rqnoColumn" msprop:Generator_UserColumnName="sreqm_rqno" type="xs:string" minOccurs="0" />
+              <xs:element name="sdode_doms" msprop:Generator_ColumnVarNameInTable="columnsdode_doms" msprop:Generator_ColumnPropNameInRow="sdode_doms" msprop:Generator_ColumnPropNameInTable="sdode_domsColumn" msprop:Generator_UserColumnName="sdode_doms" type="xs:string" minOccurs="0" />
+              <xs:element name="sdode_dodt" msprop:Generator_ColumnVarNameInTable="columnsdode_dodt" msprop:Generator_ColumnPropNameInRow="sdode_dodt" msprop:Generator_ColumnPropNameInTable="sdode_dodtColumn" msprop:Generator_UserColumnName="sdode_dodt" type="xs:string" minOccurs="0" />
+              <xs:element name="scham_chno" msprop:Generator_ColumnVarNameInTable="columnscham_chno" msprop:Generator_ColumnPropNameInRow="scham_chno" msprop:Generator_ColumnPropNameInTable="scham_chnoColumn" msprop:Generator_UserColumnName="scham_chno" type="xs:string" minOccurs="0" />
+              <xs:element name="scham_chdt" msprop:Generator_ColumnVarNameInTable="columnscham_chdt" msprop:Generator_ColumnPropNameInRow="scham_chdt" msprop:Generator_ColumnPropNameInTable="scham_chdtColumn" msprop:Generator_UserColumnName="scham_chdt" type="xs:string" minOccurs="0" />
+              <xs:element name="schad_qnty" msprop:Generator_ColumnVarNameInTable="columnschad_qnty" msprop:Generator_ColumnPropNameInRow="schad_qnty" msprop:Generator_ColumnPropNameInTable="schad_qntyColumn" msprop:Generator_UserColumnName="schad_qnty" type="xs:string" minOccurs="0" />
+              <xs:element name="challanpcs" msprop:Generator_ColumnVarNameInTable="columnchallanpcs" msprop:Generator_ColumnPropNameInRow="challanpcs" msprop:Generator_ColumnPropNameInTable="challanpcsColumn" msprop:Generator_UserColumnName="challanpcs" type="xs:string" minOccurs="0" />
+              <xs:element name="deliverylocation" msprop:Generator_ColumnVarNameInTable="columndeliverylocation" msprop:Generator_ColumnPropNameInRow="deliverylocation" msprop:Generator_ColumnPropNameInTable="deliverylocationColumn" msprop:Generator_UserColumnName="deliverylocation" type="xs:string" minOccurs="0" />
+              <xs:element name="scham_trno" msprop:Generator_ColumnVarNameInTable="columnscham_trno" msprop:Generator_ColumnPropNameInRow="scham_trno" msprop:Generator_ColumnPropNameInTable="scham_trnoColumn" msprop:Generator_UserColumnName="scham_trno" type="xs:string" minOccurs="0" />
+              <xs:element name="strpt_name" msprop:Generator_ColumnVarNameInTable="columnstrpt_name" msprop:Generator_ColumnPropNameInRow="strpt_name" msprop:Generator_ColumnPropNameInTable="strpt_nameColumn" msprop:Generator_UserColumnName="strpt_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scham_divr" msprop:Generator_ColumnVarNameInTable="columnscham_divr" msprop:Generator_ColumnPropNameInRow="scham_divr" msprop:Generator_ColumnPropNameInTable="scham_divrColumn" msprop:Generator_UserColumnName="scham_divr" type="xs:string" minOccurs="0" />
+              <xs:element name="dopcs" msprop:Generator_ColumnVarNameInTable="columndopcs" msprop:Generator_ColumnPropNameInRow="dopcs" msprop:Generator_ColumnPropNameInTable="dopcsColumn" msprop:Generator_UserColumnName="dopcs" type="xs:string" minOccurs="0" />
+              <xs:element name="sdode_qnty" msprop:Generator_ColumnVarNameInTable="columnsdode_qnty" msprop:Generator_ColumnPropNameInRow="sdode_qnty" msprop:Generator_ColumnPropNameInTable="sdode_qntyColumn" msprop:Generator_UserColumnName="sdode_qnty" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

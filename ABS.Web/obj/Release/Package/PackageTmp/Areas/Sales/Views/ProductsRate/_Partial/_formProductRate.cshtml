@@ -1,0 +1,91 @@
+﻿<form novalidate name="frmProductRate" id="frmProductRate" class="form-horizontal row-border">
+
+    <input type="hidden" id="IncentiveAchievementRatioID" readonly="readonly" ng-model="IncentiveAchievementRatioID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group" ng-if="false">
+                <label class="col-md-4 control-label">Enable Distributor</label>
+                <div class="col-md-1">
+                    <input type="checkbox" ng-change="DistributorCheck()"
+                           id="chkBDistributor"
+                           class="uniform"
+                           style="font-weight:bold; color:black !important;"
+                           name="chkBDistributor" ng-model="IsCheckedDistributor" />
+                </div>
+                <div class="col-md-5">
+                    <select id="ddlDistributor" class="select2-select-00" ng-disabled="IsDisableDistributor"
+                            ng-readonly="IsReadOnlyDistributor"
+                            ng-model="ngModelDistributor"
+                            name="ddlDistributor"
+                            data-placeholder="--Select Distributor--"
+                            style="width: 100%" ng-options="dis.OID as dis.SCUST_INFO_NAME for dis in listDistributor" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Ref Number *</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtRefNumber"
+                           class="form-control"
+                           style="font-weight:bold; color:black !important;"
+                           name="txtRefNumber" ng-model="ngRefNumber" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Type</label>
+                <div class="col-md-6">
+                    <select id="sstypId" class="select2-select-00"
+                            ng-model="sstypId" ng-change="loadBrandRecords()"
+                            name="sstypId"
+                            data-placeholder="--Select Sales Type--"
+                            style="width: 100%" ng-options="stp.SSTYP_OID as stp.SSTYP_NAME for stp in listSSTYP">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Product Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlProductBrand" class="select2-select-00"
+                            ng-model="ngModelBrand"
+                            name="ddlProductBrand"
+                            data-placeholder="--Select Brand--" ng-click="AddBrandToDetail()"
+                            style="width: 100%" ng-options="brnd.BRANDID as brnd.SBRND_NAME for brnd in listBrand"
+                            required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">            
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Active Date *</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtActiveDate"
+                           class="form-control datepicker"
+                           name="dtActiveDate" ng-model="ngActiveDate" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Close Date *</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtCloseDate"
+                           class="form-control datepicker"
+                           name="dtCloseDate" ng-model="ngCloseDate" required />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

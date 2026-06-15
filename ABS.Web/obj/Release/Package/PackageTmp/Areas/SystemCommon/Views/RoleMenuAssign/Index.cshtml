@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "User Role";
+}
+
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="roleMenuAssignCtrl">
+        <!-- Breadcrumbs line -->
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <!-- /Breadcrumbs line -->
+        <!--=== Page Header ===-->
+        <div class="page-header">
+
+        </div>
+        <!-- /Page Header -->
+        <!--==Delete Modal From System Common==-->
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+        <!--==Delete Modal From System Common==-->
+        <!--=== Page Content ===-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget box">
+                    <div class="widget-header">
+                        <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                        <div class="toolbar no-padding">
+                            <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                <i class="icon-refresh"></i> Reset
+                            </span>
+                            <span id="save" class="btn btn-success margin-right-btn" ng-click="Save()"
+                                  ng-disabled="frmRoleMenu.$invalid">
+                                <i class="icon-save"></i> {{btnSaveText}}
+                            </span>
+                            <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="widget-content no-padding">
+                        @Html.Partial("~/Areas/SystemCommon/Views/RoleMenuAssign/_Partial/_formRoleMenu.cshtml")
+                    </div>
+                    <div class="widget-content no-padding scroller" when-scrolled="loadRecords(1)" data-height="430px" data-always-visible="1" data-rail-visible="0">
+                        @Html.Partial("~/Areas/SystemCommon/Views/RoleMenuAssign/_Partial/_tableRoleMenu.cshtml")
+                    </div>
+                </div>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <!-- /Page Content -->
+        <div class="row">
+            <!-- Modal dialog -->
+            <div class="modal fade" id="roleCreation" style="z-index:1260 !important;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><i class="icon-ok-sign"></i> Create Role</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label"> Role Name</label>
+                                <div class="col-md-7">
+                                    <input type="text" id="roleName" class="form-control" ng-model="roleName" name="roleName" />                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <label class="col-md-1 control-label"></label>
+                                <div class="col-md-11">
+                                    <input ng-if="roleName!=''" type="button" id="createRole" class="btn btn-info margin-right-btn " value="Create" ng-click="saveRole()" />
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+@section AngularScript{
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/RoleMenuAssignCtrl.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Service/CrudService.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Directives/Conversion.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+
+}
+

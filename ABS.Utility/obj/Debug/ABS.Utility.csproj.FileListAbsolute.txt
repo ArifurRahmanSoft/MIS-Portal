@@ -1,0 +1,117 @@
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.pdb
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Home\Old\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csprojResolveAssemblyReference.cache
+D:\Home\Old\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+D:\Home\Old\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.pdb
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csprojResolveAssemblyReference.cache
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\ABS\AMBER_BUSINES_SUITE\Development\Applications\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll.config
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csprojAssemblyReference.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csproj.CoreCompileInputs.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csproj.CopyComplete
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Utility.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Data.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\ABS.Models.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Helpers.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Mvc.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Utility\obj\Debug\ABS.Utility.pdb

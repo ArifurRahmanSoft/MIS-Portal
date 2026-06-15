@@ -1,0 +1,59 @@
+﻿remove ------ omor testing area... monir testing area and put others place.
+
+Party Credit Limit ---- has header repeat on new page feature.
+Party Ledger Report has the fixed header while you do scrolling .... but hard to follow
+
+Undelivery Ton ......... City Feed Product ........ Need dynamic report
+
+07198 ----- sales performance report....... this user will get only sun and bulk performance
+
+
+Advanced Sales may be accomplished at any location whether it is Head Office, Marketing, Chittagong, Moulovi Bazar 
+Only bulk sales department do the advance sales
+Good to know for query understanding:
+DIRECT SALES - means bulk sales for any location
+
+*************
+BRAND WISE SALES STATEMENT  -------- summary/detail -------- the brand is now hard-coded in the query,
+so any new brand created, you need to manually put that brand to the appropriate section. otherwise, that brand data will
+not show in the report.
+**********************
+
+NATIONAL - DEFAULT ------- as per business process, this national has no sales person.
+
+
+***********************************************NEED TO WORK ON***********************************************
+ponner nam, ton, dor......... first page and location-wise sale.......... need to cross check deeply
+
+
+********************************************** Auto - Rice Sales Input ******************************
+T_CMNMENUPER_USER_TYPE ------- this table is used to restrcit the user
+
+
+************* Tentative Sales ***************************
+T_CMNMENUPER_USER_TYPE ------- this table is used to restrcit the user using location oid
+
+
+*************************************************
+Calculation for sstyp03
+-----------------------------
+ round(sum(d.sdode_qnty*d.sdode_npwt*d.sdode_nppk*u.smunt_ingm)/1000000+sum(sdode_qtval*d.sdode_npwt*u.smunt_ingm)/1000000,3) qton,
+ round(sum(((d.sdode_qnty*d.sdode_nppk) + d.sdode_qtyp+sdode_qtval)* decode(sdode_nppk,0,0,(d.sdode_rate/d.sdode_nppk))),2) amount
+ 
+  
+ Calculation for sstyp04
+-----------------------------
+sum(d.sdode_qnty*d.sdode_npwt*decode(d.sdode_nppk, 0, 1, d.sdode_nppk)*u1.smunt_ingm)/1000000 qton, 
+round(sum((d.sdode_qnty*d.sdode_rate*d.sdode_mfac)/decode(d.sdode_crat,0,1, d.sdode_crat)), 2) + round(sum(d.sdode_drmq*d.sdode_dchg), 2) + round(sum((d.sdode_qnty*d.sdode_mchg)+(d.sdode_qnty*d.sdode_gchg)), 2) amount
+
+
+********************************************* Marketing Sales Variations Filter *******************************************
+-------------------------------*********************** this Bulk Sales By Marketing *****************------------------------------
+ r.sreqm_sstyp='SSTYPxxxxxxxxxxxx04'
+ sreqm_sgloc = 'SGLOCxxxxxxxxxxxxx06'
+-------------------------------*********************** this Institutional Sales and Consumer Category 
+ (r.sreqm_sstyp='SSTYPxxxxxxxxxxxx03')
+ sreqm_dotype = 'I'
+ ------------********************** this is consumer pack sales by M.Hasan excluding the institutional sales ***********************........
+ (r.sreqm_sstyp='SSTYPxxxxxxxxxxxx03') and (sreqm_dotype != 'I' or sreqm_dotype is null)
+ ********************************************* End Marketing Sales Variations Filter *******************************************

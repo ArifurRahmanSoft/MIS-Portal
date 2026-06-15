@@ -1,0 +1,17 @@
+﻿   span.error {
+       display: block;
+       visibility: hidden;
+       color: red;
+       font-size: 90%;
+   }
+
+   tr.error {
+       border: 1px solid saddlebrown;
+   }
+
+   span a:hover {
+       text-decoration: none;
+   }
+   input[type="number"] {
+       width: 120px;
+   }

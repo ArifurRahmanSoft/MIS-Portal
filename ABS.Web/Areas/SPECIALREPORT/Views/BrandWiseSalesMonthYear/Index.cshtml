@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "MIS REPORT";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="reportCommonCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>        
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> Brand Wise Sales Statement (Month-Year)</h4>
+                            <div class="toolbar no-padding">
+                                <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                    <i class="icon-refresh"></i> Reset
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="ShowBrandWiseSalesMonthYear(3)">
+                                    <i class="icon-table"></i> Daily Report
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="ShowBrandWiseSalesMonthYear(1)">
+                                    <i class="icon-table"></i> Monthly Report
+                                </span>
+                                <span id="save" class="btn btn-success margin-right-btn" ng-click="ShowBrandWiseSalesMonthYear(2)">
+                                    <i class="icon-table"></i> Yearly Report
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" id="frmEntry">
+                            @Html.Partial("~/Areas/SPECIALREPORT/Views/BrandWiseSalesMonthYear/_Partial/_formBrandWiseSalesMonthYear.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>                                  
+        </div>
+    </div>
+</div>
+    <!-- /.container -->
+    @section AngularScript{
+        <script src="~/Areas/SPECIALREPORT/ScriptsNg/Controllers/ReportCommonCtrl_V2.js"></script>
+        <script src="~/Areas/SPECIALREPORT/ScriptsNg/Service/CrudService.js"></script>
+        <script src="~/Areas/SPECIALREPORT/ScriptsNg/Directives/Conversion.js"></script>
+        <script src="~/Scripts/CustomToastrMessage.js"></script>
+        <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+        <script src="~/Areas/Token/TokenController.js"></script>
+    }

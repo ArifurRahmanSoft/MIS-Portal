@@ -1,0 +1,114 @@
+﻿<form novalidate name="frmIncentiveFormulaSetup" id="frmIncentiveFormulaSetup" class="form-horizontal row-border">
+    <input type="hidden" id="IncentiveFormulaSetupID" readonly="readonly" ng-model="IncentiveFormulaSetupID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand</label>
+                <div class="col-md-6">
+                    <select id="ddlBrand" class="select2-select-00"
+                            ng-model="ngModelBrand"
+                            name="ddlBrand"
+                            data-placeholder="--Select Brand--"
+                            style="width: 100%" ng-options="bra.BRANDID as bra.SBRND_NAME for bra in listBrand">
+                        <option></option>
+                    </select>
+                </div>
+                @*<span class="error" ng-show="(frmIncentiveFormulaSetup.$dirty||submitted) && frmIncentiveFormulaSetup.ddlBrand.$error.required">*</span>*@
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Start Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveFormulaSetup.$dirty||submitted) && frmIncentiveFormulaSetup.dtStartDate.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Primary Sale(%)</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtPrimarySale"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtPrimarySale" ng-model="ngPrimarySale" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Incentive Percentage(%)</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtIncentivePercentage"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtIncentivePercentage" ng-model="ngIncentivePercentage" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Sales Force</label>
+                <div class="col-md-6">
+                    <select id="ddlSalesForce" class="select2-select-00"
+                            ng-model="ngSalesForce"
+                            name="ddlSalesForce"
+                            data-placeholder="--Select Sales Force--"
+                            style="width: 100%" ng-options="st.value as st.text for st in listSalesForce" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmIncentiveFormulaSetup.$dirty||submitted) && frmIncentiveFormulaSetup.ddlSalesForce.$error.required">*</span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"> End Date </label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmIncentiveFormulaSetup.$dirty||submitted) && frmIncentiveFormulaSetup.dtEndDate.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Secondary Sale(%)</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtSecondarySale"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtSecondarySale" ng-model="ngSecondarySale" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Remarks</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="txtRemarks"
+                           class="form-control"
+                           name="txtRemarks" ng-model="Remarks" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-8 control-label">Minimum Achievement for next month incentive consideration(%)</label>
+                <div class="col-md-3">
+                    <input type="text"
+                           id="txtMANMIC"
+                           class="form-control"
+                           style="font-weight:bold; color:red !important;"
+                           name="txtMANMIC" ng-model="ngMANMIC" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,133 @@
+﻿<form novalidate name="formMediaLedger" id="formMediaLedger" class="form-horizontal row-border">
+
+
+    @*to make the date time .... month/year format*@
+    <script type="text/javascript">
+        $(function () {
+            $(".mydatepicker").datepicker({
+                format: "MM-yyyy",
+                startView: "months",
+                minViewMode: "months",
+                autoclose: true
+            });
+            $(".mydatepicker").datepicker('setDate', new Date());
+        });
+    </script>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+
+                @*<div class="form-group">
+            <label class="col-md-4 control-label">Company</label>
+            <div class="col-md-6">
+                <select id="ddlCompany" class="select2-select-00" required
+                        ng-model="ngmCompany" tabindex="1" disabled
+                        name="ddlCompany"
+                        data-placeholder="--Select Company--"
+                        style="width: 100%"
+                        ng-options="company.OID as company.SCOMP_NAME for company in listCompany">
+                    <option></option>
+                </select>
+            </div>
+        </div>*@
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Agent</label>
+                    <div class="col-md-6">
+                        <select id="ddlAgent" class="select2-select-00" required
+                                ng-model="ngmAgent" tabindex="1"
+                                name="ddlAgent"
+                                data-placeholder="--Select Agent--"
+                                style="width: 100%"
+                                ng-options="agent.OID as agent.CLIENT_NAME for agent in listAgent">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Client</label>
+                    <div class="col-md-6">
+                        <select id="ddlClient" class="select2-select-00" required
+                                ng-model="ngmClient" tabindex="1"
+                                name="ddlClient"
+                                data-placeholder="--Select Client--"
+                                style="width: 100%"
+                                ng-options="client.OID as client.CLIENT_NAME for client in listClient">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                @*<div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-6">
+            <input type="text"
+                   id="dtFromMonth"
+                   placeholder="mm-yyyy" class="form-control mydatepicker"
+                   name="dtFromMonth" ng-model="ngmFromMonth" required />
+        </div>
+        <span class="error" ng-show="true"></span>
+        </div>*@
+
+                @*<br />
+        <br />
+
+        <div ng-show="loaderMore" ng-class="result">
+            <img src="~/Content/img/ng-loader.gif" />
+            {{lblMessage}}
+        </div>*@
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> From Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtStartDate"
+                               class="form-control datepicker"
+                               name="dtStartDate" ng-model="StartDate" required />
+                    </div>
+                    <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.dtStartDate.$error.required">*</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> To Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtEndDate"
+                               class="form-control datepicker"
+                               name="dtEndDate" ng-model="EndDate" required />
+                    </div>
+                    <span class="error" ng-show="(formBulkCustomerWiseDelivery.$dirty||submitted) && formBulkCustomerWiseDelivery.dtEndDate.$error.required">*</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17"> Report Type <span class="error" ng-show="true">*</span></label>
+                    <div class="col-md-7">
+                        <input id="ledger_report_Details" type="radio" ng-model="ReportType" value="ledger_report_Details"><label class="control-label" style="font-weight:normal" for="ledger_report_Details">&nbsp;Client Ledger Report Details</label><br />
+                        <input id="ledger_report_Summary" type="radio" ng-model="ReportType" value="ledger_report_Summary"><label class="control-label" style="font-weight:normal" for="ledger_report_Summary">&nbsp;Client Ledger Report Summary</label><br />                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+</form>
+
+<style type="text/css">
+    .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+        border-top-color: #333333 !important;
+        margin-top: 0;
+        margin-left: 80px !important;
+        vertical-align: middle;
+    }
+
+    .multiselect-parent {
+        width: 100% !important;
+    }
+</style>

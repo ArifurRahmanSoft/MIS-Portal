@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA41F2B6-2627-4853-BB6C-8F8594B42562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABS.Service</RootNamespace>
+    <AssemblyName>ABS.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.18.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.18.3.0\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllServiceClasses\AllServiceClasses.cs" />
+    <Compile Include="Costing\ProductCostingMgt.cs" />
+    <Compile Include="Expense\Factories\ExpenseEntryMgt.cs" />
+    <Compile Include="Expense\Interfaces\iExpenseEntryMgt.cs" />
+    <Compile Include="GetConnectionString.cs" />
+    <Compile Include="GlobalMgt\Factories\GlobalMgt.cs" />
+    <Compile Include="GlobalMgt\Interfaces\iGlobalMgt.cs" />
+    <Compile Include="MenuMgt\iMenuMgt.cs" />
+    <Compile Include="MenuMgt\MenuMgt.cs" />
+    <Compile Include="ProductDetailsPerLCBased\ProductDetailsPerLCBasedMgt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\Factories\AutoRiceSalesByProductMgt.cs" />
+    <Compile Include="Sales\Factories\AutoRiceCollectionMgt.cs" />
+    <Compile Include="Sales\Factories\CategorySetupMgt.cs" />
+    <Compile Include="Sales\Factories\BrandSetupMgt.cs" />
+    <Compile Include="Sales\Factories\ProductSetupMgt.cs" />
+    <Compile Include="Sales\Factories\ProductsRateMgt.cs" />
+    <Compile Include="Sales\Factories\SalesRequisitionUploadMgt.cs" />
+    <Compile Include="Sales\Factories\AutoRiceSalesUploadMgt.cs" />
+    <Compile Include="Sales\Factories\SMSSendingMgt.cs" />
+    <Compile Include="Sales\Factories\SOWiseDistTargetUploadMgt.cs" />
+    <Compile Include="Sales\Factories\TentativeSaleMgt.cs" />
+    <Compile Include="Sales\Factories\AutoRiceSaleMgt.cs" />
+    <Compile Include="Sales\Factories\DailyClosingMgt.cs" />
+    <Compile Include="Sales\Factories\ProductRateMgt.cs" />
+    <Compile Include="Sales\Factories\SOWiseDistTargetDocumentUploadMgt.cs" />
+    <Compile Include="Sales\Factories\PrimarySalesTargetUploadMgt.cs" />
+    <Compile Include="Sales\Factories\SecondarySalesUploadMgt.cs" />
+    <Compile Include="Sales\Factories\IncentiveCalculationMgt.cs" />
+    <Compile Include="Sales\Factories\IncentiveFormulaSetupMgt.cs" />
+    <Compile Include="Sales\Factories\DistributorTargetMgt.cs" />
+    <Compile Include="Sales\Interfaces\iAutoRiceSalesByProductMgt.cs" />
+    <Compile Include="Sales\Interfaces\iAutoRiceCollectionMgt.cs" />
+    <Compile Include="Sales\Interfaces\iCategorySetupMgt.cs" />
+    <Compile Include="Sales\Interfaces\iBrandSetupMgt - Copy.cs" />
+    <Compile Include="Sales\Interfaces\iProductSetupMgt.cs" />
+    <Compile Include="Sales\Interfaces\iProductsRateMgt.cs" />
+    <Compile Include="Sales\Interfaces\iSalesRequisitionUpload.cs" />
+    <Compile Include="Sales\Interfaces\iAutoRiceSalesUpload.cs" />
+    <Compile Include="Sales\Interfaces\iSMSSendingMgt.cs" />
+    <Compile Include="Sales\Interfaces\iSOWiseDistTargetUploadMgt.cs" />
+    <Compile Include="Sales\Interfaces\iTentativeSaleMgt.cs" />
+    <Compile Include="Sales\Interfaces\iAutoRiceSaleMgt.cs" />
+    <Compile Include="Sales\Interfaces\iDailyClosingMgt.cs" />
+    <Compile Include="Sales\Interfaces\iProductRateMgt.cs" />
+    <Compile Include="Sales\Interfaces\iSOWiseDistTargetDocumentUploadMgt.cs" />
+    <Compile Include="Sales\Interfaces\iPrimarySalesTargetUpload.cs" />
+    <Compile Include="Sales\Interfaces\iSecondarySalesUploadMgt.cs" />
+    <Compile Include="Sales\Interfaces\iIncentiveCalculationMgt.cs" />
+    <Compile Include="Sales\Interfaces\iIncentiveFormulaSetupMgt.cs" />
+    <Compile Include="Sales\Interfaces\iDistributorTargetMgt.cs" />
+    <Compile Include="Sales\Factories\CardConsumerDataUploadMgt.cs" />
+    <Compile Include="SystemCommon\Factories\CmnBrandPermissionMgt.cs" />
+    <Compile Include="SystemCommon\Factories\CmnMenuPermissionMgt.cs" />
+    <Compile Include="SystemCommon\Factories\PublicApiMgt.cs" />
+    <Compile Include="SystemCommon\Factories\CmnMenuMgt.cs" />
+    <Compile Include="SystemCommon\Factories\RoleMenuMgt.cs" />
+    <Compile Include="SystemCommon\Factories\SystemCommonDDL.cs" />
+    <Compile Include="SystemCommon\Factories\CmnModuleMgt.cs" />
+    <Compile Include="SystemCommon\Factories\CmnUserMgt.cs" />
+    <Compile Include="SystemCommon\Factories\DataMappingMgt.cs" />
+    <Compile Include="SystemCommon\Factories\UserRoleMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnBrandPermissionMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iPublicApiMgt.cs" />
+    <Compile Include="Sales\Interfaces\iCardConsumerDataUploadMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnModulePermissionMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnMenuPermissionMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iRoleMenuMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iSystemCommonDDL.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnMenuMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnModuleMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iCmnUserMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iDataMappingMgt.cs" />
+    <Compile Include="SystemCommon\Interfaces\iUserRoleMgt.cs" />
+    <Compile Include="UserFactory\UserAuthentications.cs" />
+    <Compile Include="UserFactory\UserAuthorizations.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ABS.Data\CTGroup.Data.csproj">
+      <Project>{60b41d4a-2813-4313-86d9-7b0cfca128aa}</Project>
+      <Name>CTGroup.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ABS.Utility\CTGroup.Utility.csproj">
+      <Project>{07b48faa-d263-4935-8570-06f43e586530}</Project>
+      <Name>CTGroup.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CTGroup.OracleModel\CTGroup.OracleModel.csproj">
+      <Project>{8b0690e8-3673-48dc-9f44-28649b16d689}</Project>
+      <Name>CTGroup.OracleModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

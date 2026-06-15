@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "Select Product Details";
+}
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="ProductSetupCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="page-header">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/DeleteModal/_modalCmnDelete.cshtml")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.Partial("~/Areas/SystemCommon/Views/WaitModal/_modalWait.cshtml")
+            </div>
+        </div>
+
+        <div id="PIDiv">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{PageTitle}}</h4>
+                            <div class="toolbar no-padding">
+
+                                <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clears()">
+                                    <i class="icon-refresh"></i> Reset
+                                </span>
+
+
+
+                                <span id="Show" class="btn btn-info margin-right-btn" ng-click="ShowHide()">
+                                    <i class="icon-search" ng-show="IsListIcon"></i> <i ng-show="IsCreateIcon" class="icon-plus-sign"></i> {{btnShowText}}
+                                </span>
+
+                                @* <span ng-if="ProductDetail.length > 0" id="save" class="btn btn-success margin-right-btn" data-toggle="modal" ng-click="SaveProductDetail()">
+            <i class="icon-save"></i> Save
+        </span>*@
+                                <!-- Save button: shown if ProductDetail.length > 0 and sprodOid is empty -->
+                                <span ng-if="ProductDetail.length > 0 && !ProductDetail[0].sprodOid"
+                                      id="save"
+                                      class="btn btn-success margin-right-btn"
+                                      data-toggle="modal"
+                                      ng-click="SaveProductDetail()">
+                                    <i class="icon-save"></i> Save
+                                </span>
+
+                                <!-- Update button: shown if ProductDetail.length > 0 and sprodOid is not empty -->
+                                <span ng-if="ProductDetail.length > 0 && ProductDetail[0].sprodOid"
+                                      id="save"
+                                      class="btn btn-success margin-right-btn"
+                                      data-toggle="modal"
+                                      ng-click="SaveProductDetail()">
+                                    <i class="icon-edit"></i> Update
+                                </span>
+
+
+
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="widget-content" ng-show="IsShow" >
+                            @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_formProductSetup.cshtml")
+                        </div>
+
+                    </div>
+                    <div ng-if="productsList.length > 0"  class="widget-content"  ng-show="!IsShow" >
+                        @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_tableShowProductList.cshtml")
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-hide="ProductDetail==''|| ProductDetail==undefined?true:false">
+                <div class="col-md-12">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> {{ListTitlePIDeatails}}</h4>
+                            <div class="toolbar no-padding">
+
+
+
+                                <span ng-if=" !ProductDetail[0].sprodOid" id="save" class="btn btn-success margin-right-btn" data-toggle="modal" ng-click="addProduct()">
+                                    <i class="icon-plus"></i> Add Product
+                                </span>
+                                <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+
+
+
+                            </div>
+                        </div>
+                        <div  class="widget-content no-padding">
+                            @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_tableProductDetailInfo.cshtml")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <!-- Modal dialog -->
+                <div class="modal fade" id="menuModal">
+                    <div class="modal-dialog modal-dialog-ext">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <i class="icon-remove"></i> </button>
+                                <h4 class="modal-title"><i class="icon-user"></i> {{PageTitle}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_formMenu.cshtml")
+                            </div>
+                            @* <div class="modal-footer">
+                            <input type="button" id="reset" class="btn btn-danger" value="Reset" ng-click="clear()" ng-disabled="frmMenu.$invalid" />
+                            <input type="button" id="save" class="btn btn-success" value="{{btnSaveUpdateText}}" ng-click="save()" ng-disabled="frmMenu.$invalid" />
+                        </div>*@
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div> <!-- /.row -->
+
+
+            <div class="row">
+                <!-- Modal dialog -->
+                <div class="modal fade" id="menuModal">
+                    <div class="modal-dialog modal-dialog-ext">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <i class="icon-remove"></i> </button>
+                                <h4 class="modal-title"><i class="icon-user"></i> {{PageTitle}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_formMenu.cshtml")
+                            </div>
+                            @* <div class="modal-footer">
+                            <input type="button" id="reset" class="btn btn-danger" value="Reset" ng-click="clear()" ng-disabled="frmMenu.$invalid" />
+                            <input type="button" id="save" class="btn btn-success" value="{{btnSaveUpdateText}}" ng-click="save()" ng-disabled="frmMenu.$invalid" />
+                        </div>*@
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div> <!-- /.row -->
+
+
+            <div class="row">
+
+        
+
+                <div class="modal fade" id="lItemModal">
+                    <div class="modal-dialog modal-dialog-ext">
+                        <div class="modal-content">
+                            <!-- Modal Header with Flexbox -->
+                            <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center;">
+                                <!-- Left Side: Page Title -->
+                                <h4 class="modal-title"><i class="icon-user"></i> {{PageTitle}}</h4>
+
+                                <!-- Right Side: Save Button & Close Button -->
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span data-dismiss="modal"
+                                          id="save"
+                                          class="btn btn-success margin-right-btn"
+                                          data-toggle="modal"
+                                           ng-click="SavelItemDetails()"
+                                          ng-disabled="frmExpenseEntry.$invalid">
+
+                                        <i class="icon" ng-class="lItem.lItemOid ? 'icon-edit' : 'icon-save'"></i>
+                                        {{ lItem.lItemOid ? 'Update' : 'Save' }}
+                                    </span>
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i class="icon-remove"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                @Html.Partial("~/Areas/Sales/Views/ProductSetup/_Partial/_formLitem.cshtml")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+
+
+       
+
+        </div>         
+    </div>
+</div>
+    <!-- /.container -->
+    @section AngularScript{
+        <script src="~/Areas/Sales/ScriptsNg/Controllers/ProductSetupCtrl.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Service/CrudService.js"></script>
+        <script src="~/Areas/Sales/ScriptsNg/Directives/Conversion.js"></script>
+        <script src="~/Scripts/CustomToastrMessage.js"></script>
+        <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+        <script src="~/Areas/Token/TokenController.js"></script>
+    }

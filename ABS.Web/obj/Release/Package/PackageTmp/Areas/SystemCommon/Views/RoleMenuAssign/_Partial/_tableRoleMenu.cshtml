@@ -1,0 +1,13 @@
+﻿<div ui-grid="gridOptions"
+     ui-grid-resize-columns
+     ui-grid-auto-resize
+     ui-grid-move-columns
+     ui-grid-exporter
+     ui-grid-pinning class="grid"></div>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        <img src="~/Content/img/ng-loader.gif" />
+        {{lblMessage}}
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+
+    <thead class="grid-top-panel">
+        <tr>
+            <th>                CHALLAN_NUMBER            </th>
+            <th>                CHALLAN_DATE            </th>
+            <th>                DISTRIBUTOR_ID            </th>
+            <th>                PRODUCT_ID        </th>
+            <th>                CHALLAN_QTY_CTN            </th>
+            <th>                CHALLAN_QTY_PCS            </th>
+            <th>                DP_CTN            </th>
+            <th>                DP_PCS            </th>
+            <th>                TP_CTN            </th>
+            <th>                TP_PCS            </th>
+            <th>                UPLOAD_BY         </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in ListCardConsumerUploadedData">
+            <td>{{dataModel.CHALLAN_NUMBER}}</td>
+            <td>{{dataModel.CHALLAN_DATE}}</td>
+            <td>{{dataModel.DISTRIBUTOR_ID}}</td>
+            <td>{{dataModel.PRODUCT_ID}}</td>
+            <td>{{dataModel.CHALLAN_QTY_CTN}}</td>
+            <td>{{dataModel.CHALLAN_QTY_PCS}}</td>
+            <td>{{dataModel.DP_CTN}}</td>
+            <td>{{dataModel.DP_PCS}}</td>
+            <td>{{dataModel.TP_CTN}}</td>
+            <td>{{dataModel.TP_PCS}}</td>
+            <td>{{dataModel.UPLOAD_BY}}</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(ListCardConsumerUploadedData).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

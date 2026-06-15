@@ -1,0 +1,25 @@
+﻿<form novalidate name="frmCardConsumerDataUpload" id="frmCardConsumerDataUpload" class="form-horizontal row-border">
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Browse CARD Consumer File <span class="error">*</span> </label>
+                <div class="col-md-6">
+                    <input type="file" name="file" id="file"
+                           ng-model="docfile" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <input type="button" id="Generate" style="width:150px; margin-right: 350px;" class="btn btn-info margin-right-btn" 
+                           value="View File Data" ng-click="ViewFileData()">
+                </div>
+                <div class="col-md-6">                   
+                </div>
+            </div>
+        </div>
+    </div>    
+</form>

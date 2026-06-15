@@ -1,0 +1,80 @@
+﻿<form novalidate name="frmTargetUpload" id="frmTargetUpload" class="form-horizontal row-border">
+    <input type="hidden" id="DocumentUploadID" readonly="readonly" ng-model="DocumentUploadID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">National</label>
+                <div class="col-md-7">
+                    <select id="nationalId" class="select2-select-00"
+                            ng-model="nationalId"
+                            name="nationalId"
+                            data-placeholder="--Select National--"
+                            style="width: 100%" ng-options="ntn.NTNAL_OID as ntn.NTNAL_NAME for ntn in listNational" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmTargetUpload.$dirty||submitted) && frmTargetUpload.nationalId.$error.required">*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="col-md-3 control-label">Browse <span class="error">*</span> </label>
+                <div class="col-md-7">
+                    <input type="file" name="file" id="file" required />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1" ng-hide="true">
+            <div class="form-group">
+                <div class="col-md-5">
+                    <input type="text"
+                           id="isDocFile"
+                           class="form-control"
+                           name="isDocFile" ng-model="isDocFile" required />
+                </div>
+                <span class="error" ng-show="(frmTargetUpload.$dirty||submitted) && frmTargetUpload.isDocFile.$error.required"></span>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="col-md-3 control-label"> Start<span class="error">*</span>  </label>
+                <div class="col-md-7">
+                    <input type="text" autocomplete="off"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmTargetUpload.$dirty||submitted) && frmTargetUpload.dtStartDate.$error.required"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="col-md-3 control-label"> End<span class="error">*</span>  </label>
+                <div class="col-md-7">
+                    <input type="text" autocomplete="off"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmTargetUpload.$dirty||submitted) && frmTargetUpload.dtEndDate.$error.required"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <input type="button" ng-disabled="nationalId=='' || nationalId==undefined || nationalId==null || StartDate=='' || StartDate==undefined || EndDate=='' || EndDate==undefined || docfile.length==0" id="Generate" style="width:150px; margin-right: 350px;" class="btn btn-info margin-right-btn" value="View File Data" ng-click="ViewFileData()">
+                </div>
+                @*<div class="col-md-6">
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+
+
+</form>

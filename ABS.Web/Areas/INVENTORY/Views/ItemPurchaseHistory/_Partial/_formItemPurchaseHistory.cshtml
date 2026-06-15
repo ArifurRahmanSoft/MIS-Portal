@@ -1,0 +1,57 @@
+﻿
+<form novalidate name="formItemPurchaseHistory" id="formItemPurchaseHistory" class="form-horizontal row-border">
+
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="form-group">
+                <label class="col-md-1 control-label"> Item</label>
+                <div class="col-md-5">
+                    <input type="text"
+                           id="DisplayItemName" style="width:96%; color: blue; font-weight: bold;"
+                           class="form-control pull-left" placeholder="Select Item" ng-dblclick="loadSampleNoModalRecords(0)" readonly
+                           name="DisplayItemName" ng-model="DisplayItemName" required />
+                </div>
+                <div class="col-md-1">
+                    <button class="label label-primary" style="text-align: center !important; border: none; padding: 5%; margin-left: -50%; margin-top: 0PX;" ng-click="loadSampleNoModalRecords(0)">
+                        <i class="icon-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <span class="error" ng-show="(formItemPurchaseHistory.$dirty||submitted) && formItemPurchaseHistory.ITEM_ID.$error.required">*</span>
+            </div>
+
+            <div class="form-group">
+
+                <label class="col-md-1 control-label"> From Date </label>
+                <div class="col-md-2">
+                    <input type="text"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(formItemPurchaseHistory.$dirty||submitted) && formItemPurchaseHistory.dtStartDate.$error.required">*</span>
+
+                <label class="col-md-1 control-label"> To Date </label>
+                <div class="col-md-2">
+                    <input type="text"
+                           id="dtEndDate"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(formItemPurchaseHistory.$dirty||submitted) && formItemPurchaseHistory.dtEndDate.$error.required">*</span>
+
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-1 control-label"> Report Type </label>
+                <div class="col-md-5">
+                    <input type="radio" ng-model="ReportType" value="partydetails"> Item Wise Purchase History (Details)
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>

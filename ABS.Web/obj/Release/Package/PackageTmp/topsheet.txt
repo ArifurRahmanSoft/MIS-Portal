@@ -1,0 +1,47 @@
+﻿TOP SHEET IS A IMPORTANT MENU. SO WHENEVER YOU GIVE SOMEONE THIS MENU, WORK WITH CAUTION :)
+
+Top is showing a glance of daily city group sales.........based on different locations.
+
+1. First big box on top left: shows total sales including auto-rice sales (SAP) ........... this box has
+sorasori sale + ajker soday
+
+2. Top right box shows show room sales
+
+3. On middle left box shows product-wise sales
+
+4. On middle right, first box.... "Ajker DO Bikroy" DO Sale as per from and to date selection
+
+5. On middle right, second box.... "Soday Bikroy" shows ajker sodoy and this month soday.
+
+6. On middle right, third box.... "Check er hisab" shows current checks in hand
+
+7. On bottom box "Collection" shows money collection from different ways
+
+8. On second page, shows product-wise sale on different locations. 
+
+9. On last, it shows monthly total sales, starting from first day of a month till to date selection
+
+
+select * from T_CMNMENUPER_USER_TYPE; -- this table contains autorice sales and collection user type. currently we have user type marketing and bulk.
+-- so whenever you create a new user for autorice data input....... MAKE SURE THAT USER TO TAG IN THIS TABLE.
+
+select * from T_AUTO_RICE_COLLECTION; ---- this table has different types of collection (cash, cheque, tt, lc etc) of auto rice based on bulk or marketing type.
+
+select * from T_AUTO_RICE_SALE; ---- sap sales data input for autorice
+
+select * from T_BULK_CLOSING_BALANCE; ---- this table contains daily closing cash of bulk department.
+
+
+This report has some complex calculation, show-hide rows using different formula
+
+need to check top sheet report........... check in hand ........... for a longer duration............ single day check is okay.
+
+
+=IIf(Fields!IsVehicle.Value = "1" OR Fields!slton.Value = nothing, True, False)
+top sheet second page logic block
+
+
+
+
+
+=First(Fields!closingbalance.Value, "TillDateTotalSale")

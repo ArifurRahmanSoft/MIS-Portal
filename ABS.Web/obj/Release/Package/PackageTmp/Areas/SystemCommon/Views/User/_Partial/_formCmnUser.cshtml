@@ -1,0 +1,60 @@
+﻿
+<form novalidate name="frmUser" id="userForm" class="form-horizontal row-border">
+    <input type="hidden" id="userID" readonly="readonly" ng-model="EditUserID" />
+    <div class="widget-content">
+        <div class="row" ng-show="ngAccountInfo">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Staff Id</label>
+                    <div class="col-md-7">
+                        <select id="ddlCTGStaffId" class="select2-select-00"
+                                ng-model="StaffId" tabindex="1"
+                                name="ddlCTGStaffId" ng-change="ChangeOnStaffId();"
+                                data-placeholder="--Select CTG Staff--"
+                                style="width: 100%"
+                                ng-options="staff.STAFFID as staff.STAFFNAME for staff in listCTGStaff">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Password</label>
+                    <div class="col-md-7">
+                        <input type="text"
+                               id="passwordEmp"
+                               class="form-control"
+                               name="passwordEmp" ng-model="passwordEmp" />
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Login ID</label>
+                    <div class="col-md-7">
+                        <input type="text" readonly="readonly"
+                               id="loginIDEmp"
+                               class="form-control"
+                               name="loginIDEmp" ng-model="LoginIDEmp" ng-blur="CheckLoginID()" ng-required="IsLoginIDRequired" />
+                    </div>
+                    <span class="error" ng-show="(frmUser.$dirty||submitted) && frmUser.loginIDEmp.$error.required">*</span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<style type="text/css">
+    .btn .caret, .ui-state-default .caret, .ui-widget-content .ui-state-default .caret, .ui-widget-header .ui-state-default .caret, .ColVis_MasterButton .caret, .fc-state-default .caret {
+        border-top-color: #333333 !important;
+        margin-top: 0;
+        margin-left: 125px !important;
+        vertical-align: middle;
+    }
+</style>

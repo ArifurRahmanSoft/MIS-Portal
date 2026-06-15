@@ -1,0 +1,4 @@
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Release\CTGroup.Reports.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Release\CTGroup.Reports.csproj.GenerateResource.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Release\CTGroup.Reports.Sales.rptSalNationalTargetSheet.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Release\CTGroup.Reports.csproj.CoreCompileInputs.cache

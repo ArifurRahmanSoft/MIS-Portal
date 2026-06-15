@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTDepotClosingStock" targetNamespace="http://tempuri.org/DTDepotClosingStock.xsd" xmlns:mstns="http://tempuri.org/DTDepotClosingStock.xsd" xmlns="http://tempuri.org/DTDepotClosingStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTDepotClosingStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DTDepotClosingStock" msprop:Generator_UserDSName="DTDepotClosingStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DepoStockByRate" msprop:Generator_TableClassName="DepoStockByRateDataTable" msprop:Generator_TableVarName="tableDepoStockByRate" msprop:Generator_RowChangedName="DepoStockByRateRowChanged" msprop:Generator_TablePropName="DepoStockByRate" msprop:Generator_RowDeletingName="DepoStockByRateRowDeleting" msprop:Generator_RowChangingName="DepoStockByRateRowChanging" msprop:Generator_RowEvHandlerName="DepoStockByRateRowChangeEventHandler" msprop:Generator_RowDeletedName="DepoStockByRateRowDeleted" msprop:Generator_RowClassName="DepoStockByRateRow" msprop:Generator_UserTableName="DepoStockByRate" msprop:Generator_RowEvArgName="DepoStockByRateRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sgloc_name" msprop:Generator_ColumnVarNameInTable="columnsgloc_name" msprop:Generator_ColumnPropNameInRow="sgloc_name" msprop:Generator_ColumnPropNameInTable="sgloc_nameColumn" msprop:Generator_UserColumnName="sgloc_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scomp_name" msprop:Generator_ColumnVarNameInTable="columnscomp_name" msprop:Generator_ColumnPropNameInRow="scomp_name" msprop:Generator_ColumnPropNameInTable="scomp_nameColumn" msprop:Generator_UserColumnName="scomp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sbrnd_name" msprop:Generator_ColumnVarNameInTable="columnsbrnd_name" msprop:Generator_ColumnPropNameInRow="sbrnd_name" msprop:Generator_ColumnPropNameInTable="sbrnd_nameColumn" msprop:Generator_UserColumnName="sbrnd_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sprod_pkname" msprop:Generator_ColumnVarNameInTable="columnsprod_pkname" msprop:Generator_ColumnPropNameInRow="sprod_pkname" msprop:Generator_ColumnPropNameInTable="sprod_pknameColumn" msprop:Generator_UserColumnName="sprod_pkname" type="xs:string" minOccurs="0" />
+              <xs:element name="opqnty" msprop:Generator_ColumnVarNameInTable="columnopqnty" msprop:Generator_ColumnPropNameInRow="opqnty" msprop:Generator_ColumnPropNameInTable="opqntyColumn" msprop:Generator_UserColumnName="opqnty" type="xs:string" minOccurs="0" />
+              <xs:element name="openingrate" msprop:Generator_ColumnVarNameInTable="columnopeningrate" msprop:Generator_ColumnPropNameInRow="openingrate" msprop:Generator_ColumnPropNameInTable="openingrateColumn" msprop:Generator_UserColumnName="openingrate" type="xs:string" minOccurs="0" />
+              <xs:element name="opamt" msprop:Generator_ColumnVarNameInTable="columnopamt" msprop:Generator_ColumnPropNameInRow="opamt" msprop:Generator_ColumnPropNameInTable="opamtColumn" msprop:Generator_UserColumnName="opamt" type="xs:string" minOccurs="0" />
+              <xs:element name="depotreceiveqty" msprop:Generator_ColumnVarNameInTable="columndepotreceiveqty" msprop:Generator_ColumnPropNameInRow="depotreceiveqty" msprop:Generator_ColumnPropNameInTable="depotreceiveqtyColumn" msprop:Generator_UserColumnName="depotreceiveqty" type="xs:string" minOccurs="0" />
+              <xs:element name="deporecrate" msprop:Generator_ColumnVarNameInTable="columndeporecrate" msprop:Generator_ColumnPropNameInRow="deporecrate" msprop:Generator_ColumnPropNameInTable="deporecrateColumn" msprop:Generator_UserColumnName="deporecrate" type="xs:string" minOccurs="0" />
+              <xs:element name="deporecamount" msprop:Generator_ColumnVarNameInTable="columndeporecamount" msprop:Generator_ColumnPropNameInRow="deporecamount" msprop:Generator_ColumnPropNameInTable="deporecamountColumn" msprop:Generator_UserColumnName="deporecamount" type="xs:string" minOccurs="0" />
+              <xs:element name="custreturndepoqty" msprop:Generator_ColumnVarNameInTable="columncustreturndepoqty" msprop:Generator_ColumnPropNameInRow="custreturndepoqty" msprop:Generator_ColumnPropNameInTable="custreturndepoqtyColumn" msprop:Generator_UserColumnName="custreturndepoqty" type="xs:string" minOccurs="0" />
+              <xs:element name="custreturndeporate" msprop:Generator_ColumnVarNameInTable="columncustreturndeporate" msprop:Generator_ColumnPropNameInRow="custreturndeporate" msprop:Generator_ColumnPropNameInTable="custreturndeporateColumn" msprop:Generator_UserColumnName="custreturndeporate" type="xs:string" minOccurs="0" />
+              <xs:element name="custreturndepoamount" msprop:Generator_ColumnVarNameInTable="columncustreturndepoamount" msprop:Generator_ColumnPropNameInRow="custreturndepoamount" msprop:Generator_ColumnPropNameInTable="custreturndepoamountColumn" msprop:Generator_UserColumnName="custreturndepoamount" type="xs:string" minOccurs="0" />
+              <xs:element name="partydeliveryqty" msprop:Generator_ColumnVarNameInTable="columnpartydeliveryqty" msprop:Generator_ColumnPropNameInRow="partydeliveryqty" msprop:Generator_ColumnPropNameInTable="partydeliveryqtyColumn" msprop:Generator_UserColumnName="partydeliveryqty" type="xs:string" minOccurs="0" />
+              <xs:element name="partydeliveryrate" msprop:Generator_ColumnVarNameInTable="columnpartydeliveryrate" msprop:Generator_ColumnPropNameInRow="partydeliveryrate" msprop:Generator_ColumnPropNameInTable="partydeliveryrateColumn" msprop:Generator_UserColumnName="partydeliveryrate" type="xs:string" minOccurs="0" />
+              <xs:element name="partydeliveryamount" msprop:Generator_ColumnVarNameInTable="columnpartydeliveryamount" msprop:Generator_ColumnPropNameInRow="partydeliveryamount" msprop:Generator_ColumnPropNameInTable="partydeliveryamountColumn" msprop:Generator_UserColumnName="partydeliveryamount" type="xs:string" minOccurs="0" />
+              <xs:element name="depotreturnoutqty" msprop:Generator_ColumnVarNameInTable="columndepotreturnoutqty" msprop:Generator_ColumnPropNameInRow="depotreturnoutqty" msprop:Generator_ColumnPropNameInTable="depotreturnoutqtyColumn" msprop:Generator_UserColumnName="depotreturnoutqty" type="xs:string" minOccurs="0" />
+              <xs:element name="depotreturnoutrate" msprop:Generator_ColumnVarNameInTable="columndepotreturnoutrate" msprop:Generator_ColumnPropNameInRow="depotreturnoutrate" msprop:Generator_ColumnPropNameInTable="depotreturnoutrateColumn" msprop:Generator_UserColumnName="depotreturnoutrate" type="xs:string" minOccurs="0" />
+              <xs:element name="depotreturnoutamount" msprop:Generator_ColumnVarNameInTable="columndepotreturnoutamount" msprop:Generator_ColumnPropNameInRow="depotreturnoutamount" msprop:Generator_ColumnPropNameInTable="depotreturnoutamountColumn" msprop:Generator_UserColumnName="depotreturnoutamount" type="xs:string" minOccurs="0" />
+              <xs:element name="trno" msprop:Generator_ColumnVarNameInTable="columntrno" msprop:Generator_ColumnPropNameInRow="trno" msprop:Generator_ColumnPropNameInTable="trnoColumn" msprop:Generator_UserColumnName="trno" type="xs:string" minOccurs="0" />
+              <xs:element name="SDIND_RATE" msprop:Generator_ColumnVarNameInTable="columnSDIND_RATE" msprop:Generator_ColumnPropNameInRow="SDIND_RATE" msprop:Generator_ColumnPropNameInTable="SDIND_RATEColumn" msprop:Generator_UserColumnName="SDIND_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="sprod_nppk" msprop:Generator_ColumnVarNameInTable="columnsprod_nppk" msprop:Generator_ColumnPropNameInRow="sprod_nppk" msprop:Generator_ColumnPropNameInTable="sprod_nppkColumn" msprop:Generator_UserColumnName="sprod_nppk" type="xs:string" minOccurs="0" />
+              <xs:element name="weightmton" msprop:Generator_ColumnVarNameInTable="columnweightmton" msprop:Generator_ColumnPropNameInRow="weightmton" msprop:Generator_ColumnPropNameInTable="weightmtonColumn" msprop:Generator_UserColumnName="weightmton" type="xs:string" minOccurs="0" />
+              <xs:element name="sequence_on_report" msprop:Generator_ColumnVarNameInTable="columnsequence_on_report" msprop:Generator_ColumnPropNameInRow="sequence_on_report" msprop:Generator_ColumnPropNameInTable="sequence_on_reportColumn" msprop:Generator_UserColumnName="sequence_on_report" type="xs:string" minOccurs="0" />
+              <xs:element name="cartonqty" msprop:Generator_ColumnVarNameInTable="columncartonqty" msprop:Generator_ColumnPropNameInRow="cartonqty" msprop:Generator_ColumnPropNameInTable="cartonqtyColumn" msprop:Generator_UserColumnName="cartonqty" type="xs:string" minOccurs="0" />
+              <xs:element name="sdind_mrp" msprop:Generator_ColumnVarNameInTable="columnsdind_mrp" msprop:Generator_ColumnPropNameInRow="sdind_mrp" msprop:Generator_ColumnPropNameInTable="sdind_mrpColumn" msprop:Generator_UserColumnName="sdind_mrp" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

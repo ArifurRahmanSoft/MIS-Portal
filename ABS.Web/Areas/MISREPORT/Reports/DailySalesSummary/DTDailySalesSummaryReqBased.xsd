@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTDailySalesSummaryReqBased" targetNamespace="http://tempuri.org/DTDailySalesSummaryReqBased.xsd" xmlns:mstns="http://tempuri.org/DTDailySalesSummaryReqBased.xsd" xmlns="http://tempuri.org/DTDailySalesSummaryReqBased.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTDailySalesSummaryReqBased" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DTDailySalesSummaryReqBased" msprop:Generator_UserDSName="DTDailySalesSummaryReqBased">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableDailySalesSummaryReqBased" msprop:Generator_TableClassName="DataTableDailySalesSummaryReqBasedDataTable" msprop:Generator_TableVarName="tableDataTableDailySalesSummaryReqBased" msprop:Generator_TablePropName="DataTableDailySalesSummaryReqBased" msprop:Generator_RowDeletingName="DataTableDailySalesSummaryReqBasedRowDeleting" msprop:Generator_RowChangingName="DataTableDailySalesSummaryReqBasedRowChanging" msprop:Generator_RowEvHandlerName="DataTableDailySalesSummaryReqBasedRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableDailySalesSummaryReqBasedRowDeleted" msprop:Generator_UserTableName="DataTableDailySalesSummaryReqBased" msprop:Generator_RowChangedName="DataTableDailySalesSummaryReqBasedRowChanged" msprop:Generator_RowEvArgName="DataTableDailySalesSummaryReqBasedRowChangeEvent" msprop:Generator_RowClassName="DataTableDailySalesSummaryReqBasedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sreqm_rqno" msprop:Generator_ColumnVarNameInTable="columnsreqm_rqno" msprop:Generator_ColumnPropNameInRow="sreqm_rqno" msprop:Generator_ColumnPropNameInTable="sreqm_rqnoColumn" msprop:Generator_UserColumnName="sreqm_rqno" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_text" msprop:Generator_ColumnVarNameInTable="columnscust_info_text" msprop:Generator_ColumnPropNameInRow="scust_info_text" msprop:Generator_ColumnPropNameInTable="scust_info_textColumn" msprop:Generator_UserColumnName="scust_info_text" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_name" msprop:Generator_ColumnVarNameInTable="columnscust_info_name" msprop:Generator_ColumnPropNameInRow="scust_info_name" msprop:Generator_ColumnPropNameInTable="scust_info_nameColumn" msprop:Generator_UserColumnName="scust_info_name" type="xs:string" minOccurs="0" />
+              <xs:element name="scust_info_add1" msprop:Generator_ColumnVarNameInTable="columnscust_info_add1" msprop:Generator_ColumnPropNameInRow="scust_info_add1" msprop:Generator_ColumnPropNameInTable="scust_info_add1Column" msprop:Generator_UserColumnName="scust_info_add1" type="xs:string" minOccurs="0" />
+              <xs:element name="qton" msprop:Generator_ColumnVarNameInTable="columnqton" msprop:Generator_ColumnPropNameInRow="qton" msprop:Generator_ColumnPropNameInTable="qtonColumn" msprop:Generator_UserColumnName="qton" type="xs:string" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:string" minOccurs="0" />
+              <xs:element name="sl_no" msprop:Generator_ColumnVarNameInTable="columnsl_no" msprop:Generator_ColumnPropNameInRow="sl_no" msprop:Generator_ColumnPropNameInTable="sl_noColumn" msprop:Generator_UserColumnName="sl_no" type="xs:string" minOccurs="0" />
+              <xs:element name="sdode_dodt" msprop:Generator_ColumnVarNameInTable="columnsdode_dodt" msprop:Generator_ColumnPropNameInRow="sdode_dodt" msprop:Generator_ColumnPropNameInTable="sdode_dodtColumn" msprop:Generator_UserColumnName="sdode_dodt" type="xs:string" minOccurs="0" />
+              <xs:element name="PROD_NAME" msprop:Generator_ColumnVarNameInTable="columnPROD_NAME" msprop:Generator_ColumnPropNameInRow="PROD_NAME" msprop:Generator_ColumnPropNameInTable="PROD_NAMEColumn" msprop:Generator_UserColumnName="PROD_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="comp_name" msprop:Generator_ColumnVarNameInTable="columncomp_name" msprop:Generator_ColumnPropNameInRow="comp_name" msprop:Generator_ColumnPropNameInTable="comp_nameColumn" msprop:Generator_UserColumnName="comp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="isBrndGroup" msprop:Generator_ColumnVarNameInTable="columnisBrndGroup" msprop:Generator_ColumnPropNameInRow="isBrndGroup" msprop:Generator_ColumnPropNameInTable="isBrndGroupColumn" msprop:Generator_UserColumnName="isBrndGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="brndGroupId" msprop:Generator_ColumnVarNameInTable="columnbrndGroupId" msprop:Generator_ColumnPropNameInRow="brndGroupId" msprop:Generator_ColumnPropNameInTable="brndGroupIdColumn" msprop:Generator_UserColumnName="brndGroupId" type="xs:string" minOccurs="0" />
+              <xs:element name="brandId" msprop:Generator_ColumnVarNameInTable="columnbrandId" msprop:Generator_ColumnPropNameInRow="brandId" msprop:Generator_ColumnPropNameInTable="brandIdColumn" msprop:Generator_UserColumnName="brandId" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

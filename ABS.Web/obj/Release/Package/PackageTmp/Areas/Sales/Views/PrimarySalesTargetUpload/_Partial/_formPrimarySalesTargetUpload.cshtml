@@ -1,0 +1,44 @@
+﻿<form novalidate name="frmPrimarySalesTargetUpload" id="frmPrimarySalesTargetUpload" class="form-horizontal row-border">
+    <input type="hidden" id="PrimarySalesTargetUploadID" readonly="readonly" ng-model="PrimarySalesTargetUploadID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+    <div class="row">
+        @*<button type="button" class="btn btn-sm btn-danger" ng-click="UploadTest()">Test Upload</button>*@
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Browse <span class="error">*</span> </label>
+                <div class="col-md-6">
+                    <input type="file" name="file" id="file"
+                           ng-model="docfile" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-4 control-label"> Start Date <span class="error">*</span>  </label>
+                <div class="col-md-6">
+                    <input type="text" autocomplete="off"
+                           id="dtStartDate"
+                           class="form-control datepicker"
+                           name="dtStartDate" ng-model="StartDate" required />
+                </div>
+                <span class="error" ng-show="(frmPrimarySalesTargetUpload.$dirty||submitted) && frmPrimarySalesTargetUpload.dtStartDate.$error.required"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-4 control-label"> End Date <span class="error">*</span>  </label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="dtEndDate" autocomplete="off"
+                           class="form-control datepicker"
+                           name="dtEndDate" ng-model="EndDate" required />
+                </div>
+                <span class="error" ng-show="(frmPrimarySalesTargetUpload.$dirty||submitted) && frmPrimarySalesTargetUpload.dtEndDate.$error.required"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>

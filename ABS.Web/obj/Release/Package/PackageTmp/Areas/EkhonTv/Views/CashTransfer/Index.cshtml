@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "EkhonTv";
+}
+
+<div ng-controller="tokenCtrl">
+    <div class="container" ng-controller="EkhonTvCommonCtrl">
+        <div ng-controller="BreadcrumbCtrl">
+            @Html.Partial("~/Areas/SystemCommon/Views/Shared/_Partial/_Breadcrumbs.cshtml")
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget box">
+                    <div class="widget-header">
+                        <h4><i class="icon-reorder"></i> Head Office Cash Transfer Report </h4>
+                        <div class="toolbar no-padding">
+                            <span id="reset" class="btn btn-danger margin-right-btn" ng-click="clear()">
+                                <i class="icon-refresh"></i> Reset
+                            </span>
+                            <span id="save" class="btn btn-success margin-right-btn" ng-click="ShowCashTransferReport()" ng-disabled="frmBuildingEntry.$invalid">
+                                <i class="icon-save"></i> Show Report
+                            </span>
+                            @*<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>*@
+                        </div>
+                    </div>
+                    <div class="widget-content" ng-show="IsShow">
+                        @Html.Partial("~/Areas/EkhonTv/Views/CashTransfer/_Partial/_formCashTransfer.cshtml")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+@section AngularScript{
+
+    <script src="~/Areas/EkhonTv/ScriptsNg/Controllers/EkhonTvCommonCtrl.js"></script>
+    <script src="~/Areas/EkhonTv/ScriptsNg/Service/ReportCommonService.js"></script>
+    <script src="~/Areas/EkhonTv/ScriptsNg/Service/CrudServiceCmnPro.js"></script>
+    <script src="~/Areas/EkhonTv/ScriptsNg/Directives/ConversionCmnPro.js"></script>
+    <script src="~/Scripts/CustomToastrMessage.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+    <script src="~/Areas/Token/TokenController.js"></script>
+    <script src="~/Areas/SystemCommon/ScriptsNg/Controllers/BreadcrumbCtrl.js"></script>
+}

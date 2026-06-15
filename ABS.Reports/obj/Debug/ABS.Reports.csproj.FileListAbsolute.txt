@@ -1,0 +1,36 @@
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll.config
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.pdb
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csprojAssemblyReference.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptPIUpdateHistory.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalPISummaryWithFabric.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalPISummary.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalLCSummary.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalBookingSheet.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptHDOSummaryWithItem.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptHDOSummary.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptPI.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rpt_HDOMasterDetail.resources
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.GenerateResource.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.CoreCompileInputs.cache
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.CopyComplete
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.dll
+E:\Projects\Amber Denim\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\bin\Debug\ABS.Reports.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptPIUpdateHistory.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalPISummaryWithFabric.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalPISummary.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalLCSummary.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptSalBookingSheet.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptHDOSummaryWithItem.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptHDOSummary.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rptPI.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.Sales.rpt_HDOMasterDetail.resources
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.GenerateResource.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Reports\obj\Debug\ABS.Reports.csprojAssemblyReference.cache

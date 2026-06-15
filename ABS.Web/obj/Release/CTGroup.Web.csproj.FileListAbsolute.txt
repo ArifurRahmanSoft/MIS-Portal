@@ -1,0 +1,882 @@
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\csc.exe
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\vbc.exe
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\VBCSCompiler.exe
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Web.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Web.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Web.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Service.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Utility.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Antlr3.Runtime.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Newtonsoft.Json.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Owin.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Net.Http.Formatting.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Helpers.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Http.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Http.WebHost.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Mvc.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Optimization.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Deployment.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Razor.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\WebGrease.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Data.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Service.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Service.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Utility.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Utility.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Antlr3.Runtime.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EntityFramework.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Optimization.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Deployment.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Razor.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Helpers.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Mvc.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Newtonsoft.Json.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Net.Http.Formatting.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Http.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Web.Http.WebHost.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Data.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ABS.Data.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csproj.CopyComplete
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\ABS.Web.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\ABS.Web.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\SqlServerTypes\x64\msvcr120.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\SqlServerTypes\x86\msvcr120.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\itextsharp.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.Design.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WinForms.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.SqlServer.Types.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EnvDTE.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\stdole.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.MSXML.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\itextsharp.xml
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\RdlCompile.cache
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\obj\Release\RdlCompile.compiled
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.VSHelp.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\EnvDTE80.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Build.Tasks.Core.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Data.Services.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\VSLangProj.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Data.Core.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\VSLangProj80.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Threading.Tasks.Dataflow.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.GraphModel.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Build.Utilities.Core.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.Build.Framework.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\VSLangProj2.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\System.Collections.Immutable.dll
+E:\Projects\ERPBizness\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\SqlServerTypes\x64\msvcr120.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\SqlServerTypes\x86\msvcr120.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\csc.exe
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\System.Collections.Immutable.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\System.Reflection.Metadata.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\vbc.exe
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\VBCSCompiler.exe
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\roslyn\VBCSCompiler.exe.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Web.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Web.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Web.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Service.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Utility.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Antlr3.Runtime.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\EntityFramework.SqlServer.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\itextsharp.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.Cookies.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.Common.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.Design.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WebDesign.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WebForms.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.ReportViewer.WinForms.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.SqlServer.Types.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Web.Infrastructure.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Newtonsoft.Json.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Oracle.ManagedDataAccess.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Owin.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Net.Http.Formatting.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Helpers.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Http.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Http.WebHost.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Mvc.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Optimization.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Razor.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Deployment.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Razor.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\WebGrease.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Data.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\EnvDTE.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\stdole.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.MSXML.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Service.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Service.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Utility.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Utility.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\CTGroup.OracleModel.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Antlr3.Runtime.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\EntityFramework.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\EntityFramework.SqlServer.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\itextsharp.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Microsoft.Owin.Security.Cookies.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Optimization.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Razor.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Deployment.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Webpages.Razor.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Helpers.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Mvc.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\Newtonsoft.Json.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Net.Http.Formatting.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Http.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\System.Web.Http.WebHost.xml
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Data.pdb
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ABS.Data.dll.config
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csprojAssemblyReference.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\RdlCompile.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\RdlCompile.compiled
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csproj.CoreCompileInputs.cache
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\CTGroup.Web.csproj.CopyComplete
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\ABS.Web.dll
+F:\From Monir Bhai\ABS-DEV\ABS.Web\obj\Release\ABS.Web.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\SqlServerTypes\x64\msvcr120.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\SqlServerTypes\x86\msvcr120.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\csc.exe
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\vbc.exe
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\VBCSCompiler.exe
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Web.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Web.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Web.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Service.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Utility.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Antlr3.Runtime.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\CTGroup.OracleModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EntityFramework.SqlServer.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\itextsharp.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Security.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.Design.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.ReportViewer.WinForms.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.SqlServer.Types.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Newtonsoft.Json.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Oracle.ManagedDataAccess.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Owin.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Net.Http.Formatting.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Helpers.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Http.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Http.WebHost.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Mvc.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Optimization.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Razor.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.Deployment.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.Razor.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\WebGrease.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Data.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EnvDTE.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\stdole.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.VSHelp.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EnvDTE80.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Build.Tasks.Core.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Data.Services.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\VSLangProj.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Data.Core.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\VSLangProj80.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Threading.Tasks.Dataflow.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.GraphModel.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.MSXML.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Build.Utilities.Core.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Build.Framework.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\VSLangProj2.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Collections.Immutable.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Service.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Service.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Utility.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Utility.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\CTGroup.OracleModel.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\CTGroup.OracleModel.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Antlr3.Runtime.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EntityFramework.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\EntityFramework.SqlServer.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\itextsharp.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Security.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Optimization.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Razor.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.Deployment.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Webpages.Razor.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Helpers.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Mvc.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Newtonsoft.Json.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Net.Http.Formatting.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Http.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\System.Web.Http.WebHost.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Data.pdb
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ABS.Data.dll.config
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\CTGroup.Web.csprojAssemblyReference.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\RdlCompile.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\RdlCompile.compiled
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\CTGroup.Web.csproj.CoreCompileInputs.cache
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\CTGroup.Web.csproj.CopyComplete
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\ABS.Web.dll
+E:\Projects\ERPBizness\BackupSourceCodeBeforeInternetVersion\ABS.Web\obj\Release\ABS.Web.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\SqlServerTypes\x64\msvcr120.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\SqlServerTypes\x86\msvcr120.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\csc.exe
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\vbc.exe
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\VBCSCompiler.exe
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Web.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Web.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Web.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Service.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Utility.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Antlr3.Runtime.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\CTGroup.OracleModel.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\EntityFramework.SqlServer.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\itextsharp.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Security.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.Design.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.ReportViewer.WinForms.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.SqlServer.Types.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Newtonsoft.Json.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Owin.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Net.Http.Formatting.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Helpers.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Http.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Http.WebHost.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Mvc.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Optimization.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Razor.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.Deployment.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.Razor.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\WebGrease.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Data.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.DataSet.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\EnvDTE.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\stdole.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.MSXML.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Service.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Service.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Utility.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Utility.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\CTGroup.OracleModel.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Antlr3.Runtime.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\EntityFramework.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\EntityFramework.SqlServer.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\itextsharp.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Security.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Optimization.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Razor.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.Deployment.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Webpages.Razor.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Helpers.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Mvc.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\Newtonsoft.Json.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Net.Http.Formatting.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Http.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\System.Web.Http.WebHost.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Data.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ABS.Data.dll.config
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.DataSet.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.pdb
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ExcelDataReader.xml
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\CTGroup.Web.csprojAssemblyReference.cache
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\RdlCompile.cache
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\RdlCompile.compiled
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\CTGroup.Web.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\CTGroup.Web.csproj.CopyComplete
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\ABS.Web.dll
+E:\ProjectsDev\TFS_Project\ABS.Web\obj\Release\ABS.Web.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\SqlServerTypes\x64\msvcr120.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\SqlServerTypes\x86\msvcr120.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\csc.exe
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\vbc.exe
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\VBCSCompiler.exe
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Web.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Web.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Web.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Service.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Utility.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Antlr3.Runtime.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\CTGroup.OracleModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\EntityFramework.SqlServer.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\itextsharp.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Security.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.Design.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.ReportViewer.WinForms.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.SqlServer.Types.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Newtonsoft.Json.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Oracle.ManagedDataAccess.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Owin.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Net.Http.Formatting.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Helpers.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Http.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Http.WebHost.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Mvc.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Optimization.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.Deployment.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.Razor.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\WebGrease.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Data.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.DataSet.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\EnvDTE.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\stdole.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.MSXML.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Service.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Service.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Utility.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Utility.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\CTGroup.OracleModel.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\CTGroup.OracleModel.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Antlr3.Runtime.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\EntityFramework.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\EntityFramework.SqlServer.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\itextsharp.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Security.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Optimization.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.Deployment.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Webpages.Razor.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Helpers.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Mvc.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Newtonsoft.Json.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Net.Http.Formatting.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Http.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\System.Web.Http.WebHost.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Data.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ABS.Data.dll.config
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.DataSet.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.DataSet.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ExcelDataReader.xml
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\CTGroup.Web.csproj.AssemblyReference.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\RdlCompile.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\RdlCompile.compiled
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\CTGroup.Web.csproj.CoreCompileInputs.cache
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\CTGroup.Web.csproj.CopyComplete
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\ABS.Web.dll
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\obj\Release\ABS.Web.pdb
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\SaleTopSheet\SaleDepositTS.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\PrimaryTargetVsAchivement\rpt_Primary_Target_Vs_Sales.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\PrimarySalesGrowthMonitoring\rpt_Primary_Sales_Growth_Monitoring.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\PrimarySalesGrowthMonitoring\rpt_Primary_Sales_Growth_Monitoring_DB_BRND.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\PrimarySalesGrowthMonitoring\rpt_Primary_Sales_Growth_Monitoring_DB_Area_BRND.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\SaleTopSheet\SaleDepositTS_Bak1.rdlc
+E:\ProjectsDev\MonirBhai_Projects\MIS\ABS.Web\bin\Areas\MISREPORT\Reports\SaleTopSheet\SaleDepositTS_Bak2.rdlc

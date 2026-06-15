@@ -1,0 +1,92 @@
+﻿<form novalidate name="frmIncentiveRate" id="frmIncentiveRate" class="form-horizontal row-border">
+    <input type="hidden" id="IncentiveAchievementRatioID" readonly="readonly" ng-model="IncentiveAchievementRatioID" />
+    <input type="hidden" id="menuID" readonly="readonly" ng-model="MenuID" />
+
+
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="input17">Incentive Formula ID</label>
+                <div class="col-md-7">
+                    <select id="ddlIncentiveFormula" class="select2-select-00"
+                            ng-model="ngIncentiveFormula"
+                            name="ddlIncentiveFormula"
+                            data-placeholder="--Select Sales Force--"
+                            style="width: 100%" ng-options="incenfor.INCEN_ID as incenfor.BRAND_ID for incenfor in listIncentiveFormula">
+                        <option></option>
+                    </select>
+                </div>
+                @*<span class="error" ng-show="(frmIncentiveAchievementRatio.$dirty||submitted) && frmIncentiveAchievementRatio.ddlSalesForce.$error.required">*</span>*@
+            </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Brand</label>
+                    <div class="col-md-2">
+                        <div class="loadmore_ddl">
+                            <div ng-show="loaderMoreForSampleNo" ng-class="result">
+                                <img src="~/Content/img/ng-loader.gif" />
+                                {{lblMessageForSampleNo}}
+                            </div>
+                        </div>
+                    </div>
+                    <span class="label label-success label-mini">
+                        <a href="javascript:void(0);" ng-click="loadSampleNoModalRecords(0)" class="bs-tooltip" title="Show Brand Info">
+                            <i class="icon-search"></i>
+                        </a>
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> Start Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtStartDate"
+                               class="form-control datepicker"
+                               name="dtStartDate" ng-model="StartDate" required />
+                    </div>
+                    <span class="error" ng-show="(frmIncentiveRate.$dirty||submitted) && frmIncentiveRate.dtStartDate.$error.required">*</span>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">Sales Force</label>
+                    <div class="col-md-6">
+                        <select id="ddlSalesForce" class="select2-select-00"
+                                ng-model="ngSalesForce"
+                                name="ddlSalesForce"
+                                data-placeholder="--Select Sales Force--"
+                                style="width: 100%" ng-options="st.value as st.text for st in listSalesForce" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(frmIncentiveAchievementRatio.$dirty||submitted) && frmIncentiveAchievementRatio.ddlSalesForce.$error.required">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> End Date </label>
+                    <div class="col-md-3">
+                        <input type="text"
+                               id="dtEndDate"
+                               class="form-control datepicker"
+                               name="dtEndDate" ng-model="EndDate" required />
+                    </div>
+                    <span class="error" ng-show="(frmIncentiveRate.$dirty||submitted) && frmIncentiveRate.dtEndDate.$error.required">*</span>
+                </div>
+
+
+
+            </div>
+        </div>
+</form>

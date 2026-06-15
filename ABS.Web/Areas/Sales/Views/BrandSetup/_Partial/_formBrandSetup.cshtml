@@ -1,0 +1,70 @@
+﻿<form novalidate name="frmProductSetup" id="frmProductSetup" class="form-horizontal row-border">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand Name *</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="productName"
+                           class="form-control"
+                           ng-init="productName=''"
+                           name="productName" ng-model="productName" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand Catagory *</label>
+                <div class="col-md-6">
+
+                    <select class="form-control"
+                            ng-model="dataModel.sprod_wunt"
+                            style="width: 100%;"
+                            ng-options="munt.id as munt.text for munt in ProductCat" required>
+                    </select>
+
+                   @* <input type="text"
+                           id="productName"
+                           class="form-control"
+                           ng-init="productName=''"
+                           name="productName" ng-model="productName" />*@
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Brand Bangla Name *</label>
+                <div class="col-md-6">
+                    <input type="text"
+                           id="productName"
+                           class="form-control"
+                           ng-init="productName=''"
+                           name="productName" ng-model="productName" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div ng-show="true">
+                    <label class="col-md-4 control-label">Brand Short Name *</label>
+                    <div class="col-md-6">
+                        <input type="text"
+                               id="productCode"
+                               class="form-control "
+                               name="productCode" ng-model="productCode"
+                               required
+                               ng-init="productCode=''" />
+                    </div>
+                </div>
+
+
+              
+            </div>
+
+
+
+
+        </div>
+    </div>
+</form>

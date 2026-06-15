@@ -1,0 +1,40 @@
+﻿<form novalidate name="frmUserRole" id="frmUserRole" class="form-horizontal row-border">
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17">Role</label>
+                <div class="col-md-6">
+                    <select id="ROLEID" class="select2-select-00"
+                            ng-model="ROLEID"
+                            name="ROLEID"
+                            data-placeholder="--Select Role--"
+                            style="width: 100%" ng-options="rl.ROLEID as rl.ROLENAME for rl in listRole" required>
+                        <option></option>
+                    </select>
+                </div>
+                <span class="error" ng-show="(frmUserRole.$dirty||submitted) && frmUserRole.ROLEID.$error.required">*</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+          
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="input17">User</label>
+                    <div class="col-md-6">
+                        <select id="USERID" class="select2-select-00"
+                                ng-model="USERID"
+                                name="USERID"
+                                data-placeholder="--Select User--"
+                                style="width: 100%" ng-options="usr.USERID as usr.USERNAME for usr in listUser" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span class="error" ng-show="(frmUserRole.$dirty||submitted) && frmUserRole.USERID.$error.required">*</span>
+                </div>
+            </div>
+        </div>
+
+    </form>

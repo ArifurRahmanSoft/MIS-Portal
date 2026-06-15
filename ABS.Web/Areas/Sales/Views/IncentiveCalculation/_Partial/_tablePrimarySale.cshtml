@@ -1,0 +1,29 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+    <thead class="grid-top-panel">
+        <tr>
+            <th>Brand Name</th>
+            <th>Total Quantity</th>
+            <th>Total Quantity(M.Ton)</th>
+            <th>Unit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in listIncenPrimarySale">
+            <td>{{dataModel.SBRND_NAME}}</td>
+            <td>{{dataModel.TOTALQTY}}</td>
+            <td>{{dataModel.TOTALQTYINTON}}</td>            
+            <td>Kg/Ltr</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p ng-show="(listIncenPrimarySale).length == 0" style="color:red">No Data found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>

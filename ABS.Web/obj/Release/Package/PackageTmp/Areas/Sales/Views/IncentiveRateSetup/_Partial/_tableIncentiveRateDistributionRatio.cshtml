@@ -1,0 +1,32 @@
+﻿<table class="table table-hover right-bottom-scroll-m">
+    <thead class="grid-top-panel">
+        <tr>
+            <td style="display:none">SalesForceTypeId</td>
+            <th>Sales Force Type</th>
+            <th>Taka</th>   
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dataModel in ListIncentiveDistRatio">
+            <td style="display:none">{{dataModel.SF_TYPE}}</td>
+            <td>{{dataModel.SF_TYPE}}</td>
+            <td>
+                <input type="number" id="txtIncTkDistRatio" name="txtIncTkDistRatio" class="form-control" style="width:100px;"
+                       ng-model="dataModel.EACH_SF_TK_AMOUNT" min="0.00" required />
+            </td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+
+<p ng-show="(ListPIDetails).length == 0" style="color:red">Nothing found!</p>
+
+<div class="loadmore">
+    <div ng-show="loaderMore" ng-class="result">
+        {{lblMessage}}
+    </div>
+    <div ng-show="scrollended" ng-class="result">
+        {{lblMessage}}
+    </div>
+</div>
